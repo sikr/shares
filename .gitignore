@@ -1,6 +1,6 @@
 data
 db
-json
+json/private*
 log
 node_modules
 shares.sublime*
