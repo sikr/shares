@@ -1,6 +1,13 @@
-data
-db
+data/*
+!data/ALV.F*.json
+!data/AFO1.F*.json
+!data/BAS.F*.json
+!data/HWP.F*.json
+!data/NOVC.F*.json
+!data/SMHN.F*.json
+!data/FNTN.F*.json
+db/*
 json/private*
-log
+log/*
 node_modules
 shares.sublime*

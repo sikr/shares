@@ -1,0 +1,2621 @@
+{
+  "query": {
+    "count": 261,
+    "created": "2014-11-02T12:50:19Z",
+    "lang": "en-US",
+    "results": {
+      "quote": [
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-31",
+          "Open": "6.35",
+          "High": "6.35",
+          "Low": "6.35",
+          "Close": "6.35",
+          "Volume": "000",
+          "Adj_Close": "6.35"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-30",
+          "Open": "6.17",
+          "High": "6.35",
+          "Low": "6.17",
+          "Close": "6.35",
+          "Volume": "10900",
+          "Adj_Close": "6.35"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-27",
+          "Open": "6.37",
+          "High": "6.37",
+          "Low": "6.17",
+          "Close": "6.17",
+          "Volume": "7100",
+          "Adj_Close": "6.17"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-26",
+          "Open": "6.36",
+          "High": "6.36",
+          "Low": "6.36",
+          "Close": "6.36",
+          "Volume": "000",
+          "Adj_Close": "6.36"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-25",
+          "Open": "6.36",
+          "High": "6.36",
+          "Low": "6.36",
+          "Close": "6.36",
+          "Volume": "000",
+          "Adj_Close": "6.36"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-24",
+          "Open": "6.36",
+          "High": "6.36",
+          "Low": "6.36",
+          "Close": "6.36",
+          "Volume": "000",
+          "Adj_Close": "6.36"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-23",
+          "Open": "6.25",
+          "High": "6.43",
+          "Low": "6.25",
+          "Close": "6.36",
+          "Volume": "1200",
+          "Adj_Close": "6.36"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-20",
+          "Open": "6.11",
+          "High": "6.37",
+          "Low": "6.11",
+          "Close": "6.26",
+          "Volume": "7400",
+          "Adj_Close": "6.26"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-19",
+          "Open": "6.09",
+          "High": "6.21",
+          "Low": "6.07",
+          "Close": "6.20",
+          "Volume": "6200",
+          "Adj_Close": "6.20"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-18",
+          "Open": "5.98",
+          "High": "6.05",
+          "Low": "5.94",
+          "Close": "6.05",
+          "Volume": "7500",
+          "Adj_Close": "6.05"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-17",
+          "Open": "6.05",
+          "High": "6.15",
+          "Low": "5.71",
+          "Close": "5.87",
+          "Volume": "68400",
+          "Adj_Close": "5.87"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-16",
+          "Open": "6.16",
+          "High": "6.21",
+          "Low": "6.06",
+          "Close": "6.06",
+          "Volume": "5900",
+          "Adj_Close": "6.06"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-13",
+          "Open": "6.17",
+          "High": "6.19",
+          "Low": "6.17",
+          "Close": "6.19",
+          "Volume": "700",
+          "Adj_Close": "6.19"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-12",
+          "Open": "6.15",
+          "High": "6.21",
+          "Low": "6.15",
+          "Close": "6.21",
+          "Volume": "2300",
+          "Adj_Close": "6.21"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-11",
+          "Open": "6.14",
+          "High": "6.26",
+          "Low": "6.14",
+          "Close": "6.23",
+          "Volume": "3500",
+          "Adj_Close": "6.23"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-10",
+          "Open": "6.27",
+          "High": "6.33",
+          "Low": "6.20",
+          "Close": "6.20",
+          "Volume": "8600",
+          "Adj_Close": "6.20"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-09",
+          "Open": "6.36",
+          "High": "6.36",
+          "Low": "6.22",
+          "Close": "6.32",
+          "Volume": "2600",
+          "Adj_Close": "6.32"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-06",
+          "Open": "6.09",
+          "High": "6.29",
+          "Low": "6.08",
+          "Close": "6.29",
+          "Volume": "10100",
+          "Adj_Close": "6.29"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-05",
+          "Open": "6.18",
+          "High": "6.25",
+          "Low": "6.04",
+          "Close": "6.13",
+          "Volume": "16100",
+          "Adj_Close": "6.13"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-04",
+          "Open": "6.20",
+          "High": "6.31",
+          "Low": "6.15",
+          "Close": "6.19",
+          "Volume": "11400",
+          "Adj_Close": "6.19"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-03",
+          "Open": "6.47",
+          "High": "6.52",
+          "Low": "6.19",
+          "Close": "6.20",
+          "Volume": "21400",
+          "Adj_Close": "6.20"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-12-02",
+          "Open": "6.59",
+          "High": "6.70",
+          "Low": "6.50",
+          "Close": "6.56",
+          "Volume": "5800",
+          "Adj_Close": "6.56"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-29",
+          "Open": "6.84",
+          "High": "6.84",
+          "Low": "6.64",
+          "Close": "6.68",
+          "Volume": "15500",
+          "Adj_Close": "6.68"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-28",
+          "Open": "6.52",
+          "High": "6.84",
+          "Low": "6.52",
+          "Close": "6.81",
+          "Volume": "22200",
+          "Adj_Close": "6.81"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-27",
+          "Open": "6.51",
+          "High": "6.57",
+          "Low": "6.50",
+          "Close": "6.52",
+          "Volume": "12900",
+          "Adj_Close": "6.52"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-26",
+          "Open": "6.27",
+          "High": "6.46",
+          "Low": "6.25",
+          "Close": "6.46",
+          "Volume": "15300",
+          "Adj_Close": "6.46"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-25",
+          "Open": "6.20",
+          "High": "6.28",
+          "Low": "6.18",
+          "Close": "6.27",
+          "Volume": "3200",
+          "Adj_Close": "6.27"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-22",
+          "Open": "6.20",
+          "High": "6.37",
+          "Low": "6.20",
+          "Close": "6.21",
+          "Volume": "11700",
+          "Adj_Close": "6.21"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-21",
+          "Open": "6.54",
+          "High": "6.54",
+          "Low": "6.21",
+          "Close": "6.21",
+          "Volume": "16600",
+          "Adj_Close": "6.21"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-20",
+          "Open": "6.40",
+          "High": "6.50",
+          "Low": "6.35",
+          "Close": "6.50",
+          "Volume": "9300",
+          "Adj_Close": "6.50"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-19",
+          "Open": "6.16",
+          "High": "6.41",
+          "Low": "6.15",
+          "Close": "6.41",
+          "Volume": "13500",
+          "Adj_Close": "6.41"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-18",
+          "Open": "6.24",
+          "High": "6.30",
+          "Low": "6.16",
+          "Close": "6.20",
+          "Volume": "13400",
+          "Adj_Close": "6.20"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-15",
+          "Open": "6.50",
+          "High": "6.50",
+          "Low": "6.17",
+          "Close": "6.34",
+          "Volume": "16000",
+          "Adj_Close": "6.34"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-14",
+          "Open": "6.60",
+          "High": "6.60",
+          "Low": "6.37",
+          "Close": "6.51",
+          "Volume": "19100",
+          "Adj_Close": "6.51"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-13",
+          "Open": "6.65",
+          "High": "6.75",
+          "Low": "6.45",
+          "Close": "6.55",
+          "Volume": "15100",
+          "Adj_Close": "6.55"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-12",
+          "Open": "6.84",
+          "High": "6.99",
+          "Low": "6.71",
+          "Close": "6.73",
+          "Volume": "20300",
+          "Adj_Close": "6.73"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-11",
+          "Open": "6.90",
+          "High": "7.00",
+          "Low": "6.87",
+          "Close": "6.93",
+          "Volume": "10700",
+          "Adj_Close": "6.93"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-08",
+          "Open": "7.08",
+          "High": "7.08",
+          "Low": "6.76",
+          "Close": "6.90",
+          "Volume": "20700",
+          "Adj_Close": "6.90"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-07",
+          "Open": "7.15",
+          "High": "7.29",
+          "Low": "6.86",
+          "Close": "7.13",
+          "Volume": "84500",
+          "Adj_Close": "7.13"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-06",
+          "Open": "7.78",
+          "High": "8.05",
+          "Low": "7.78",
+          "Close": "8.03",
+          "Volume": "4900",
+          "Adj_Close": "8.03"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-05",
+          "Open": "7.85",
+          "High": "8.00",
+          "Low": "7.85",
+          "Close": "7.89",
+          "Volume": "6100",
+          "Adj_Close": "7.89"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-04",
+          "Open": "8.14",
+          "High": "8.18",
+          "Low": "7.73",
+          "Close": "7.96",
+          "Volume": "24100",
+          "Adj_Close": "7.96"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-11-01",
+          "Open": "7.80",
+          "High": "8.20",
+          "Low": "7.80",
+          "Close": "7.91",
+          "Volume": "37100",
+          "Adj_Close": "7.91"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-31",
+          "Open": "7.08",
+          "High": "7.87",
+          "Low": "7.08",
+          "Close": "7.73",
+          "Volume": "50500",
+          "Adj_Close": "7.73"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-30",
+          "Open": "7.20",
+          "High": "7.37",
+          "Low": "7.12",
+          "Close": "7.22",
+          "Volume": "10100",
+          "Adj_Close": "7.22"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-29",
+          "Open": "6.94",
+          "High": "7.26",
+          "Low": "6.94",
+          "Close": "7.26",
+          "Volume": "9900",
+          "Adj_Close": "7.26"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-28",
+          "Open": "7.31",
+          "High": "7.31",
+          "Low": "7.00",
+          "Close": "7.00",
+          "Volume": "2100",
+          "Adj_Close": "7.00"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-25",
+          "Open": "6.90",
+          "High": "7.25",
+          "Low": "6.90",
+          "Close": "7.22",
+          "Volume": "5300",
+          "Adj_Close": "7.22"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-24",
+          "Open": "7.10",
+          "High": "7.10",
+          "Low": "6.97",
+          "Close": "6.99",
+          "Volume": "8400",
+          "Adj_Close": "6.99"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-23",
+          "Open": "7.10",
+          "High": "7.24",
+          "Low": "7.05",
+          "Close": "7.12",
+          "Volume": "3600",
+          "Adj_Close": "7.12"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-22",
+          "Open": "7.12",
+          "High": "7.25",
+          "Low": "7.12",
+          "Close": "7.16",
+          "Volume": "4500",
+          "Adj_Close": "7.16"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-21",
+          "Open": "7.16",
+          "High": "7.25",
+          "Low": "7.16",
+          "Close": "7.17",
+          "Volume": "2900",
+          "Adj_Close": "7.17"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-18",
+          "Open": "7.18",
+          "High": "7.30",
+          "Low": "7.16",
+          "Close": "7.29",
+          "Volume": "2100",
+          "Adj_Close": "7.29"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-17",
+          "Open": "7.07",
+          "High": "7.25",
+          "Low": "7.07",
+          "Close": "7.25",
+          "Volume": "10000",
+          "Adj_Close": "7.25"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-16",
+          "Open": "7.40",
+          "High": "7.40",
+          "Low": "7.10",
+          "Close": "7.10",
+          "Volume": "1600",
+          "Adj_Close": "7.10"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-15",
+          "Open": "7.17",
+          "High": "7.35",
+          "Low": "7.17",
+          "Close": "7.31",
+          "Volume": "10400",
+          "Adj_Close": "7.31"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-14",
+          "Open": "7.09",
+          "High": "7.25",
+          "Low": "7.08",
+          "Close": "7.23",
+          "Volume": "7000",
+          "Adj_Close": "7.23"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-11",
+          "Open": "7.25",
+          "High": "7.27",
+          "Low": "7.17",
+          "Close": "7.19",
+          "Volume": "11500",
+          "Adj_Close": "7.19"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-10",
+          "Open": "6.81",
+          "High": "7.23",
+          "Low": "6.81",
+          "Close": "7.20",
+          "Volume": "17800",
+          "Adj_Close": "7.20"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-09",
+          "Open": "6.74",
+          "High": "6.85",
+          "Low": "6.74",
+          "Close": "6.81",
+          "Volume": "5300",
+          "Adj_Close": "6.81"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-08",
+          "Open": "6.85",
+          "High": "6.88",
+          "Low": "6.80",
+          "Close": "6.88",
+          "Volume": "3800",
+          "Adj_Close": "6.88"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-07",
+          "Open": "6.85",
+          "High": "6.97",
+          "Low": "6.85",
+          "Close": "6.91",
+          "Volume": "4200",
+          "Adj_Close": "6.91"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-04",
+          "Open": "6.85",
+          "High": "6.95",
+          "Low": "6.85",
+          "Close": "6.92",
+          "Volume": "8700",
+          "Adj_Close": "6.92"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-03",
+          "Open": "6.72",
+          "High": "6.91",
+          "Low": "6.70",
+          "Close": "6.91",
+          "Volume": "4600",
+          "Adj_Close": "6.91"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-02",
+          "Open": "6.62",
+          "High": "6.72",
+          "Low": "6.62",
+          "Close": "6.72",
+          "Volume": "1500",
+          "Adj_Close": "6.72"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-10-01",
+          "Open": "6.61",
+          "High": "6.69",
+          "Low": "6.61",
+          "Close": "6.64",
+          "Volume": "11100",
+          "Adj_Close": "6.64"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-30",
+          "Open": "6.70",
+          "High": "6.73",
+          "Low": "6.66",
+          "Close": "6.73",
+          "Volume": "8900",
+          "Adj_Close": "6.73"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-27",
+          "Open": "6.78",
+          "High": "6.81",
+          "Low": "6.71",
+          "Close": "6.74",
+          "Volume": "4300",
+          "Adj_Close": "6.74"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-26",
+          "Open": "6.79",
+          "High": "6.83",
+          "Low": "6.79",
+          "Close": "6.80",
+          "Volume": "3100",
+          "Adj_Close": "6.80"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-25",
+          "Open": "6.78",
+          "High": "6.90",
+          "Low": "6.78",
+          "Close": "6.90",
+          "Volume": "4600",
+          "Adj_Close": "6.90"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-24",
+          "Open": "6.79",
+          "High": "6.85",
+          "Low": "6.79",
+          "Close": "6.81",
+          "Volume": "2700",
+          "Adj_Close": "6.81"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-23",
+          "Open": "6.77",
+          "High": "6.91",
+          "Low": "6.77",
+          "Close": "6.91",
+          "Volume": "2500",
+          "Adj_Close": "6.91"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-20",
+          "Open": "6.99",
+          "High": "6.99",
+          "Low": "6.76",
+          "Close": "6.76",
+          "Volume": "13800",
+          "Adj_Close": "6.76"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-19",
+          "Open": "7.05",
+          "High": "7.10",
+          "Low": "6.96",
+          "Close": "7.08",
+          "Volume": "14600",
+          "Adj_Close": "7.08"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-18",
+          "Open": "7.22",
+          "High": "7.23",
+          "Low": "6.95",
+          "Close": "7.01",
+          "Volume": "4300",
+          "Adj_Close": "7.01"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-17",
+          "Open": "7.22",
+          "High": "7.31",
+          "Low": "7.14",
+          "Close": "7.21",
+          "Volume": "6900",
+          "Adj_Close": "7.21"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-16",
+          "Open": "7.16",
+          "High": "7.26",
+          "Low": "7.16",
+          "Close": "7.26",
+          "Volume": "12000",
+          "Adj_Close": "7.26"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-13",
+          "Open": "7.20",
+          "High": "7.21",
+          "Low": "7.17",
+          "Close": "7.19",
+          "Volume": "8000",
+          "Adj_Close": "7.19"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-12",
+          "Open": "7.18",
+          "High": "7.18",
+          "Low": "7.11",
+          "Close": "7.14",
+          "Volume": "1700",
+          "Adj_Close": "7.14"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-11",
+          "Open": "6.95",
+          "High": "7.22",
+          "Low": "6.95",
+          "Close": "7.17",
+          "Volume": "28000",
+          "Adj_Close": "7.17"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-10",
+          "Open": "6.90",
+          "High": "6.95",
+          "Low": "6.73",
+          "Close": "6.92",
+          "Volume": "8500",
+          "Adj_Close": "6.92"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-09",
+          "Open": "6.80",
+          "High": "6.80",
+          "Low": "6.67",
+          "Close": "6.80",
+          "Volume": "4800",
+          "Adj_Close": "6.80"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-06",
+          "Open": "6.80",
+          "High": "6.80",
+          "Low": "6.61",
+          "Close": "6.61",
+          "Volume": "9400",
+          "Adj_Close": "6.61"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-05",
+          "Open": "6.77",
+          "High": "6.77",
+          "Low": "6.70",
+          "Close": "6.76",
+          "Volume": "7300",
+          "Adj_Close": "6.76"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-04",
+          "Open": "6.76",
+          "High": "6.86",
+          "Low": "6.75",
+          "Close": "6.75",
+          "Volume": "3600",
+          "Adj_Close": "6.75"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-03",
+          "Open": "6.87",
+          "High": "6.90",
+          "Low": "6.77",
+          "Close": "6.77",
+          "Volume": "3500",
+          "Adj_Close": "6.77"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-09-02",
+          "Open": "6.71",
+          "High": "6.92",
+          "Low": "6.71",
+          "Close": "6.91",
+          "Volume": "11200",
+          "Adj_Close": "6.91"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-30",
+          "Open": "6.71",
+          "High": "6.71",
+          "Low": "6.63",
+          "Close": "6.70",
+          "Volume": "4000",
+          "Adj_Close": "6.70"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-29",
+          "Open": "6.88",
+          "High": "6.92",
+          "Low": "6.66",
+          "Close": "6.76",
+          "Volume": "9700",
+          "Adj_Close": "6.76"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-28",
+          "Open": "6.53",
+          "High": "6.78",
+          "Low": "6.53",
+          "Close": "6.78",
+          "Volume": "14800",
+          "Adj_Close": "6.78"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-27",
+          "Open": "6.76",
+          "High": "6.82",
+          "Low": "6.52",
+          "Close": "6.60",
+          "Volume": "9900",
+          "Adj_Close": "6.60"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-26",
+          "Open": "7.00",
+          "High": "7.00",
+          "Low": "6.90",
+          "Close": "6.91",
+          "Volume": "4600",
+          "Adj_Close": "6.91"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-23",
+          "Open": "7.04",
+          "High": "7.12",
+          "Low": "6.97",
+          "Close": "6.97",
+          "Volume": "6000",
+          "Adj_Close": "6.97"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-22",
+          "Open": "6.80",
+          "High": "7.01",
+          "Low": "6.80",
+          "Close": "7.01",
+          "Volume": "2900",
+          "Adj_Close": "7.01"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-21",
+          "Open": "6.80",
+          "High": "6.92",
+          "Low": "6.77",
+          "Close": "6.92",
+          "Volume": "10800",
+          "Adj_Close": "6.92"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-20",
+          "Open": "6.95",
+          "High": "7.00",
+          "Low": "6.80",
+          "Close": "6.80",
+          "Volume": "9000",
+          "Adj_Close": "6.80"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-19",
+          "Open": "7.15",
+          "High": "7.19",
+          "Low": "6.93",
+          "Close": "6.97",
+          "Volume": "11800",
+          "Adj_Close": "6.97"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-16",
+          "Open": "7.17",
+          "High": "7.28",
+          "Low": "7.17",
+          "Close": "7.25",
+          "Volume": "3300",
+          "Adj_Close": "7.25"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-15",
+          "Open": "7.35",
+          "High": "7.38",
+          "Low": "7.23",
+          "Close": "7.23",
+          "Volume": "5000",
+          "Adj_Close": "7.23"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-14",
+          "Open": "7.39",
+          "High": "7.42",
+          "Low": "7.38",
+          "Close": "7.38",
+          "Volume": "5300",
+          "Adj_Close": "7.38"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-13",
+          "Open": "7.30",
+          "High": "7.43",
+          "Low": "7.30",
+          "Close": "7.41",
+          "Volume": "5700",
+          "Adj_Close": "7.41"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-12",
+          "Open": "7.40",
+          "High": "7.40",
+          "Low": "7.20",
+          "Close": "7.26",
+          "Volume": "3500",
+          "Adj_Close": "7.26"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-09",
+          "Open": "7.38",
+          "High": "7.38",
+          "Low": "7.30",
+          "Close": "7.36",
+          "Volume": "11600",
+          "Adj_Close": "7.36"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-08",
+          "Open": "6.95",
+          "High": "7.55",
+          "Low": "6.95",
+          "Close": "7.43",
+          "Volume": "21700",
+          "Adj_Close": "7.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-07",
+          "Open": "6.88",
+          "High": "7.00",
+          "Low": "6.87",
+          "Close": "7.00",
+          "Volume": "12700",
+          "Adj_Close": "7.00"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-06",
+          "Open": "7.10",
+          "High": "7.10",
+          "Low": "6.78",
+          "Close": "6.86",
+          "Volume": "15500",
+          "Adj_Close": "6.86"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-05",
+          "Open": "7.16",
+          "High": "7.18",
+          "Low": "7.12",
+          "Close": "7.12",
+          "Volume": "2200",
+          "Adj_Close": "7.12"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-02",
+          "Open": "7.23",
+          "High": "7.31",
+          "Low": "7.14",
+          "Close": "7.14",
+          "Volume": "12200",
+          "Adj_Close": "7.14"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-08-01",
+          "Open": "7.21",
+          "High": "7.23",
+          "Low": "7.18",
+          "Close": "7.23",
+          "Volume": "4000",
+          "Adj_Close": "7.23"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-31",
+          "Open": "7.24",
+          "High": "7.25",
+          "Low": "7.17",
+          "Close": "7.18",
+          "Volume": "3800",
+          "Adj_Close": "7.18"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-30",
+          "Open": "7.29",
+          "High": "7.34",
+          "Low": "7.23",
+          "Close": "7.31",
+          "Volume": "16400",
+          "Adj_Close": "7.31"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-29",
+          "Open": "7.25",
+          "High": "7.35",
+          "Low": "7.25",
+          "Close": "7.27",
+          "Volume": "8100",
+          "Adj_Close": "7.27"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-26",
+          "Open": "7.57",
+          "High": "7.57",
+          "Low": "7.27",
+          "Close": "7.36",
+          "Volume": "4300",
+          "Adj_Close": "7.36"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-25",
+          "Open": "7.54",
+          "High": "7.54",
+          "Low": "7.35",
+          "Close": "7.43",
+          "Volume": "10600",
+          "Adj_Close": "7.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-24",
+          "Open": "7.51",
+          "High": "7.53",
+          "Low": "7.11",
+          "Close": "7.40",
+          "Volume": "25100",
+          "Adj_Close": "7.40"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-23",
+          "Open": "7.86",
+          "High": "8.20",
+          "Low": "7.80",
+          "Close": "7.80",
+          "Volume": "19300",
+          "Adj_Close": "7.80"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-22",
+          "Open": "7.70",
+          "High": "7.76",
+          "Low": "7.66",
+          "Close": "7.76",
+          "Volume": "4400",
+          "Adj_Close": "7.76"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-19",
+          "Open": "7.69",
+          "High": "7.69",
+          "Low": "7.64",
+          "Close": "7.66",
+          "Volume": "1600",
+          "Adj_Close": "7.66"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-18",
+          "Open": "7.79",
+          "High": "7.85",
+          "Low": "7.70",
+          "Close": "7.70",
+          "Volume": "2400",
+          "Adj_Close": "7.70"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-17",
+          "Open": "8.15",
+          "High": "8.15",
+          "Low": "7.75",
+          "Close": "7.75",
+          "Volume": "4500",
+          "Adj_Close": "7.75"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-16",
+          "Open": "8.03",
+          "High": "8.31",
+          "Low": "8.03",
+          "Close": "8.14",
+          "Volume": "9000",
+          "Adj_Close": "8.14"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-15",
+          "Open": "7.70",
+          "High": "8.18",
+          "Low": "7.70",
+          "Close": "8.03",
+          "Volume": "12200",
+          "Adj_Close": "8.03"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-12",
+          "Open": "7.30",
+          "High": "7.63",
+          "Low": "7.30",
+          "Close": "7.63",
+          "Volume": "2400",
+          "Adj_Close": "7.63"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-11",
+          "Open": "7.43",
+          "High": "7.43",
+          "Low": "7.22",
+          "Close": "7.37",
+          "Volume": "5600",
+          "Adj_Close": "7.37"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-10",
+          "Open": "7.51",
+          "High": "7.51",
+          "Low": "7.40",
+          "Close": "7.43",
+          "Volume": "1900",
+          "Adj_Close": "7.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-09",
+          "Open": "7.47",
+          "High": "7.54",
+          "Low": "7.47",
+          "Close": "7.51",
+          "Volume": "7700",
+          "Adj_Close": "7.51"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-08",
+          "Open": "7.45",
+          "High": "7.51",
+          "Low": "7.45",
+          "Close": "7.51",
+          "Volume": "700",
+          "Adj_Close": "7.51"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-05",
+          "Open": "7.58",
+          "High": "7.71",
+          "Low": "7.46",
+          "Close": "7.46",
+          "Volume": "4400",
+          "Adj_Close": "7.46"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-04",
+          "Open": "7.46",
+          "High": "7.64",
+          "Low": "7.46",
+          "Close": "7.64",
+          "Volume": "10700",
+          "Adj_Close": "7.64"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-03",
+          "Open": "7.67",
+          "High": "7.67",
+          "Low": "7.25",
+          "Close": "7.46",
+          "Volume": "6600",
+          "Adj_Close": "7.46"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-02",
+          "Open": "7.92",
+          "High": "7.92",
+          "Low": "7.45",
+          "Close": "7.55",
+          "Volume": "7600",
+          "Adj_Close": "7.55"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-07-01",
+          "Open": "7.83",
+          "High": "7.92",
+          "Low": "7.83",
+          "Close": "7.92",
+          "Volume": "1300",
+          "Adj_Close": "7.92"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-28",
+          "Open": "7.93",
+          "High": "7.99",
+          "Low": "7.89",
+          "Close": "7.89",
+          "Volume": "2800",
+          "Adj_Close": "7.89"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-27",
+          "Open": "7.81",
+          "High": "8.00",
+          "Low": "7.80",
+          "Close": "8.00",
+          "Volume": "7600",
+          "Adj_Close": "8.00"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-26",
+          "Open": "7.82",
+          "High": "7.85",
+          "Low": "7.76",
+          "Close": "7.85",
+          "Volume": "1800",
+          "Adj_Close": "7.85"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-25",
+          "Open": "7.66",
+          "High": "7.85",
+          "Low": "7.66",
+          "Close": "7.85",
+          "Volume": "4200",
+          "Adj_Close": "7.85"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-24",
+          "Open": "7.65",
+          "High": "7.75",
+          "Low": "7.65",
+          "Close": "7.75",
+          "Volume": "400",
+          "Adj_Close": "7.75"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-21",
+          "Open": "7.71",
+          "High": "7.76",
+          "Low": "7.65",
+          "Close": "7.76",
+          "Volume": "5800",
+          "Adj_Close": "7.76"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-20",
+          "Open": "7.90",
+          "High": "7.90",
+          "Low": "7.71",
+          "Close": "7.71",
+          "Volume": "11600",
+          "Adj_Close": "7.71"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-19",
+          "Open": "8.07",
+          "High": "8.07",
+          "Low": "7.95",
+          "Close": "7.95",
+          "Volume": "3400",
+          "Adj_Close": "7.95"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-18",
+          "Open": "8.10",
+          "High": "8.15",
+          "Low": "8.08",
+          "Close": "8.08",
+          "Volume": "5900",
+          "Adj_Close": "8.08"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-17",
+          "Open": "8.20",
+          "High": "8.20",
+          "Low": "8.17",
+          "Close": "8.17",
+          "Volume": "100",
+          "Adj_Close": "8.17"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-14",
+          "Open": "8.41",
+          "High": "8.41",
+          "Low": "8.21",
+          "Close": "8.25",
+          "Volume": "2300",
+          "Adj_Close": "8.25"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-13",
+          "Open": "8.08",
+          "High": "8.29",
+          "Low": "8.05",
+          "Close": "8.29",
+          "Volume": "2400",
+          "Adj_Close": "8.29"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-12",
+          "Open": "8.26",
+          "High": "8.43",
+          "Low": "8.26",
+          "Close": "8.43",
+          "Volume": "1200",
+          "Adj_Close": "8.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-11",
+          "Open": "8.44",
+          "High": "8.44",
+          "Low": "8.27",
+          "Close": "8.32",
+          "Volume": "1600",
+          "Adj_Close": "8.32"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-10",
+          "Open": "8.05",
+          "High": "8.45",
+          "Low": "7.95",
+          "Close": "8.40",
+          "Volume": "8800",
+          "Adj_Close": "8.40"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-07",
+          "Open": "8.07",
+          "High": "8.10",
+          "Low": "7.72",
+          "Close": "7.92",
+          "Volume": "14500",
+          "Adj_Close": "7.92"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-06",
+          "Open": "8.18",
+          "High": "8.28",
+          "Low": "8.00",
+          "Close": "8.00",
+          "Volume": "3700",
+          "Adj_Close": "8.00"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-05",
+          "Open": "8.20",
+          "High": "8.25",
+          "Low": "8.20",
+          "Close": "8.25",
+          "Volume": "2600",
+          "Adj_Close": "8.25"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-04",
+          "Open": "8.35",
+          "High": "8.37",
+          "Low": "8.30",
+          "Close": "8.35",
+          "Volume": "3100",
+          "Adj_Close": "8.35"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-06-03",
+          "Open": "8.68",
+          "High": "8.68",
+          "Low": "8.29",
+          "Close": "8.29",
+          "Volume": "2800",
+          "Adj_Close": "8.29"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-31",
+          "Open": "8.42",
+          "High": "8.67",
+          "Low": "8.42",
+          "Close": "8.60",
+          "Volume": "8900",
+          "Adj_Close": "8.60"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-30",
+          "Open": "8.31",
+          "High": "8.49",
+          "Low": "8.31",
+          "Close": "8.49",
+          "Volume": "100",
+          "Adj_Close": "8.49"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-29",
+          "Open": "8.35",
+          "High": "8.41",
+          "Low": "8.31",
+          "Close": "8.34",
+          "Volume": "4000",
+          "Adj_Close": "8.34"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-28",
+          "Open": "8.27",
+          "High": "8.50",
+          "Low": "8.27",
+          "Close": "8.40",
+          "Volume": "5700",
+          "Adj_Close": "8.40"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-27",
+          "Open": "8.34",
+          "High": "8.34",
+          "Low": "8.34",
+          "Close": "8.34",
+          "Volume": "000",
+          "Adj_Close": "8.34"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-24",
+          "Open": "8.31",
+          "High": "8.39",
+          "Low": "8.31",
+          "Close": "8.36",
+          "Volume": "3200",
+          "Adj_Close": "8.36"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-23",
+          "Open": "8.40",
+          "High": "8.48",
+          "Low": "8.15",
+          "Close": "8.35",
+          "Volume": "17100",
+          "Adj_Close": "8.35"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-22",
+          "Open": "8.64",
+          "High": "8.69",
+          "Low": "8.56",
+          "Close": "8.57",
+          "Volume": "6400",
+          "Adj_Close": "8.57"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-21",
+          "Open": "8.65",
+          "High": "8.73",
+          "Low": "8.58",
+          "Close": "8.73",
+          "Volume": "9300",
+          "Adj_Close": "8.73"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-20",
+          "Open": "8.50",
+          "High": "8.75",
+          "Low": "8.50",
+          "Close": "8.75",
+          "Volume": "4600",
+          "Adj_Close": "8.75"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-17",
+          "Open": "8.36",
+          "High": "8.50",
+          "Low": "8.36",
+          "Close": "8.49",
+          "Volume": "2100",
+          "Adj_Close": "8.49"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-16",
+          "Open": "8.58",
+          "High": "8.61",
+          "Low": "8.38",
+          "Close": "8.47",
+          "Volume": "5900",
+          "Adj_Close": "8.47"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-15",
+          "Open": "8.67",
+          "High": "8.67",
+          "Low": "8.60",
+          "Close": "8.62",
+          "Volume": "3400",
+          "Adj_Close": "8.62"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-14",
+          "Open": "8.75",
+          "High": "8.75",
+          "Low": "8.66",
+          "Close": "8.72",
+          "Volume": "15400",
+          "Adj_Close": "8.72"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-13",
+          "Open": "8.84",
+          "High": "8.85",
+          "Low": "8.77",
+          "Close": "8.80",
+          "Volume": "3000",
+          "Adj_Close": "8.80"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-10",
+          "Open": "8.92",
+          "High": "9.10",
+          "Low": "8.86",
+          "Close": "8.91",
+          "Volume": "11800",
+          "Adj_Close": "8.91"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-09",
+          "Open": "8.58",
+          "High": "8.95",
+          "Low": "8.58",
+          "Close": "8.93",
+          "Volume": "12800",
+          "Adj_Close": "8.93"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-08",
+          "Open": "8.60",
+          "High": "8.73",
+          "Low": "8.52",
+          "Close": "8.59",
+          "Volume": "23000",
+          "Adj_Close": "8.59"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-07",
+          "Open": "8.67",
+          "High": "9.11",
+          "Low": "8.67",
+          "Close": "9.00",
+          "Volume": "11300",
+          "Adj_Close": "9.00"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-06",
+          "Open": "8.75",
+          "High": "8.77",
+          "Low": "8.66",
+          "Close": "8.70",
+          "Volume": "3700",
+          "Adj_Close": "8.70"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-03",
+          "Open": "8.44",
+          "High": "8.66",
+          "Low": "8.44",
+          "Close": "8.66",
+          "Volume": "6600",
+          "Adj_Close": "8.66"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-02",
+          "Open": "8.65",
+          "High": "8.70",
+          "Low": "8.65",
+          "Close": "8.70",
+          "Volume": "900",
+          "Adj_Close": "8.70"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-05-01",
+          "Open": "8.74",
+          "High": "8.74",
+          "Low": "8.74",
+          "Close": "8.74",
+          "Volume": "000",
+          "Adj_Close": "8.74"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-30",
+          "Open": "8.51",
+          "High": "8.74",
+          "Low": "8.51",
+          "Close": "8.74",
+          "Volume": "5100",
+          "Adj_Close": "8.74"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-29",
+          "Open": "8.46",
+          "High": "8.49",
+          "Low": "8.45",
+          "Close": "8.45",
+          "Volume": "1100",
+          "Adj_Close": "8.45"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-26",
+          "Open": "8.54",
+          "High": "8.54",
+          "Low": "8.45",
+          "Close": "8.45",
+          "Volume": "2100",
+          "Adj_Close": "8.45"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-25",
+          "Open": "8.65",
+          "High": "8.65",
+          "Low": "8.63",
+          "Close": "8.63",
+          "Volume": "500",
+          "Adj_Close": "8.63"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-24",
+          "Open": "8.58",
+          "High": "8.74",
+          "Low": "8.58",
+          "Close": "8.62",
+          "Volume": "2300",
+          "Adj_Close": "8.62"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-23",
+          "Open": "8.23",
+          "High": "8.49",
+          "Low": "8.23",
+          "Close": "8.49",
+          "Volume": "2800",
+          "Adj_Close": "8.49"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-22",
+          "Open": "8.70",
+          "High": "8.70",
+          "Low": "8.26",
+          "Close": "8.26",
+          "Volume": "1800",
+          "Adj_Close": "8.26"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-19",
+          "Open": "8.34",
+          "High": "8.67",
+          "Low": "8.34",
+          "Close": "8.65",
+          "Volume": "2800",
+          "Adj_Close": "8.65"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-18",
+          "Open": "8.29",
+          "High": "8.38",
+          "Low": "8.29",
+          "Close": "8.34",
+          "Volume": "2500",
+          "Adj_Close": "8.34"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-17",
+          "Open": "8.40",
+          "High": "8.44",
+          "Low": "8.34",
+          "Close": "8.40",
+          "Volume": "3200",
+          "Adj_Close": "8.40"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-16",
+          "Open": "8.70",
+          "High": "8.70",
+          "Low": "8.38",
+          "Close": "8.43",
+          "Volume": "7600",
+          "Adj_Close": "8.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-15",
+          "Open": "8.88",
+          "High": "8.88",
+          "Low": "8.66",
+          "Close": "8.73",
+          "Volume": "2500",
+          "Adj_Close": "8.73"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-12",
+          "Open": "8.80",
+          "High": "9.00",
+          "Low": "8.80",
+          "Close": "8.85",
+          "Volume": "800",
+          "Adj_Close": "8.85"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-11",
+          "Open": "8.98",
+          "High": "9.09",
+          "Low": "8.98",
+          "Close": "9.06",
+          "Volume": "4900",
+          "Adj_Close": "9.06"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-10",
+          "Open": "8.92",
+          "High": "9.10",
+          "Low": "8.92",
+          "Close": "9.02",
+          "Volume": "2200",
+          "Adj_Close": "9.02"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-09",
+          "Open": "9.11",
+          "High": "9.11",
+          "Low": "8.96",
+          "Close": "9.00",
+          "Volume": "3900",
+          "Adj_Close": "9.00"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-08",
+          "Open": "9.13",
+          "High": "9.15",
+          "Low": "8.99",
+          "Close": "8.99",
+          "Volume": "8000",
+          "Adj_Close": "8.99"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-05",
+          "Open": "9.29",
+          "High": "9.30",
+          "Low": "9.00",
+          "Close": "9.03",
+          "Volume": "2200",
+          "Adj_Close": "9.03"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-04",
+          "Open": "9.47",
+          "High": "9.47",
+          "Low": "9.24",
+          "Close": "9.27",
+          "Volume": "15800",
+          "Adj_Close": "9.27"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-03",
+          "Open": "9.20",
+          "High": "9.54",
+          "Low": "9.20",
+          "Close": "9.43",
+          "Volume": "25900",
+          "Adj_Close": "9.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-02",
+          "Open": "9.05",
+          "High": "9.25",
+          "Low": "8.96",
+          "Close": "9.25",
+          "Volume": "14300",
+          "Adj_Close": "9.25"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-04-01",
+          "Open": "9.06",
+          "High": "9.06",
+          "Low": "9.06",
+          "Close": "9.06",
+          "Volume": "000",
+          "Adj_Close": "9.06"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-29",
+          "Open": "9.06",
+          "High": "9.06",
+          "Low": "9.06",
+          "Close": "9.06",
+          "Volume": "000",
+          "Adj_Close": "9.06"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-28",
+          "Open": "8.38",
+          "High": "9.08",
+          "Low": "8.07",
+          "Close": "9.06",
+          "Volume": "25400",
+          "Adj_Close": "9.06"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-27",
+          "Open": "8.25",
+          "High": "8.55",
+          "Low": "8.25",
+          "Close": "8.26",
+          "Volume": "4000",
+          "Adj_Close": "8.26"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-26",
+          "Open": "8.10",
+          "High": "8.16",
+          "Low": "8.10",
+          "Close": "8.16",
+          "Volume": "400",
+          "Adj_Close": "8.16"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-25",
+          "Open": "8.06",
+          "High": "8.15",
+          "Low": "8.06",
+          "Close": "8.10",
+          "Volume": "6100",
+          "Adj_Close": "8.10"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-22",
+          "Open": "7.87",
+          "High": "8.15",
+          "Low": "7.85",
+          "Close": "8.07",
+          "Volume": "7900",
+          "Adj_Close": "8.07"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-21",
+          "Open": "8.15",
+          "High": "8.15",
+          "Low": "7.87",
+          "Close": "8.00",
+          "Volume": "5000",
+          "Adj_Close": "8.00"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-20",
+          "Open": "8.12",
+          "High": "8.30",
+          "Low": "8.12",
+          "Close": "8.18",
+          "Volume": "4600",
+          "Adj_Close": "8.18"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-19",
+          "Open": "8.14",
+          "High": "8.23",
+          "Low": "8.14",
+          "Close": "8.15",
+          "Volume": "2100",
+          "Adj_Close": "8.15"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-18",
+          "Open": "8.07",
+          "High": "8.23",
+          "Low": "8.06",
+          "Close": "8.20",
+          "Volume": "10000",
+          "Adj_Close": "8.20"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-15",
+          "Open": "8.48",
+          "High": "8.48",
+          "Low": "8.27",
+          "Close": "8.30",
+          "Volume": "2300",
+          "Adj_Close": "8.30"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-14",
+          "Open": "8.15",
+          "High": "8.45",
+          "Low": "8.15",
+          "Close": "8.30",
+          "Volume": "2300",
+          "Adj_Close": "8.30"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-13",
+          "Open": "8.05",
+          "High": "8.24",
+          "Low": "8.05",
+          "Close": "8.16",
+          "Volume": "3900",
+          "Adj_Close": "8.16"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-12",
+          "Open": "7.96",
+          "High": "8.15",
+          "Low": "7.96",
+          "Close": "8.15",
+          "Volume": "900",
+          "Adj_Close": "8.15"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-11",
+          "Open": "8.01",
+          "High": "8.20",
+          "Low": "7.89",
+          "Close": "7.96",
+          "Volume": "17800",
+          "Adj_Close": "7.96"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-08",
+          "Open": "8.21",
+          "High": "8.25",
+          "Low": "8.05",
+          "Close": "8.25",
+          "Volume": "7000",
+          "Adj_Close": "8.25"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-07",
+          "Open": "8.36",
+          "High": "8.36",
+          "Low": "8.26",
+          "Close": "8.26",
+          "Volume": "1500",
+          "Adj_Close": "8.26"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-06",
+          "Open": "8.23",
+          "High": "8.43",
+          "Low": "8.23",
+          "Close": "8.43",
+          "Volume": "2600",
+          "Adj_Close": "8.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-05",
+          "Open": "8.25",
+          "High": "8.45",
+          "Low": "8.24",
+          "Close": "8.29",
+          "Volume": "7500",
+          "Adj_Close": "8.29"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-04",
+          "Open": "8.55",
+          "High": "8.55",
+          "Low": "8.15",
+          "Close": "8.15",
+          "Volume": "4300",
+          "Adj_Close": "8.15"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-03-01",
+          "Open": "8.54",
+          "High": "8.64",
+          "Low": "8.28",
+          "Close": "8.43",
+          "Volume": "2800",
+          "Adj_Close": "8.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-28",
+          "Open": "8.56",
+          "High": "8.58",
+          "Low": "8.56",
+          "Close": "8.58",
+          "Volume": "800",
+          "Adj_Close": "8.58"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-27",
+          "Open": "8.62",
+          "High": "8.62",
+          "Low": "8.52",
+          "Close": "8.53",
+          "Volume": "2300",
+          "Adj_Close": "8.53"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-26",
+          "Open": "8.45",
+          "High": "8.61",
+          "Low": "8.45",
+          "Close": "8.61",
+          "Volume": "2700",
+          "Adj_Close": "8.61"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-25",
+          "Open": "8.55",
+          "High": "8.67",
+          "Low": "8.52",
+          "Close": "8.67",
+          "Volume": "5100",
+          "Adj_Close": "8.67"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-22",
+          "Open": "8.39",
+          "High": "8.60",
+          "Low": "8.39",
+          "Close": "8.52",
+          "Volume": "1400",
+          "Adj_Close": "8.52"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-21",
+          "Open": "8.60",
+          "High": "8.61",
+          "Low": "8.35",
+          "Close": "8.38",
+          "Volume": "10600",
+          "Adj_Close": "8.38"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-20",
+          "Open": "8.63",
+          "High": "8.75",
+          "Low": "8.60",
+          "Close": "8.60",
+          "Volume": "2200",
+          "Adj_Close": "8.60"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-19",
+          "Open": "8.77",
+          "High": "8.77",
+          "Low": "8.60",
+          "Close": "8.66",
+          "Volume": "4700",
+          "Adj_Close": "8.66"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-18",
+          "Open": "8.86",
+          "High": "8.89",
+          "Low": "8.81",
+          "Close": "8.82",
+          "Volume": "2300",
+          "Adj_Close": "8.82"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-15",
+          "Open": "8.77",
+          "High": "9.06",
+          "Low": "8.77",
+          "Close": "8.95",
+          "Volume": "3200",
+          "Adj_Close": "8.95"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-14",
+          "Open": "8.85",
+          "High": "9.01",
+          "Low": "8.70",
+          "Close": "8.77",
+          "Volume": "17100",
+          "Adj_Close": "8.77"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-13",
+          "Open": "9.47",
+          "High": "9.47",
+          "Low": "9.16",
+          "Close": "9.20",
+          "Volume": "2900",
+          "Adj_Close": "9.20"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-12",
+          "Open": "9.32",
+          "High": "9.51",
+          "Low": "9.24",
+          "Close": "9.51",
+          "Volume": "2600",
+          "Adj_Close": "9.51"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-11",
+          "Open": "9.38",
+          "High": "9.38",
+          "Low": "9.31",
+          "Close": "9.31",
+          "Volume": "1000",
+          "Adj_Close": "9.31"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-08",
+          "Open": "9.34",
+          "High": "9.41",
+          "Low": "9.34",
+          "Close": "9.39",
+          "Volume": "3200",
+          "Adj_Close": "9.39"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-07",
+          "Open": "9.27",
+          "High": "9.39",
+          "Low": "9.27",
+          "Close": "9.36",
+          "Volume": "2200",
+          "Adj_Close": "9.36"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-06",
+          "Open": "9.46",
+          "High": "9.60",
+          "Low": "9.28",
+          "Close": "9.28",
+          "Volume": "8500",
+          "Adj_Close": "9.28"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-05",
+          "Open": "9.40",
+          "High": "9.48",
+          "Low": "9.24",
+          "Close": "9.45",
+          "Volume": "4300",
+          "Adj_Close": "9.45"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-04",
+          "Open": "9.35",
+          "High": "9.65",
+          "Low": "9.35",
+          "Close": "9.46",
+          "Volume": "9400",
+          "Adj_Close": "9.46"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-02-01",
+          "Open": "9.09",
+          "High": "9.40",
+          "Low": "9.09",
+          "Close": "9.35",
+          "Volume": "2300",
+          "Adj_Close": "9.35"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-31",
+          "Open": "9.12",
+          "High": "9.25",
+          "Low": "9.06",
+          "Close": "9.25",
+          "Volume": "8300",
+          "Adj_Close": "9.25"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-30",
+          "Open": "9.14",
+          "High": "9.23",
+          "Low": "9.07",
+          "Close": "9.07",
+          "Volume": "2100",
+          "Adj_Close": "9.07"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-29",
+          "Open": "9.17",
+          "High": "9.27",
+          "Low": "9.09",
+          "Close": "9.21",
+          "Volume": "13800",
+          "Adj_Close": "9.21"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-28",
+          "Open": "9.32",
+          "High": "9.45",
+          "Low": "9.14",
+          "Close": "9.14",
+          "Volume": "14900",
+          "Adj_Close": "9.14"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-25",
+          "Open": "9.37",
+          "High": "9.48",
+          "Low": "9.37",
+          "Close": "9.43",
+          "Volume": "5700",
+          "Adj_Close": "9.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-24",
+          "Open": "9.49",
+          "High": "9.52",
+          "Low": "9.41",
+          "Close": "9.43",
+          "Volume": "16500",
+          "Adj_Close": "9.43"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-23",
+          "Open": "9.58",
+          "High": "9.58",
+          "Low": "9.54",
+          "Close": "9.54",
+          "Volume": "1600",
+          "Adj_Close": "9.54"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-22",
+          "Open": "9.77",
+          "High": "9.77",
+          "Low": "9.19",
+          "Close": "9.48",
+          "Volume": "16500",
+          "Adj_Close": "9.48"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-21",
+          "Open": "9.72",
+          "High": "9.88",
+          "Low": "9.69",
+          "Close": "9.85",
+          "Volume": "8200",
+          "Adj_Close": "9.85"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-18",
+          "Open": "9.72",
+          "High": "9.84",
+          "Low": "9.63",
+          "Close": "9.69",
+          "Volume": "6000",
+          "Adj_Close": "9.69"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-17",
+          "Open": "9.58",
+          "High": "9.85",
+          "Low": "9.58",
+          "Close": "9.85",
+          "Volume": "10400",
+          "Adj_Close": "9.85"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-16",
+          "Open": "9.46",
+          "High": "9.62",
+          "Low": "9.43",
+          "Close": "9.62",
+          "Volume": "1800",
+          "Adj_Close": "9.62"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-15",
+          "Open": "9.67",
+          "High": "9.67",
+          "Low": "9.43",
+          "Close": "9.46",
+          "Volume": "12800",
+          "Adj_Close": "9.46"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-14",
+          "Open": "9.86",
+          "High": "10.07",
+          "Low": "9.75",
+          "Close": "9.75",
+          "Volume": "6000",
+          "Adj_Close": "9.75"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-11",
+          "Open": "10.15",
+          "High": "10.18",
+          "Low": "9.69",
+          "Close": "9.90",
+          "Volume": "12800",
+          "Adj_Close": "9.90"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-10",
+          "Open": "10.10",
+          "High": "10.32",
+          "Low": "9.98",
+          "Close": "10.02",
+          "Volume": "8700",
+          "Adj_Close": "10.02"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-09",
+          "Open": "9.73",
+          "High": "10.10",
+          "Low": "9.73",
+          "Close": "10.10",
+          "Volume": "15300",
+          "Adj_Close": "10.10"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-08",
+          "Open": "9.60",
+          "High": "10.11",
+          "Low": "9.43",
+          "Close": "9.80",
+          "Volume": "41400",
+          "Adj_Close": "9.80"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-07",
+          "Open": "9.00",
+          "High": "9.65",
+          "Low": "8.95",
+          "Close": "9.60",
+          "Volume": "15200",
+          "Adj_Close": "9.60"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-04",
+          "Open": "8.90",
+          "High": "8.99",
+          "Low": "8.90",
+          "Close": "8.98",
+          "Volume": "3900",
+          "Adj_Close": "8.98"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-03",
+          "Open": "8.90",
+          "High": "9.01",
+          "Low": "8.78",
+          "Close": "8.90",
+          "Volume": "6000",
+          "Adj_Close": "8.90"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-02",
+          "Open": "8.40",
+          "High": "8.97",
+          "Low": "8.40",
+          "Close": "8.89",
+          "Volume": "10200",
+          "Adj_Close": "8.89"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2013-01-01",
+          "Open": "8.48",
+          "High": "8.48",
+          "Low": "8.48",
+          "Close": "8.48",
+          "Volume": "000",
+          "Adj_Close": "8.48"
+        }
+      ]
+    }
+  }
+}
