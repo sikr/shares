@@ -157,7 +157,9 @@ function runServer() {
 }
 
 if (process.argv[2] == '-c' || process.argv[2] == '--create') {
+  console.time('Create Datebase');
   createDatebase();
+  console.timeEnd('Create Datebase');
 }
 else {
   runServer();
