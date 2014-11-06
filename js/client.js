@@ -5,7 +5,6 @@ $(function() {
 
 var depots;
 var positions;
-var counter = 0;
 
 var getQuotes = function(symbol, callback) {
   $.getJSON('http://127.0.0.1:3000/quotes?symbol=' + symbol, function (quotes) {
@@ -24,18 +23,19 @@ var getShare = function(symbol, callback) {
 };
 
 // get depots
-var getDepots = function() {
+var getDepots = function(callback) {
   $.getJSON('http://127.0.0.1:3000/depots', function (data) {
     depots = data;
     for (var i in depots) {
       $('#depots').append('<option value=' + depots[i].id + '>' + depots[i].name + '</option>');
     }
+    callback();
   });
-}();
+};
 
 // get depot positions
-var getPositions = function() {
-  $.getJSON('http://127.0.0.1:3000/positions?id=1', function (data) {
+var getPositions = function(id, callback) {
+  $.getJSON('http://127.0.0.1:3000/positions?id=' + id, function (data) {
     positions = data;
     var tr;
     for (var i in positions) {
@@ -50,6 +50,7 @@ var getPositions = function() {
       tr.append('<td><label for="c' + positions[i].id + '" title="'+ tooltip + '">' + positions[i].name + '</label></td>');
       $('#positions').append(tr);
     }
+    callback();
 
     $('table#positions input[type="checkbox"]').change(function(e) {
       if ($(e.target).prop('checked') === true) {
@@ -73,7 +74,7 @@ var getPositions = function() {
       }
     });
   });
-}();
+};
 
 var createChart = function() {
   // Create the chart
@@ -111,5 +112,31 @@ $('#percent').click(function (e) {
   axis.setCompare('percent');
 });
 
+var changeDepot = function() {
+  var i;
+  // $('#positions').off('change');
+  $('#positions').empty();
+
+  // clear chart
+  var chart = Highcharts.charts[0];
+  var count = chart.series.length;
+  for (i = 0; i < count; i++) {
+    chart.series[0].remove();
+  }
+  getPositions($('#depots option:selected').attr('value'), function () {
+  });
+};
+
+var initialize = function() {
+  getDepots(function () {
+    getPositions(0, function () {
+      var i = 0;
+      $('#depots option[value="1"]').attr('selected', true);
+      $('#depots').change(function () {
+        changeDepot();
+      });
+    });
+  });
+}();
 
 });

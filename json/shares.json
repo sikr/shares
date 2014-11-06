@@ -34,5 +34,15 @@
   {"id": "33", "symbol": "BAS.F",  "isin": "DE000BASF111", "wkn": "BASF11", "name": "BASF"},
   {"id": "34", "symbol": "FNTN.F", "isin": "DE000A0Z2ZZ5", "wkn": "A0Z2ZZ", "name": "freenet AG"},
   {"id": "35", "symbol": "NOVC.F", "isin": "DK0060534915", "wkn": "A1XA8R", "name": "Novo Nordisk A-S (B)"},
-  {"id": "36", "symbol": "SMHN.F", "isin": "DE000A1K0235", "wkn": "A1K023", "name": "Suess Microtec AG"}
+  {"id": "36", "symbol": "SMHN.F", "isin": "DE000A1K0235", "wkn": "A1K023", "name": "Suess Microtec AG"},
+
+  {"id": "37", "symbol": "SYV.F",  "isin": "US88554D2053", "wkn": "888346", "name": "3D Systems Corp."},
+  {"id": "38", "symbol": "AG8.F",  "isin": "US00846U1016", "wkn": "929138", "name": "Agilent Technologies Inc."},
+  {"id": "39", "symbol": "BAYN.F", "isin": "DE000BAY0017", "wkn": "BAY001", "name": "Bayer"},
+  {"id": "40", "symbol": "75C.F",  "isin": "CNE1000009Q7", "wkn": "A0NHPX", "name": "China Pacific Insurance (Group) Co Ltd (H)"},
+  {"id": "41", "symbol": "IVSB.F", "isin": "SE0000107419", "wkn": "869202", "name": "Investor AB (B, FRIA)"},
+  {"id": "42", "symbol": "TFBF.F", "isin": "TH0016010017", "wkn": "878347", "name": "Kasikornbank PCL"},
+  {"id": "43", "symbol": "LIN.F",  "isin": "DE0006483001", "wkn": "648300", "name": "Linde AG"},
+  {"id": "44", "symbol": "NOT.F",  "isin": "CH0012005267", "wkn": "904278", "name": "Novartis AG"},
+  {"id": "45", "symbol": "SRT3.F", "isin": "DE0007165631", "wkn": "716563", "name": "Sartorius AG"}
 ]

@@ -5,5 +5,15 @@
   {"id": "203", "share_id": "34", "symbol": "FNTN.F", "exchange": "Frankfurt", "currency": "EUR", "count":   "690", "buying_price":  "14.49", "buying_date": "2012-12-05", "selling_price":     "0", "selling_date": ""},
   {"id": "204", "share_id": "10", "symbol": "HWP.F",  "exchange": "Frankfurt", "currency": "EUR", "count":  "1000", "buying_price":   "9.93", "buying_date": "2012-11-30", "selling_price":     "0", "selling_date": ""},
   {"id": "205", "share_id": "35", "symbol": "NOVC.F", "exchange": "Frankfurt", "currency": "EUR", "count":   "400", "buying_price":  "24.50", "buying_date": "2012-11-30", "selling_price":     "0", "selling_date": ""},
-  {"id": "206", "share_id": "36", "symbol": "SMHN.F", "exchange": "Frankfurt", "currency": "EUR", "count":  "1061", "buying_price":   "4.76", "buying_date": "2013-01-23", "selling_price":     "0", "selling_date": ""}
+  {"id": "206", "share_id": "36", "symbol": "SMHN.F", "exchange": "Frankfurt", "currency": "EUR", "count":  "1061", "buying_price":   "4.76", "buying_date": "2013-01-23", "selling_price":     "0", "selling_date": ""},
+
+  {"id": "301", "share_id": "37", "symbol": "SYV.F",  "exchange": "Frankfurt", "currency": "EUR", "count":   "260", "buying_price":  "38.50", "buying_date": "2012-12-28", "selling_price":     "0", "selling_date": ""},
+  {"id": "302", "share_id": "38", "symbol": "AG8.F",  "exchange": "Frankfurt", "currency": "EUR", "count":   "330", "buying_price":  "30.35", "buying_date": "2012-12-17", "selling_price":     "0", "selling_date": ""},
+  {"id": "303", "share_id": "39", "symbol": "BAYN.F", "exchange": "Frankfurt", "currency": "EUR", "count":   "140", "buying_price":  "72.38", "buying_date": "2012-12-28", "selling_price":     "0", "selling_date": ""},
+  {"id": "304", "share_id": "40", "symbol": "75C.F",  "exchange": "Frankfurt", "currency": "EUR", "count":  "3700", "buying_price":   "2.66", "buying_date": "2012-12-17", "selling_price":     "0", "selling_date": ""},
+  {"id": "305", "share_id": "41", "symbol": "IVSB.F", "exchange": "Frankfurt", "currency": "EUR", "count":   "530", "buying_price":  "18.80", "buying_date": "2012-12-17", "selling_price":     "0", "selling_date": ""},
+  {"id": "306", "share_id": "42", "symbol": "TFBF.F", "exchange": "Frankfurt", "currency": "EUR", "count":  "2000", "buying_price":   "4.84", "buying_date": "2012-12-17", "selling_price":     "0", "selling_date": ""},
+  {"id": "307", "share_id": "43", "symbol": "LIN.F",  "exchange": "Frankfurt", "currency": "EUR", "count":    "75", "buying_price": "134.01", "buying_date": "2012-12-17", "selling_price":     "0", "selling_date": ""},
+  {"id": "308", "share_id": "44", "symbol": "NOT.F",  "exchange": "Frankfurt", "currency": "EUR", "count":   "197", "buying_price":  "50.27", "buying_date": "2013-01-31", "selling_price":     "0", "selling_date": ""},
+  {"id": "309", "share_id": "45", "symbol": "SRT3.F", "exchange": "Frankfurt", "currency": "EUR", "count":   "150", "buying_price":  "67.51", "buying_date": "2012-12-28", "selling_price":     "0", "selling_date": ""}
 ]

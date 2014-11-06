@@ -1,9 +1,7 @@
 [
-  {"id": "0", "name": "Voba", "description": "Volksbank Depot"},
-  {"id": "1", "name": "Simon 7", "description": "Erstes Musterdepot"},
-  {"id": "2", "name": "Simon 9", "description": "Zweites Musterdepot"},
-  {"id": "3", "name": "Papa 2", "description": "Papas zweites Depot"},
-  {"id": "4", "name": "Kaufkandidaten", "description": "Kaufkandidaten"},
-  {"id": "5", "name": "Simon A", "description": "Musterdepot amerikanische Aktien"},
-  {"id": "6", "name": "Simon A2", "description": "Zweites Musterdepot amerikanische Aktien"}
+  {"id": "10", "name": "Simon 7", "description": "Erstes Musterdepot"},
+  {"id": "11", "name": "Simon 9", "description": "Zweites Musterdepot"},
+  {"id": "12", "name": "Kaufkandidaten", "description": "Kaufkandidaten"},
+  {"id": "13", "name": "Simon A", "description": "Musterdepot amerikanische Aktien"},
+  {"id": "14", "name": "Simon A2", "description": "Zweites Musterdepot amerikanische Aktien"}
 ]

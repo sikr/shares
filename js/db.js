@@ -4,7 +4,6 @@ var db;
 var fs      = require('fs');
 var sqlite3 = require("sqlite3").verbose();
 
-
 exports.open = function(file){
   db = new sqlite3.cached.Database(file);
 };
@@ -177,7 +176,8 @@ exports.getPositions = function(depot, callback){
     'AND      depots.id=depot.depot_id            ' +
     'AND      depot.positions_id=positions.id     ' +
     'AND      positions.share_id=shares.id        ' +
-    'AND      positions.selling_date=""           ' +
+    // 'AND      positions.selling_date=""           ' +
+    'GROUP BY shares.id                           ' +
     'ORDER BY shares.name                         ');
   stmt.all(depot, function (err, rows) {
     if (err) {
@@ -236,6 +236,7 @@ exports.dumpFiles = function(){
   var count = 0;
   var totalCount = 0;
   var sum;
+  var close;
 
   stmt = db.prepare(
     'SELECT shares.id AS id,        ' +
@@ -266,6 +267,11 @@ exports.dumpFiles = function(){
           count = 0;
           sum = 0;
           for (i in res) {
+            // close = parseFloat(res[i].Close);
+            // if (isNaN(close)) {
+            //   console.log('***** ERROR: %s %s is NaN: %d', symbol, res[i].Date, close);
+            // }
+
             stmt = db.prepare('INSERT INTO quotes VALUES (NULL,?,date(?),?,?,?,?,?,?)');
             stmt.run(
               id,

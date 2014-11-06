@@ -53,12 +53,28 @@ var dataDepots    = require('../json/depots.json');
 var dataDepot     = require('../json/depot.json');
 var dataShares    = require('../json/shares.json');
 var dataPositions = require('../json/positions.json');
+var dataPrivateDepots;
+var dataPrivateDepot;
 var dataPrivatePositions;
 
-// 
+var tmp;
+
+// merge private date (not on github) with public
+if (fs.existsSync('../json/private_depots.json')) {
+  dataPrivateDepots  = require('../json/private_depots.json');
+  tmp = dataDepots.concat(dataPrivateDepots);
+  dataDepots = tmp;
+}
+
+if (fs.existsSync('../json/private_depot.json')) {
+  dataPrivateDepot  = require('../json/private_depot.json');
+  tmp = dataDepot.concat(dataPrivateDepot);
+  dataDepot = tmp;
+}
+
 if (fs.existsSync('../json/private_positions.json')) {
   dataPrivatePositions  = require('../json/private_positions.json');
-  var tmp = dataPositions.concat(dataPrivatePositions);
+  tmp = dataPositions.concat(dataPrivatePositions);
   dataPositions = tmp;
 }
 
