@@ -3,39 +3,64 @@ $(function() {
 
 'use strict';
 
+var hostname = location.hostname;
 var depots;
 var positions;
+var loadingAnimation;
+var pendingRequests;
+
+var loading = function(start) {
+    if (start) {
+    pendingRequests++;
+  }
+  else {
+    pendingRequests--;
+  }
+  if (pendingRequests === 0) {
+    loadingAnimation.hide();
+  }
+  else {
+    loadingAnimation.show();
+  }
+};
 
 var getQuotes = function(symbol, callback) {
-  $.getJSON('http://127.0.0.1:7781/quotes?symbol=' + symbol, function (quotes) {
+  loading(true);
+  $.getJSON('http://' + location.hostname + ':7781/quotes?symbol=' + symbol, function (quotes) {
     if (callback) {
       callback(quotes);
+      loading(false);
     }
   });
 };
 
 var getShare = function(symbol, callback) {
-  $.getJSON('http://127.0.0.1:7781/share?symbol=' + symbol, function (share) {
+  loading(true);
+  $.getJSON('http://' + location.hostname + ':7781/share?symbol=' + symbol, function (share) {
     if (callback) {
       callback(share);
+      loading(false);
     }
   });
 };
 
 // get depots
 var getDepots = function(callback) {
-  $.getJSON('http://127.0.0.1:7781/depots', function (data) {
+  loading(true);
+  $.getJSON('http://' + location.hostname + ':7781/depots', function (data) {
     depots = data;
     for (var i in depots) {
       $('#depots').append('<option value=' + depots[i].id + '>' + depots[i].name + '</option>');
     }
     callback();
+    loading(false);
   });
 };
 
 // get depot positions
 var getPositions = function(id, callback) {
-  $.getJSON('http://127.0.0.1:7781/positions?id=' + id, function (data) {
+  loading(true);
+  $.getJSON('http://' + location.hostname + ':7781/positions?id=' + id, function (data) {
     positions = data;
     var tr;
     for (var i in positions) {
@@ -51,6 +76,7 @@ var getPositions = function(id, callback) {
       $('#positions').append(tr);
     }
     callback();
+    loading(false);
 
     $('table#positions input[type="checkbox"]').change(function(e) {
       if ($(e.target).prop('checked') === true) {
@@ -97,20 +123,29 @@ $('body').keydown(function (e) {
   }
 });
 
-$('#none').click(function (e) {
-  var axis = Highcharts.charts[0].yAxis[0];
-  axis.setCompare(null);
-});
+var initUI = function() {
+  pendingRequests = 0;
+  loadingAnimation = $('<div class="loading"><i class="fa fa fa-refresh fa-spin fa-2x"></i></div>');
+  // loadingAnimation.css('height', parseInt($('body').css('height')) + 'px');
+  // loadingAnimation.css('width', parseInt($('body').css('width')) + 'px');
+  $('body').append(loadingAnimation);
+  $('div.loading i').css('margin-top', parseInt($('body').css('height'), 10)/2 - parseInt($('div.loading i').css('height'))/2);
 
-$('#value').click(function (e) {
-  var axis = Highcharts.charts[0].yAxis[0];
-  axis.setCompare('value');
-});
+  $('#none').click(function (e) {
+    var axis = Highcharts.charts[0].yAxis[0];
+    axis.setCompare(null);
+  });
 
-$('#percent').click(function (e) {
-  var axis = Highcharts.charts[0].yAxis[0];
-  axis.setCompare('percent');
-});
+  $('#value').click(function (e) {
+    var axis = Highcharts.charts[0].yAxis[0];
+    axis.setCompare('value');
+  });
+
+  $('#percent').click(function (e) {
+    var axis = Highcharts.charts[0].yAxis[0];
+    axis.setCompare('percent');
+  });
+}();
 
 var changeDepot = function() {
   var i;

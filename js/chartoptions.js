@@ -6,18 +6,18 @@ var chartOptions = {
   //          '#edff5b', '#c7e000', '#52e000', '#00b22c',
   //          '#1a9391', '#0eacbd', '#00c4da', '4643bb',
   //          '#610c8c', '#980fb7', '#d223fe', '#b30347'],
-  legend: {
-    align: 'left',
-    backgroundColor: 'rgba(255, 255, 255, 0.7)',
-    borderColor: 'rgba(0, 0, 0, 0.25)',
-    borderWidth: '1',
-    enabled: true,
-    floating: false,
-    layout: 'vertical',
-    verticalAlign: 'top',
-    x: 0,
-    y: 100
-  },
+  // legend: {
+  //   align: 'left',
+  //   backgroundColor: 'rgba(255, 255, 255, 0.7)',
+  //   borderColor: 'rgba(0, 0, 0, 0.25)',
+  //   borderWidth: '1',
+  //   enabled: true,
+  //   floating: false,
+  //   layout: 'vertical',
+  //   verticalAlign: 'top',
+  //   x: 0,
+  //   y: 100
+  // },
   // plotOptions: {
   //   series: {
   //     compare: 'percent'
