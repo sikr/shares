@@ -13,7 +13,8 @@ var express = require('express');
 var app     = express();
 
 
-var databaseFile   = "../db/shares.sqlite";
+var databaseDir    = "../db/";
+var databaseFile   = "shares.sqlite";
 
 var tableDepots    = 'id            INTEGER PRIMARY KEY,              ' +
                      'name          TEXT,                             ' +
@@ -87,7 +88,16 @@ var databaseTables = [{'name': 'depots', 'sql': tableDepots, 'data': dataDepots}
 db.open(databaseFile);
 
 function createDatebase() {
-  db.clear(databaseTables);
+  if (!fs.existsSync(databaseDir + databaseFile)) {
+    if (!fs.existsSync(databaseDir)) {
+      fs.mkdirSync(databaseDir);
+      db.open(databaseDir + databaseFile);
+      db.createTables(databaseDir + databaseFile, databaseTables);
+    }
+  }
+  else {
+    db.clear(databaseTables);
+  }
   // db.createTables(databaseFile, databaseTables);
   db.fillTables(databaseTables);
   db.dumpFiles();
