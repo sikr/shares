@@ -85,7 +85,8 @@ var databaseTables = [{'name': 'depots', 'sql': tableDepots, 'data': dataDepots}
                       {'name': 'positions', 'sql': tablePositions, 'data': dataPositions},
                       {'name': 'quotes', 'sql': tableQuotes, 'data': []}];
 
-db.open(databaseFile);
+db.open(databaseDir + databaseFile);
+db.getTables();
 
 function createDatebase() {
   if (!fs.existsSync(databaseDir + databaseFile)) {
@@ -160,12 +161,12 @@ function runServer() {
     });
   });
 
-  var dataServer = app.listen(3000, function () {
+  var dataServer = app.listen(7781, function () {
     var host = dataServer.address().address;
     var port = dataServer.address().port;
     console.log('Example app listening at http://%s:%s', host, port);
   });
-  var httpServer = app.listen(8080, function () {
+  var httpServer = app.listen(7780, function () {
     var host = httpServer.address().address;
     var port = httpServer.address().port;
     console.log('Example app listening at http://%s:%s', host, port);

@@ -7,7 +7,7 @@ var depots;
 var positions;
 
 var getQuotes = function(symbol, callback) {
-  $.getJSON('http://127.0.0.1:3000/quotes?symbol=' + symbol, function (quotes) {
+  $.getJSON('http://127.0.0.1:7781/quotes?symbol=' + symbol, function (quotes) {
     if (callback) {
       callback(quotes);
     }
@@ -15,7 +15,7 @@ var getQuotes = function(symbol, callback) {
 };
 
 var getShare = function(symbol, callback) {
-  $.getJSON('http://127.0.0.1:3000/share?symbol=' + symbol, function (share) {
+  $.getJSON('http://127.0.0.1:7781/share?symbol=' + symbol, function (share) {
     if (callback) {
       callback(share);
     }
@@ -24,7 +24,7 @@ var getShare = function(symbol, callback) {
 
 // get depots
 var getDepots = function(callback) {
-  $.getJSON('http://127.0.0.1:3000/depots', function (data) {
+  $.getJSON('http://127.0.0.1:7781/depots', function (data) {
     depots = data;
     for (var i in depots) {
       $('#depots').append('<option value=' + depots[i].id + '>' + depots[i].name + '</option>');
@@ -35,7 +35,7 @@ var getDepots = function(callback) {
 
 // get depot positions
 var getPositions = function(id, callback) {
-  $.getJSON('http://127.0.0.1:3000/positions?id=' + id, function (data) {
+  $.getJSON('http://127.0.0.1:7781/positions?id=' + id, function (data) {
     positions = data;
     var tr;
     for (var i in positions) {

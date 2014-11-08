@@ -81,6 +81,18 @@ exports.fillTables = function(tables){
   });
 };
 
+exports.getTables = function() {
+  var stmt = db.prepare('SELECT * FROM sqlite_master');
+  stmt.all(function (err, rows) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      var r = rows;
+    }
+  });
+};
+
 exports.close = function()
 {
   db.serialize(function(){
@@ -106,7 +118,7 @@ exports.test = function(){
     if (err) {
       console.log(err);
     }
-    else{
+    else {
       sum = 0;
       for (var i in rows) {
         rows[i].sum = (rows[i].close * rows[i].count).toFixed(2);
