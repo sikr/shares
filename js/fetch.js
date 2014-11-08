@@ -1,24 +1,32 @@
 var http = require('http');
 var fs   = require('fs');
+var util = require('util');
 
 var fetchYahooData = function(symbol, year) {
 
   var startDate = year + '-01-01';
   var endDate   = year + '-12-31';
 
+  // concat select statement
+  var select = util.format(
+    'select * from yahoo.finance.historicaldata ' +
+    'where symbol in ("%s") and ' +
+    'startDate = "%s" and ' +
+    'endDate = "%s"',
+    symbol, startDate, endDate);
+
+  // put URL together with encoded select statement
+  var encoededURL = '/v1/public/yql?q=' +
+    encodeURIComponent(select) +
+    '&env=http://datatables.org/alltables.env&format=json';
+
   var requestOptions = {
     host: 'query.yahooapis.com',
-    path: '/v1/public/yql?q=select%20*%20from%20yahoo.finance.historicaldata' +
-      '%20where%20symbol%20in%20(%22' +
-      symbol +
-      '%22)%20and%20startDate%20=%20%22' +
-      startDate +
-      '%22%20and%20endDate%20=%20%22' +
-      endDate +
-      '%22&env=http%3A%2F%2Fdatatables.org%2Falltables.env&format=json',
+    path: encoededURL,
     method: 'GET'
   };
   console.log('http://' + requestOptions.host + requestOptions.path);
+
   http.request(requestOptions, function(response) {
     var str = '';
 

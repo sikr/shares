@@ -5,5 +5,15 @@
   {"depot_id": "10", "positions_id": "203"},
   {"depot_id": "10", "positions_id": "204"},
   {"depot_id": "10", "positions_id": "205"},
-  {"depot_id": "10", "positions_id": "206"}
+  {"depot_id": "10", "positions_id": "206"},
+
+  {"depot_id": "11", "positions_id": "301"},
+  {"depot_id": "11", "positions_id": "302"},
+  {"depot_id": "11", "positions_id": "303"},
+  {"depot_id": "11", "positions_id": "304"},
+  {"depot_id": "11", "positions_id": "305"},
+  {"depot_id": "11", "positions_id": "306"},
+  {"depot_id": "11", "positions_id": "307"},
+  {"depot_id": "11", "positions_id": "308"},
+  {"depot_id": "11", "positions_id": "309"}
 ]

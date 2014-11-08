@@ -96,6 +96,7 @@ function createDatebase() {
 }
 
 function runServer() {
+  app.use('/shares', express.static('../'));
   app.use(function (req, res, next) {
     console.log('request:' + req.url);
     next();
@@ -149,9 +150,14 @@ function runServer() {
     });
   });
 
-  var server = app.listen(3000, function () {
-    var host = server.address().address;
-    var port = server.address().port;
+  var dataServer = app.listen(3000, function () {
+    var host = dataServer.address().address;
+    var port = dataServer.address().port;
+    console.log('Example app listening at http://%s:%s', host, port);
+  });
+  var httpServer = app.listen(8080, function () {
+    var host = httpServer.address().address;
+    var port = httpServer.address().port;
     console.log('Example app listening at http://%s:%s', host, port);
   });
 }
