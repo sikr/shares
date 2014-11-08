@@ -3,9 +3,12 @@
 var db;
 var fs      = require('fs');
 var sqlite3 = require("sqlite3").verbose();
+var transactionDatabase = require('sqlite3-transactions').TransactionDatabase;
 
 exports.open = function(file){
-  db = new sqlite3.cached.Database(file);
+  db = new transactionDatabase(
+    new sqlite3.Database(file)
+  );
 };
 
 exports.clear = function(tables)
@@ -256,7 +259,7 @@ exports.dumpFiles = function(){
     '       shares.symbol AS symbol ' +
     'FROM   shares                  ');
     stmt.all(function(err, rows) {
-    db.serialize(function() {
+    db.beginTransaction(function(err, transaction) {
       var i;
       var f;
 
@@ -284,7 +287,7 @@ exports.dumpFiles = function(){
             //   console.log('***** ERROR: %s %s is NaN: %d', symbol, res[i].Date, close);
             // }
 
-            stmt = db.prepare('INSERT INTO quotes VALUES (NULL,?,date(?),?,?,?,?,?,?)');
+            stmt = transaction.prepare('INSERT INTO quotes VALUES (NULL,?,date(?),?,?,?,?,?,?)');
             stmt.run(
               id,
               res[i].Date,
@@ -303,6 +306,14 @@ exports.dumpFiles = function(){
           console.log('  -> ' + count + ' entries inserted, sum=' + sum.toFixed(2));
         }
       }
+      transaction.commit(function (err) {
+        if (err) {
+          console.log('commit failed');
+        }
+        else {
+          console.log('commit successful');
+        }
+      });
       console.log('total count: ' + totalCount);
     });
   });
