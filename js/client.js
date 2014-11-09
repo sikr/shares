@@ -1,19 +1,26 @@
 $(function() {
 
-
 'use strict';
 
-var hostname = location.hostname;
+var socket = io.connect('http://' + location.hostname + ':7780');
 var depots;
 var positions;
 var loadingAnimation;
 var pendingRequests;
+var serverUnavailable;
+var colorCounter = 0;
+
+var colors = [
+  '#c10001', '#edff5b', '#1a9391', '#610c8c',
+  '#fc331c', '#c7e000', '#0eacbd', '#980fb7',
+  '#ff8f00', '#52e000', '#00c4da', '#d223fe',
+  '#ffd221', '#00b22c', '#4643bb', '#b30347'];
 
 var loading = function(start) {
-    if (start) {
+    if (true === start) {
     pendingRequests++;
   }
-  else {
+  else if (false === start) {
     pendingRequests--;
   }
   if (pendingRequests === 0) {
@@ -21,6 +28,15 @@ var loading = function(start) {
   }
   else {
     loadingAnimation.show();
+  }
+};
+
+var unavailable = function(state) {
+  if (true === state) {
+    serverUnavailable.show();
+  }
+  else {
+    serverUnavailable.hide();
   }
 };
 
@@ -62,33 +78,29 @@ var getPositions = function(id, callback) {
   loading(true);
   $.getJSON('http://' + location.hostname + ':7781/positions?id=' + id, function (data) {
     positions = data;
-    var tr;
+    var list = $('<ul class="positions-list"></ul');
+    $('#positions').append(list);
     for (var i in positions) {
-      tr = $('<tr></tr>');
-      tr.append('<td><input type="checkbox" id="c' + positions[i].id + '" value="' + positions[i].symbol + '"/></td>');
-      var tooltip = 'Kaufpreis: ' + positions[i].buying_price + '\n' +
-                    'Anzahl: '    + positions[i].count        + '\n' +
-                    'Daufdatum: ' + positions[i].buying_date  + '\n' +
-                    'Symbol: '    + positions[i].symbol       + '\n' +
-                    'ISIN: '      + positions[i].isin         + '\n' +
-                    'WKN: '       + positions[i].wkn          + '\n';
-      tr.append('<td><label for="c' + positions[i].id + '" title="'+ tooltip + '">' + positions[i].name + '</label></td>');
-      $('#positions').append(tr);
+      list.append($('<li data-symbol="' + positions[i].symbol + '">' + positions[i].name + '</li>'));
     }
-    callback();
-    loading(false);
+    $('ul.positions-list li').click(function (e) {
+      $(e.target).toggleClass('selected');
 
-    $('table#positions input[type="checkbox"]').change(function(e) {
-      if ($(e.target).prop('checked') === true) {
-        getQuotes($(e.target).prop('value'), function (quotes) {
-          getShare($(e.target).prop('value'), function (share) {
+      if ($(e.target).hasClass('selected')) {
+        var color = colorCounter++ % 16 + 1;
+        $(e.target).addClass('selected-color-' + color);
+        $(e.target).data('selected-color', color);
+        getQuotes($(e.target).data('symbol'), function (quotes) {
+          getShare($(e.target).data('symbol'), function (share) {
             var chart = Highcharts.charts[0];
-            chart.addSeries({'name': share[0].name, 'data': quotes});
+            console.log('color: ' + color);
+            chart.addSeries({'name': share[0].name, 'data': quotes, color: colors[color-1]});
           });
         });
       }
       else {
-        getShare($(e.target).prop('value'), function (share) {
+        $(e.target).removeClass('selected-color-' + $(e.target).data('selected-color'));
+        getShare($(e.target).data('symbol'), function (share) {
           var chart = Highcharts.charts[0];
           var i;
           for (i = 0; i < chart.series.length; i++) {
@@ -99,6 +111,8 @@ var getPositions = function(id, callback) {
         });
       }
     });
+    callback();
+    loading(false);
   });
 };
 
@@ -126,9 +140,11 @@ $('body').keydown(function (e) {
 var initUI = function() {
   pendingRequests = 0;
   loadingAnimation = $('<div class="loading"><i class="fa fa fa-refresh fa-spin fa-2x"></i></div>');
-  // loadingAnimation.css('height', parseInt($('body').css('height')) + 'px');
-  // loadingAnimation.css('width', parseInt($('body').css('width')) + 'px');
   $('body').append(loadingAnimation);
+
+  serverUnavailable = $('<div class="loading"><i class="fa fa fa-refresh fa-spin fa-2x"></i><br>Server unavailable</div>');
+  $('body').append(serverUnavailable);
+
   $('div.loading i').css('margin-top', parseInt($('body').css('height'), 10)/2 - parseInt($('div.loading i').css('height'))/2);
 
   $('#none').click(function (e) {
@@ -144,6 +160,24 @@ var initUI = function() {
   $('#percent').click(function (e) {
     var axis = Highcharts.charts[0].yAxis[0];
     axis.setCompare('percent');
+  });
+}();
+
+var webSocket = function() {
+  socket.on('connect', function(){
+    unavailable(false);
+    console.log('connected...');
+  });
+  socket.on('connect_error', function(error) {
+    unavailable(true);
+    console.log('connect error: ' + JSON.stringify(error));
+  });
+  socket.on('error', function(error) {
+    console.log('error: ' + JSON.stringify(error));
+  });
+  socket.on('disconnect', function(){
+    unavailable(true);
+    console.log('disconnected');
   });
 }();
 

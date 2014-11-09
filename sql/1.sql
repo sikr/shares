@@ -3,7 +3,7 @@ SELECT   quotes.date,
          ROUND(SUM(quotes.close * positions.count), 2)
 FROM     positions, quotes
 WHERE    quotes.share_id=positions.share_id AND
-         quotes.date > positions.buying_date
+         MAX(strftime("%s", quotes.date) > MAX(strftime("%s", positions.buying_date)
 GROUP BY quotes.date
 
 SELECT shares.name,

@@ -8,9 +8,10 @@ var util    = require('util');
 var fs      = require('fs');
 var sqlite3 = require("sqlite3").verbose();
 var db      = require('./db');
-var http    = require('http');
 var express = require('express');
 var app     = express();
+var server  = require('http').Server(app);
+var io      = require('socket.io')(server);
 
 
 var databaseDir    = "../db/";
@@ -161,15 +162,26 @@ function runServer() {
     });
   });
 
+  // xhr server for serving db queries
   var dataServer = app.listen(7781, function () {
     var host = dataServer.address().address;
     var port = dataServer.address().port;
     console.log('Example app listening at http://%s:%s', host, port);
   });
-  var httpServer = app.listen(7780, function () {
+
+  // http server for serving static content
+  var httpServer = server.listen(7780, function () {
     var host = httpServer.address().address;
     var port = httpServer.address().port;
     console.log('Example app listening at http://%s:%s', host, port);
+  });
+
+  // websocket server
+  io.on('connection', function (socket) {
+    console.log('websocket successfully connected');
+    socket.on('disconnect', function () {
+      console.log('websocket disconnected');
+    });
   });
 }
 

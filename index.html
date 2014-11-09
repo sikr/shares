@@ -7,8 +7,10 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="css/shares.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highstock/2.0.4/highstock.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+    <script src="components/jquery/dist/jquery.js"></script>
+    <script src="components/highstock-release/highstock.src.js"></script>
+    <script src="components/socket.io-client/socket.io.js"></script>
     <script src="js/chartoptions.js"></script>
     <script src="js/client.js"></script>
   </head>
@@ -36,8 +38,7 @@
         <input type="radio" name="period" id="3j" />
         <label for="3j">3J</label>
       </div>
-      <div class="odd">
-        <table id="positions"></table>
+      <div id="positions" class="odd">
       </div>
     </div>
     <div id="container"></div>

@@ -1,0 +1,26 @@
+{
+  "name": "shares",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sikr/shares",
+  "authors": [
+    "Simon Kruska <simon.kruska@googlemail.com>"
+  ],
+  "description": "Stock data in SQLITE3 DB with Highstock (Highcharts)",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "font-awesome": "~4.2.0",
+    "highstock-release": "latest",
+    "socket.io-client": "latest"
+  }
+}
