@@ -7,7 +7,11 @@ var transactionDatabase = require('sqlite3-transactions').TransactionDatabase;
 
 exports.open = function(file){
   db = new transactionDatabase(
-    new sqlite3.Database(file)
+    new sqlite3.Database(file, function (err) {
+      if (null !== err) {
+        console.log('error opening database file: %s', JSON.stringiy(err));
+      }
+    })
   );
 };
 

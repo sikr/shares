@@ -86,10 +86,11 @@ var databaseTables = [{'name': 'depots', 'sql': tableDepots, 'data': dataDepots}
                       {'name': 'positions', 'sql': tablePositions, 'data': dataPositions},
                       {'name': 'quotes', 'sql': tableQuotes, 'data': []}];
 
-db.open(databaseDir + databaseFile);
-db.getTables();
+// db.open(databaseDir + databaseFile);
+// db.getTables();
 
 function createDatebase() {
+  console.time('Create Datebase');
   if (!fs.existsSync(databaseDir + databaseFile)) {
     if (!fs.existsSync(databaseDir)) {
       fs.mkdirSync(databaseDir);
@@ -98,13 +99,13 @@ function createDatebase() {
     }
   }
   else {
+    db.open(databaseDir + databaseFile);
     db.clear(databaseTables);
+    // db.getTables();
   }
-  // db.createTables(databaseFile, databaseTables);
   db.fillTables(databaseTables);
   db.dumpFiles();
-  // db.test();
-  // db.close();
+  console.timeEnd('Create Datebase');
 }
 
 function runServer() {
@@ -186,11 +187,10 @@ function runServer() {
 }
 
 if (process.argv[2] == '-c' || process.argv[2] == '--create') {
-  console.time('Create Datebase');
   createDatebase();
-  console.timeEnd('Create Datebase');
 }
 else {
+  db.open(databaseDir + databaseFile);
   runServer();
 }
 
