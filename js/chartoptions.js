@@ -27,9 +27,9 @@ var chartOptions = {
     selected : 4
   },
   // series: chartData,
-  title : {
-    text : 'Shares'
-  },
+  // title : {
+  //   text : 'Shares'
+  // },
   tooltip : {
     crosshairs: [true, false],
     followPointer: false

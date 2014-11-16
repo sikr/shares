@@ -1,0 +1,93 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.ui-panel {
+  background-color: white;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+.ui-panel div {
+  transition: all 0.3s;
+}
+.ui-panel-top, .ui-panel-bottom {
+  background-color: #ccc;
+  height: 50px;
+}
+.ui-panel-middle {
+  height: calc(100% - 100px);
+}
+.ui-panel-left, .ui-panel-right  {
+  height: calc(100% - 100px);
+  position: absolute;
+  z-index: 1;
+  opacity: 0.9;
+}
+.ui-panel-center {
+  height: calc(100% - 100px);
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  position: absolute;
+  display: auto;
+}
+.ui-panel-left {
+  background-color: #ddd;
+  left: -400px;
+  width: 400px;
+}
+.ui-panel-right {
+  background-color: #ddd;
+  right: -400px;
+  width: 400px;
+}
+.ui-panel-left-open div[class="ui-panel-left"] {
+  left: 0;
+}
+.ui-panel-right-open div[class="ui-panel-right"] {
+  right: 0;
+}
+.ui-color-gray {
+  color: #555;
+}
+.ui-toolbar {
+  height: 50px;
+  display: flex;
+}
+.ui-toolbar-left {
+  flex: none;
+  padding-left: 10px;
+}
+.ui-toolbar-center {
+  flex: auto;
+  height: 100%;
+  overflow: hidden;
+}
+.ui-toolbar-right {
+  flex: none;
+  padding-right: 10px;
+}
+.ui-toolbar-button {
+  background-color: transparent;
+  border-width: 0;
+  color: #555;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 50px;
+  outline: none;
+  padding: 5px;
+}
+.ui-toolbar-title {
+  font-weight: bold;
+  line-height: 50px;
+  padding-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

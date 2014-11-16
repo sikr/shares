@@ -3,44 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <title>Shares</title>
+
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="css/uipanel.css">
     <link rel="stylesheet" type="text/css" href="css/shares.css">
     <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+
     <script src="components/jquery/dist/jquery.js"></script>
     <script src="components/highstock-release/highstock.src.js"></script>
     <script src="components/socket.io-client/socket.io.js"></script>
+
+    <script src="js/uipanel.js"></script>
     <script src="js/chartoptions.js"></script>
     <script src="js/client.js"></script>
   </head>
   <body>
-    <div id="settings">
-      <div class="odd">
-        <label for "depots">Depots:</label>
-        <select id="depots"></select>
-      </div>
-      <div class="even">
-        <label>Compare:</label>
-        <button id="none">Ohne</button>
-        <button id="value">Wert</button>
-        <button id="percent">Prozent</button>
-      </div>
-      <div class="even">
-        <input type="radio" name="period" id="1m" />
-        <label for="1m">1M</label>
-        <input type="radio" name="period" id="3m" />
-        <label for="3m">3M</label>
-        <input type="radio" name="period" id="6m" />
-        <label for="6m">6M</label>
-        <input type="radio" name="period" id="1j" />
-        <label for="1j">1J</label>
-        <input type="radio" name="period" id="3j" />
-        <label for="3j">3J</label>
-      </div>
-      <div id="positions" class="odd">
-      </div>
-    </div>
-    <div id="container"></div>
   </body>
 </html>

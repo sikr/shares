@@ -5,10 +5,8 @@ $(function() {
 var socket = io.connect('http://' + location.hostname + ':7780');
 var depots;
 var positions;
-var loadingAnimation;
-var pendingRequests;
-var serverUnavailable;
 var colorCounter = 0;
+var panel;
 
 var colors = [
   '#c10001', '#edff5b', '#1a9391', '#610c8c',
@@ -16,66 +14,35 @@ var colors = [
   '#ff8f00', '#52e000', '#00c4da', '#d223fe',
   '#ffd221', '#00b22c', '#4643bb', '#b30347'];
 
-var loading = function(start) {
-    if (true === start) {
-    pendingRequests++;
-  }
-  else if (false === start) {
-    pendingRequests--;
-  }
-  if (pendingRequests === 0) {
-    loadingAnimation.hide();
-  }
-  else {
-    loadingAnimation.show();
-  }
-};
-
-var unavailable = function(state) {
-  if (true === state) {
-    serverUnavailable.show();
-  }
-  else {
-    serverUnavailable.hide();
-  }
-};
-
 var getQuotes = function(symbol, callback) {
-  loading(true);
   $.getJSON('http://' + location.hostname + ':7781/quotes?symbol=' + symbol, function (quotes) {
     if (callback) {
       callback(quotes);
-      loading(false);
     }
   });
 };
 
 var getShare = function(symbol, callback) {
-  loading(true);
   $.getJSON('http://' + location.hostname + ':7781/share?symbol=' + symbol, function (share) {
     if (callback) {
       callback(share);
-      loading(false);
     }
   });
 };
 
 // get depots
 var getDepots = function(callback) {
-  loading(true);
   $.getJSON('http://' + location.hostname + ':7781/depots', function (data) {
     depots = data;
     for (var i in depots) {
       $('#depots').append('<option value=' + depots[i].id + '>' + depots[i].name + '</option>');
     }
     callback();
-    loading(false);
   });
 };
 
 // get depot positions
 var getPositions = function(id, callback) {
-  loading(true);
   $.getJSON('http://' + location.hostname + ':7781/positions?id=' + id, function (data) {
     positions = data;
     var list = $('<ul class="positions-list"></ul');
@@ -112,40 +79,43 @@ var getPositions = function(id, callback) {
       }
     });
     callback();
-    loading(false);
   });
 };
 
-var createChart = function() {
-  // Create the chart
-  var chart = $('#container').highcharts();
-  if (chart !== undefined) {
-    chart.destroy();
-  }
-  $('#container').highcharts('StockChart', chartOptions);
-  Highcharts.setOptions(highchartsOptions);
-}();
-
-$('body').keydown(function (e) {
-  if (e.keyCode == 27) {
-    if ($('#settings').is(':visible')) {
-      $('#settings').hide();
-    }
-    else {
-      $('#settings').show();
-    }
-  }
-});
-
 var initUI = function() {
-  pendingRequests = 0;
-  loadingAnimation = $('<div class="loading"><i class="fa fa fa-refresh fa-spin fa-2x"></i></div>');
-  $('body').append(loadingAnimation);
+  var row;
+  panel = new UIPanel('panel');
+  panel.create('shares').appendTo($('body'));
+  panel.addToolbarButton('left', 'options', '', 'fa-bars');
+  panel.addToolbarButton('right', 'settings', '', 'fa-cog');
+  panel.addToolbarButton('center', 'overview', 'Übersicht', '');
+  panel.addToolbarButton('center', 'chart', 'Chart', '');
 
-  serverUnavailable = $('<div class="loading"><i class="fa fa fa-refresh fa-spin fa-2x"></i><br>Server unavailable</div>');
-  $('body').append(serverUnavailable);
+  row = $('<div class="row"></div').appendTo(panel.panelLeft);
+  $('<label for="depots">Depots:</label>').appendTo(row);
+  $('<select id="depots"></select>').appendTo(row);
 
-  $('div.loading i').css('margin-top', parseInt($('body').css('height'), 10)/2 - parseInt($('div.loading i').css('height'))/2);
+  row = $('<div class="row"></div').appendTo(panel.panelLeft);
+  $('<label>Compare:</label>').appendTo(row);
+  $('<button id="none">Ohne</button>').appendTo(row);
+  $('<button id="value">Wert</button>').appendTo(row);
+  $('<button id="percent">Prozent</button>').appendTo(row);
+
+  $('<div id="positions" class="odd">').appendTo(panel.panelLeft);
+
+  $('#options').click(function (e) {
+    panel.toggle('left');
+  });
+
+  $('#settings').click(function (e) {
+    panel.toggle('right');
+  });
+
+  $('body').keydown(function (e) {
+    if (e.keyCode == 27) {
+      panel.toggle('left');
+    }
+  });
 
   $('#none').click(function (e) {
     var axis = Highcharts.charts[0].yAxis[0];
@@ -163,20 +133,27 @@ var initUI = function() {
   });
 }();
 
+var createChart = function() {
+  // Create the chart
+  var chart = $('#shares-ui-panel-center').highcharts();
+  if (chart !== undefined) {
+    chart.destroy();
+  }
+  $('#shares-ui-panel-center').highcharts('StockChart', chartOptions);
+  Highcharts.setOptions(highchartsOptions);
+}();
+
 var webSocket = function() {
   socket.on('connect', function(){
-    unavailable(false);
     console.log('connected...');
   });
   socket.on('connect_error', function(error) {
-    unavailable(true);
     console.log('connect error: ' + JSON.stringify(error));
   });
   socket.on('error', function(error) {
     console.log('error: ' + JSON.stringify(error));
   });
   socket.on('disconnect', function(){
-    unavailable(true);
     console.log('disconnected');
   });
 }();
