@@ -1,10 +1,110 @@
 {
   "query": {
-    "count": 214,
-    "created": "2014-11-02T12:49:54Z",
+    "count": 228,
+    "created": "2014-11-17T20:09:22Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-14",
+          "Open": "35.50",
+          "High": "35.82",
+          "Low": "34.90",
+          "Close": "34.90",
+          "Volume": "7500",
+          "Adj_Close": "34.90"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-13",
+          "Open": "35.70",
+          "High": "35.70",
+          "Low": "35.00",
+          "Close": "35.59",
+          "Volume": "9200",
+          "Adj_Close": "35.59"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-12",
+          "Open": "35.60",
+          "High": "35.77",
+          "Low": "35.20",
+          "Close": "35.69",
+          "Volume": "9900",
+          "Adj_Close": "35.69"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-11",
+          "Open": "35.01",
+          "High": "35.61",
+          "Low": "34.85",
+          "Close": "35.50",
+          "Volume": "11700",
+          "Adj_Close": "35.50"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-10",
+          "Open": "35.53",
+          "High": "35.53",
+          "Low": "34.50",
+          "Close": "35.12",
+          "Volume": "16700",
+          "Adj_Close": "35.12"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-07",
+          "Open": "35.30",
+          "High": "35.62",
+          "Low": "34.90",
+          "Close": "35.00",
+          "Volume": "9600",
+          "Adj_Close": "35.00"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-06",
+          "Open": "35.86",
+          "High": "36.06",
+          "Low": "34.83",
+          "Close": "35.83",
+          "Volume": "9800",
+          "Adj_Close": "35.83"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-05",
+          "Open": "35.44",
+          "High": "35.87",
+          "Low": "34.88",
+          "Close": "35.86",
+          "Volume": "15000",
+          "Adj_Close": "35.86"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-04",
+          "Open": "35.83",
+          "High": "35.84",
+          "Low": "34.85",
+          "Close": "35.44",
+          "Volume": "5300",
+          "Adj_Close": "35.44"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-11-03",
+          "Open": "36.45",
+          "High": "36.60",
+          "Low": "34.88",
+          "Close": "35.73",
+          "Volume": "9900",
+          "Adj_Close": "35.73"
+        },
         {
           "Symbol": "NOVC.F",
           "Date": "2014-10-31",
@@ -117,6 +217,26 @@
         },
         {
           "Symbol": "NOVC.F",
+          "Date": "2014-10-16",
+          "Open": "33.63",
+          "High": "34.50",
+          "Low": "32.79",
+          "Close": "33.05",
+          "Volume": "12000",
+          "Adj_Close": "33.05"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-10-15",
+          "Open": "34.80",
+          "High": "34.80",
+          "Low": "33.36",
+          "Close": "33.36",
+          "Volume": "10900",
+          "Adj_Close": "33.36"
+        },
+        {
+          "Symbol": "NOVC.F",
           "Date": "2014-10-14",
           "Open": "34.20",
           "High": "35.32",
@@ -124,6 +244,26 @@
           "Close": "35.10",
           "Volume": "8900",
           "Adj_Close": "35.10"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-10-13",
+          "Open": "34.50",
+          "High": "34.89",
+          "Low": "33.86",
+          "Close": "34.89",
+          "Volume": "13600",
+          "Adj_Close": "34.89"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2014-10-10",
+          "Open": "35.70",
+          "High": "35.70",
+          "Low": "34.30",
+          "Close": "35.06",
+          "Volume": "30200",
+          "Adj_Close": "35.06"
         },
         {
           "Symbol": "NOVC.F",

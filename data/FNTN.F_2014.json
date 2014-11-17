@@ -1,10 +1,110 @@
 {
   "query": {
-    "count": 214,
-    "created": "2014-11-02T12:49:32Z",
+    "count": 228,
+    "created": "2014-11-17T20:08:06Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-14",
+          "Open": "21.89",
+          "High": "21.96",
+          "Low": "21.63",
+          "Close": "21.67",
+          "Volume": "3400",
+          "Adj_Close": "21.67"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-13",
+          "Open": "22.08",
+          "High": "22.27",
+          "Low": "21.58",
+          "Close": "21.70",
+          "Volume": "10700",
+          "Adj_Close": "21.70"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-12",
+          "Open": "22.25",
+          "High": "22.25",
+          "Low": "22.00",
+          "Close": "22.08",
+          "Volume": "6200",
+          "Adj_Close": "22.08"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-11",
+          "Open": "21.85",
+          "High": "22.35",
+          "Low": "21.81",
+          "Close": "22.22",
+          "Volume": "13900",
+          "Adj_Close": "22.22"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-10",
+          "Open": "21.80",
+          "High": "21.92",
+          "Low": "21.59",
+          "Close": "21.92",
+          "Volume": "5300",
+          "Adj_Close": "21.92"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-07",
+          "Open": "22.16",
+          "High": "22.40",
+          "Low": "21.45",
+          "Close": "21.61",
+          "Volume": "15000",
+          "Adj_Close": "21.61"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-06",
+          "Open": "21.75",
+          "High": "22.11",
+          "Low": "21.51",
+          "Close": "22.05",
+          "Volume": "10900",
+          "Adj_Close": "22.05"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-05",
+          "Open": "21.37",
+          "High": "21.87",
+          "Low": "21.37",
+          "Close": "21.87",
+          "Volume": "4300",
+          "Adj_Close": "21.87"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-04",
+          "Open": "21.20",
+          "High": "21.61",
+          "Low": "21.15",
+          "Close": "21.45",
+          "Volume": "10100",
+          "Adj_Close": "21.45"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-03",
+          "Open": "20.92",
+          "High": "21.33",
+          "Low": "20.85",
+          "Close": "21.28",
+          "Volume": "15300",
+          "Adj_Close": "21.28"
+        },
         {
           "Symbol": "FNTN.F",
           "Date": "2014-10-31",
@@ -117,12 +217,52 @@
         },
         {
           "Symbol": "FNTN.F",
+          "Date": "2014-10-16",
+          "Open": "18.42",
+          "High": "18.63",
+          "Low": "17.68",
+          "Close": "18.35",
+          "Volume": "25600",
+          "Adj_Close": "18.35"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-10-15",
+          "Open": "19.15",
+          "High": "19.15",
+          "Low": "18.25",
+          "Close": "18.31",
+          "Volume": "16300",
+          "Adj_Close": "18.31"
+        },
+        {
+          "Symbol": "FNTN.F",
           "Date": "2014-10-14",
           "Open": "18.94",
           "High": "19.14",
           "Low": "18.82",
           "Close": "19.08",
           "Volume": "10800",
+          "Adj_Close": "19.08"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-10-13",
+          "Open": "19.00",
+          "High": "19.02",
+          "Low": "18.83",
+          "Close": "18.94",
+          "Volume": "16100",
+          "Adj_Close": "18.94"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-10-10",
+          "Open": "18.90",
+          "High": "19.20",
+          "Low": "18.68",
+          "Close": "19.08",
+          "Volume": "16700",
           "Adj_Close": "19.08"
         },
         {

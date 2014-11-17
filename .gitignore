@@ -8,6 +8,15 @@ data/*
 !data/NOVC.F*.json
 !data/SMHN.F*.json
 !data/FNTN.F*.json
+!data/SYV.F*.json
+!data/AG8.F*.json
+!data/BAYN.F*.json
+!data/75C.F*.json
+!data/IVSB.F*.json
+!data/TFBF.F*.json
+!data/LIN.F*.json
+!data/NOT.F*.json
+!data/SRT3.F*.json
 db/*
 json/private*
 log/*

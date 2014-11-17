@@ -1,10 +1,120 @@
 {
   "query": {
-    "count": 213,
-    "created": "2014-10-31T18:24:08Z",
+    "count": 228,
+    "created": "2014-11-17T20:08:25Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-14",
+          "Open": "29.12",
+          "High": "29.54",
+          "Low": "29.09",
+          "Close": "29.52",
+          "Volume": "1900",
+          "Adj_Close": "29.52"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-13",
+          "Open": "29.27",
+          "High": "29.45",
+          "Low": "29.22",
+          "Close": "29.31",
+          "Volume": "3100",
+          "Adj_Close": "29.31"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-12",
+          "Open": "29.35",
+          "High": "29.56",
+          "Low": "29.34",
+          "Close": "29.34",
+          "Volume": "1300",
+          "Adj_Close": "29.34"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-11",
+          "Open": "29.80",
+          "High": "29.81",
+          "Low": "29.50",
+          "Close": "29.53",
+          "Volume": "2200",
+          "Adj_Close": "29.53"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-10",
+          "Open": "29.27",
+          "High": "29.76",
+          "Low": "29.15",
+          "Close": "29.76",
+          "Volume": "4800",
+          "Adj_Close": "29.76"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-07",
+          "Open": "29.09",
+          "High": "29.26",
+          "Low": "29.06",
+          "Close": "29.15",
+          "Volume": "1800",
+          "Adj_Close": "29.15"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-06",
+          "Open": "28.79",
+          "High": "29.20",
+          "Low": "28.79",
+          "Close": "29.15",
+          "Volume": "1000",
+          "Adj_Close": "29.15"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-05",
+          "Open": "28.60",
+          "High": "28.90",
+          "Low": "28.60",
+          "Close": "28.90",
+          "Volume": "2300",
+          "Adj_Close": "28.90"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-04",
+          "Open": "28.55",
+          "High": "28.76",
+          "Low": "28.51",
+          "Close": "28.70",
+          "Volume": "3000",
+          "Adj_Close": "28.70"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-11-03",
+          "Open": "28.79",
+          "High": "28.82",
+          "Low": "28.56",
+          "Close": "28.82",
+          "Volume": "8900",
+          "Adj_Close": "28.82"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-10-31",
+          "Open": "28.41",
+          "High": "28.56",
+          "Low": "28.27",
+          "Close": "28.42",
+          "Volume": "5500",
+          "Adj_Close": "28.42"
+        },
         {
           "Symbol": "HWP.F",
           "Date": "2014-10-30",
@@ -107,6 +217,26 @@
         },
         {
           "Symbol": "HWP.F",
+          "Date": "2014-10-16",
+          "Open": "25.51",
+          "High": "26.25",
+          "Low": "25.10",
+          "Close": "26.25",
+          "Volume": "5800",
+          "Adj_Close": "26.25"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-10-15",
+          "Open": "25.44",
+          "High": "26.00",
+          "Low": "24.75",
+          "Close": "25.00",
+          "Volume": "6300",
+          "Adj_Close": "25.00"
+        },
+        {
+          "Symbol": "HWP.F",
           "Date": "2014-10-14",
           "Open": "25.84",
           "High": "25.87",
@@ -114,6 +244,26 @@
           "Close": "25.87",
           "Volume": "2600",
           "Adj_Close": "25.87"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-10-13",
+          "Open": "26.20",
+          "High": "26.45",
+          "Low": "25.38",
+          "Close": "26.05",
+          "Volume": "15400",
+          "Adj_Close": "26.05"
+        },
+        {
+          "Symbol": "HWP.F",
+          "Date": "2014-10-10",
+          "Open": "26.95",
+          "High": "27.00",
+          "Low": "26.60",
+          "Close": "26.72",
+          "Volume": "5000",
+          "Adj_Close": "26.72"
         },
         {
           "Symbol": "HWP.F",

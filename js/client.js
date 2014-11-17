@@ -175,9 +175,9 @@ var changeDepot = function() {
 
 var initialize = function() {
   getDepots(function () {
-    getPositions(0, function () {
+    getPositions(10, function () {
       var i = 0;
-      $('#depots option[value="1"]').attr('selected', true);
+      $('#depots option[value="0"]').attr('selected', true);
       $('#depots').change(function () {
         changeDepot();
       });
