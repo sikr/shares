@@ -22,3 +22,4 @@ json/private*
 log/*
 node_modules
 shares.sublime*
+private*
