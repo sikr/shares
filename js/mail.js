@@ -8,7 +8,7 @@ var mail = require('../private-mail.json');
 
 var transporter = nodemailer.createTransport({ 
    host: mail.host,
-   secuire: true,
+   // secure: true,
 
    auth: {
        user: mail.user,
