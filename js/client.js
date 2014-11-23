@@ -87,7 +87,8 @@ var initUI = function() {
   panel = new UIPanel('panel');
   panel.create('shares').appendTo($('body'));
   panel.addToolbarButton('left', 'options', '', 'fa-bars');
-  panel.addToolbarButton('right', 'settings', '', 'fa-cog');
+  // panel.addToolbarButton('right', 'settings', '', 'fa-cog');
+  // panel.addToolbarButton('right', 'settings', '', 'fa-line-chart');
   panel.addToolbarButton('center', 'overview', 'Übersicht', '');
   panel.addToolbarButton('center', 'chart', 'Chart', '');
 
@@ -146,15 +147,21 @@ var createChart = function() {
 var webSocket = function() {
   socket.on('connect', function(){
     console.log('connected...');
+    $('#options i').addClass('ui-color-available');
+    $('#options i').removeClass('ui-color-unavailable');
   });
   socket.on('connect_error', function(error) {
     console.log('connect error: ' + JSON.stringify(error));
+    $('#options i').addClass('ui-color-unavailable');
+    $('#options i').removeClass('ui-color-available');
   });
   socket.on('error', function(error) {
     console.log('error: ' + JSON.stringify(error));
   });
   socket.on('disconnect', function(){
     console.log('disconnected');
+    $('#options i').addClass('ui-color-unavailable');
+    $('#options i').removeClass('ui-color-available');
   });
 }();
 

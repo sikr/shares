@@ -1,23 +1,52 @@
 (function() {
 
-var db;
-var fs      = require('fs');
-var sqlite3 = require("sqlite3").verbose();
-var transactionDatabase = require('sqlite3-transactions').TransactionDatabase;
+'use strict';
 
-exports.open = function(file){
-  db = new transactionDatabase(
+var db;
+var fs                  = require('fs');
+var sqlite3             = require("sqlite3").verbose();
+var winston             = require('winston');
+var TransactionDatabase = require('sqlite3-transactions').TransactionDatabase;
+
+var log = new (winston.Logger)({
+  levels: {
+    verbose: 1,
+    debug:   2,
+    info:    3,
+    data:    4,
+    warn:    5,
+    error:   6
+  },
+  colors: {
+    verbose: 'cyan',
+    debug:   'blue',
+    info:    'green',
+    data:    'grey',
+    warn:    'yellow',
+    error:   'red'
+  }
+});
+
+log.add(winston.transports.Console, {
+  level: 'debug',
+  prettyPrint: false,
+  colorize: true,
+  silent: false,
+  timestamp: false
+});
+
+exports.open = function(file) {
+  db = new TransactionDatabase(
     new sqlite3.Database(file, function (err) {
       if (null !== err) {
-        console.log('error opening database file: %s', JSON.stringiy(err));
+        log.error('error opening database file: %s', JSON.stringiy(err));
       }
     })
   );
 };
 
-exports.clear = function(tables)
-{
-  db.serialize(function() {
+exports.clear = function(tables) {
+  db.serialize(function () {
     var table;
     var stmt;
     for (table in tables) {
@@ -37,7 +66,7 @@ exports.deleteFromDisk = function(file, tables){
 
 exports.createTables = function(file, tables){
   var stmt;
-  db.serialize(function() {
+  db.serialize(function () {
     var table;
     for (table in tables) {
       stmt = db.prepare('CREATE TABLE ' + tables[table].name + ' (' + tables[table].sql + ')');
@@ -49,7 +78,7 @@ exports.createTables = function(file, tables){
 
 exports.fillTables = function(tables){
   var i;
-  db.serialize(function(){
+  db.serialize(function (){
     var stmt;
     var table;
     var sql;
@@ -58,8 +87,8 @@ exports.fillTables = function(tables){
     var v; // array of values inserted
     var q; // array of questions marks added to the INSERT statement
 
-    var callback = function() {
-      console.log(this.sql);
+    var callback = function () {
+      log.verbose(this.sql);
     };
 
     // creates SQL statements like
@@ -73,26 +102,28 @@ exports.fillTables = function(tables){
         }
         sql += q.join(',') + ')';
         stmt = db.prepare(sql);
-        for (i=0; i < tables[table].data.length; i++){
+        for (i = 0; i < tables[table].data.length; i++){
           v = [];
           for (j in tables[table].data[i]) {
             v.push(tables[table].data[i][j]);
           }
-          console.log(stmt.sql + ' ' + JSON.stringify(v) + '(' + v.length + ')');
+          log.verbose(sql + ' ' + JSON.stringify(v) + '(' + v.length + ')');
           stmt.simon = JSON.stringify(v);
           stmt.run(v, callback);
         }
         stmt.finalize();
       }
     }
+    // create depot with all shares
+    
   });
 };
 
-exports.getTables = function() {
+exports.getTables = function () {
   var stmt = db.prepare('SELECT * FROM sqlite_master');
   stmt.all(function (err, rows) {
     if (err) {
-      console.log(err);
+      log.error(err);
     }
     else {
       var r = rows;
@@ -102,12 +133,12 @@ exports.getTables = function() {
 
 exports.close = function()
 {
-  db.serialize(function(){
+  db.serialize(function () {
     db.close();
   });
 };
 
-exports.test = function(){
+exports.test = function() {
   var stmt; 
   stmt = db.prepare(
     'SELECT   shares.id AS id,               ' +
@@ -123,21 +154,21 @@ exports.test = function(){
 
   stmt.all(function (err, rows) {
     if (err) {
-      console.log(err);
+      log.error(err);
     }
     else {
       sum = 0;
       for (var i in rows) {
         rows[i].sum = (rows[i].close * rows[i].count).toFixed(2);
-        console.log(JSON.stringify(rows[i]));
+        log.info(JSON.stringify(rows[i]));
         sum += (rows[i].close * rows[i].count);
       }
-      console.log(sum);
+      log.info(sum);
     }
   });
 };
 
-exports.getDepots = function(callback){
+exports.getDepots = function(callback) {
   var stmt;
   stmt = db.prepare(
     'SELECT   id,         ' +
@@ -147,7 +178,7 @@ exports.getDepots = function(callback){
     'ORDER BY id          ');
   stmt.all(function (err, rows) {
     if (err) {
-      console.log(err);
+      log.error(err);
     }
     else {
       callback(rows);
@@ -155,7 +186,7 @@ exports.getDepots = function(callback){
   });
 };
 
-exports.getDepot = function(depot, callback){
+exports.getDepot = function(depot, callback) {
   var stmt;
   stmt  = db.prepare(
     'SELECT   positions_id  ' +
@@ -164,7 +195,7 @@ exports.getDepot = function(depot, callback){
     'ORDER BY positions_id  ');
   stmt.all(depot, function (err, rows) {
     if (err) {
-      console.log(err);
+      log.error(err);
     }
     else{
       callback(rows);
@@ -172,7 +203,7 @@ exports.getDepot = function(depot, callback){
   });
 };
 
-exports.getPositions = function(depot, callback){
+exports.getPositions = function(depot, callback) {
   var stmt = db.prepare(
     'SELECT                                       ' +
     // '         depot.depot_id,                     ' +
@@ -195,12 +226,12 @@ exports.getPositions = function(depot, callback){
     'AND      depots.id=depot.depot_id            ' +
     'AND      depot.positions_id=positions.id     ' +
     'AND      positions.share_id=shares.id        ' +
-    // 'AND      positions.selling_date=""           ' +
+    'AND      positions.selling_date=""           ' +
     'GROUP BY shares.id                           ' +
     'ORDER BY shares.name                         ');
   stmt.all(depot, function (err, rows) {
     if (err) {
-      console.log(err);
+      log.error(err);
     }
     else{
       callback(rows);
@@ -208,21 +239,20 @@ exports.getPositions = function(depot, callback){
   });
 };
 
-exports.getQuotes = function(symbol, callback){
+exports.getQuotes = function(symbol, callback) {
   var stmt = db.prepare(
     'SELECT   strftime("%s", quotes.date) * 1000 AS date,                           ' +
     '         quotes.close AS close                                                 ' +
-    // '         positions.count AS count,                                             ' +
     'FROM     shares, quotes                                                        ' +
     'WHERE    shares.symbol=?                                                       ' +
-    'AND      strftime("%s", quotes.date) > strftime("%s", date("now", "-3 years")) ' +
+    // 'AND      strftime("%s", quotes.date) > strftime("%s", date("now", "-3 years")) ' +
     'AND      quotes.share_id=shares.id                                             ' +
     'ORDER BY quotes.date                                                           ');
   stmt.all(symbol, function (err, rows) {
     var a = [];
     var i;
     if (err) {
-      console.log(err);
+      log.error(err);
     }
     else {
       for (i in rows) {
@@ -233,17 +263,62 @@ exports.getQuotes = function(symbol, callback){
   });
 };
 
-exports.getShare = function(symbol, callback){
+exports.getAdjQuotes = function(symbol, callback){
+  var stmt = db.prepare(
+    'SELECT   strftime("%s", adj_quotes.date) * 1000 AS date,                           ' +
+    '         adj_quotes.close AS close                                                 ' +
+    'FROM     shares, adj_quotes                                                        ' +
+    'WHERE    shares.symbol=?                                                           ' +
+    // 'AND      strftime("%s", adj_quotes.date) > strftime("%s", date("now", "-3 years")) ' +
+    'AND      adj_quotes.share_id=shares.id                                             ' +
+    'ORDER BY adj_quotes.date                                                           ');
+  stmt.all(symbol, function (err, rows) {
+    var a = [];
+    var i;
+    if (err) {
+      log.error(err);
+    }
+    else {
+      for (i in rows) {
+        a.push([rows[i].date, rows[i].close]);
+      }
+      callback(a);
+    }
+  });
+};
+
+exports.getShare = function(symbol, callback) {
   var stmt = db.prepare(
     'SELECT *       ' +
     'FROM   shares  ' +
     'WHERE  symbol=?');
   stmt.all(symbol, function (err, rows) {
-    callback(rows);
+    if (err) {
+      log.error(err);
+    }
+    else {
+      callback(rows);
+    }
   });
 };
 
-exports.dumpFiles = function(){
+exports.getSymbols = function(callback) {
+  var stmt = db.prepare(
+    'SELECT   symbol       ' +
+    'FROM     shares       ' +
+    'WHERE    symbol != "" ' *
+    'GROUP BY symbol       ');
+  stmt.all(function (err, rows) {
+    if (err) {
+      log.error(err);
+    }
+    else {
+      callback(rows);
+    }
+  });
+};
+
+exports.dumpFiles = function(callback) {
   var files = fs.readdirSync('../data/');
   var symbol;
   var symbols = [];
@@ -262,10 +337,11 @@ exports.dumpFiles = function(){
     '       shares.name AS name,    ' +
     '       shares.symbol AS symbol ' +
     'FROM   shares                  ');
-    stmt.all(function(err, rows) {
-    db.beginTransaction(function(err, transaction) {
+  stmt.all(function (err, rows) {
+    db.beginTransaction(function (err, transaction) {
       var i;
       var f;
+      var content;
 
       for (i in rows) {
         symbols[rows[i].id] = rows[i].symbol;
@@ -281,46 +357,96 @@ exports.dumpFiles = function(){
           }
         }
         if (id > -1) {
-          console.log('Processing file ' + files[f] + ', Symbol ' + symbol + ', Id ' + id);
-          res = require('../data/' + files[f]).query.results.quote;
-          count = 0;
-          sum = 0;
-          for (i in res) {
-            // close = parseFloat(res[i].Close);
-            // if (isNaN(close)) {
-            //   console.log('***** ERROR: %s %s is NaN: %d', symbol, res[i].Date, close);
-            // }
-
-            stmt = transaction.prepare('INSERT INTO quotes VALUES (NULL,?,date(?),?,?,?,?,?,?)');
-            stmt.run(
-              id,
-              res[i].Date,
-              res[i].Open,
-              res[i].High,
-              res[i].Low,
-              res[i].Close,
-              res[i].Volume,
-              res[i].Adj_Close
-            );
-            sum += parseFloat(res[i].Close);
-            count++;
-            totalCount++;
+          log.info('Processing file ' + files[f] + ', Symbol ' + symbol + ', Id ' + id);
+          content = require('../data/' + files[f]);
+          if (files[f].indexOf('_dividends_and_splits') > -1) {
+            //
+            // process dividends and splits
+            //
+            res = content;
+            for (i in res) {
+              if (undefined !== res[i].Dividend) {
+                stmt = transaction.prepare('INSERT INTO dividends VALUES (?, ?, ?, ?)');
+                stmt.run(
+                  id,
+                  res[i].Symbol,
+                  res[i].Date,
+                  res[i].Dividend
+                  );
+              }
+              else if (undefined !== res[i].Split) {
+                stmt = transaction.prepare('INSERT INTO splits VALUES (?, ?, ?, ?)');
+                stmt.run(
+                  id,
+                  res[i].Symbol,
+                  res[i].Date,
+                  res[i].Split
+                  );
+              }
+            }
           }
-          stmt.finalize();
-          console.log('  -> ' + count + ' entries inserted, sum=' + sum.toFixed(2));
-        }
-      }
-      transaction.commit(function (err) {
-        if (err) {
-          console.log('commit failed');
+          else {
+            //
+            // process quotes
+            //
+            if (content.query.results !== null) {
+              res = content.query.results.quote;
+              count = 0;
+              sum = 0;
+              for (i in res) {
+                stmt = transaction.prepare('INSERT INTO quotes VALUES (?,date(?),?,?,?,?,?,?)');
+                stmt.run(
+                  id,
+                  res[i].Date,
+                  res[i].Open,
+                  res[i].High,
+                  res[i].Low,
+                  res[i].Close,
+                  res[i].Volume,
+                  res[i].Adj_Close
+                  );
+                sum += parseFloat(res[i].Close);
+                count++;
+                totalCount++;
+              }
+              log.info('-> ' + count + ' entries inserted, sum=' + sum.toFixed(2));
+            }
+            else {
+              log.warn('-> NO ENTRIES in ' + files[f]);
+            }
+          }
         }
         else {
-          console.log('commit successful');
+          log.error('No matching share for symbol %s', symbol);
+        }
+      }
+      //
+      // apply splits to adj_quotes table
+      //
+      transaction.run('INSERT INTO adj_quotes SELECT * FROM quotes');
+      transaction.each('SELECT * FROM splits', function (err, row) {
+        var m = parseInt(row.ratio.split(':')[0]);
+        var n = parseInt(row.ratio.split(':')[1]);
+        stmt = transaction.prepare(
+          'UPDATE adj_quotes                ' + 
+          'SET    close = ((close / ?) * ?) ' +
+          'WHERE  share_id = ? AND          ' +
+          '       date < ?                  '
+        );
+        stmt.run(m, n, row.share_id, row.date);
+      });
+      transaction.commit(function (err) {
+        if (err) {
+          log.error('commit failed');
+        }
+        else {
+          log.info('commit successful');
         }
       });
-      console.log('total count: ' + totalCount);
+      log.info('total count: ' + totalCount);
     });
   });
 };
+
 
 })();

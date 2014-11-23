@@ -8,6 +8,7 @@ var util    = require('util');
 var fs      = require('fs');
 var sqlite3 = require("sqlite3").verbose();
 var db      = require('./db');
+// var yql     = require('./yql');
 var express = require('express');
 var app     = express();
 var server  = require('http').Server(app);
@@ -17,39 +18,55 @@ var io      = require('socket.io')(server);
 var databaseDir    = "../db/";
 var databaseFile   = "shares.sqlite";
 
-var tableDepots    = 'id            INTEGER PRIMARY KEY,              ' +
-                     'name          TEXT,                             ' +
-                     'description   TEXT                              ';
+var tableDepots    = 'id            INTEGER,                  ' +
+                     'name          TEXT,                     ' +
+                     'description   TEXT,                     ' +
+                     'PRIMARY KEY   (name)                    ';
 
-var tableDepot     = 'depot_id      INTEGER,                          ' +
-                     'positions_id                                    ';
+var tableDepot     = 'depot_id      INTEGER,                  ' +
+                     'positions_id,                           ' +
+                     'PRIMARY KEY   (depot_id, positions_id)  ';
 
-var tableShares    = 'id            INTEGER PRIMARY KEY,              ' +
-                     'symbol        TEXT,                             ' +
-                     'isin          TEXT,                             ' +
-                     'wkn           TEXT,                             ' +
-                     'name          TEXT                              ';
+var tableShares    = 'id            INTEGER,                  ' +
+                     'symbol        TEXT,                     ' +
+                     'isin          TEXT,                     ' +
+                     'wkn           TEXT,                     ' +
+                     'name          TEXT,                     ' +
+                     'PRIMARY KEY   (symbol, isin, wkn, name) ';
 
-var tablePositions = 'id            INTEGER PRIMARY KEY,              ' +
-                     'share_id      INTEGER,                          ' +
-                     'symbol        TEXT,                             ' +
-                     'exchange      TEXT,                             ' +
-                     'currency      TEXT,                             ' +
-                     'count         INTEGER,                          ' +
-                     'buying_price  REAL,                             ' +
-                     'buying_date   INTEGER,                          ' +
-                     'selling_price REAL,                             ' +
-                     'selling_date  INTEGER                           ';
+var tablePositions = 'id            INTEGER,                  ' +
+                     'share_id      INTEGER,                  ' +
+                     'symbol        TEXT,                     ' +
+                     'exchange      TEXT,                     ' +
+                     'currency      TEXT,                     ' +
+                     'count         INTEGER,                  ' +
+                     'buying_price  REAL,                     ' +
+                     'buying_date   INTEGER,                  ' +
+                     'selling_price REAL,                     ' +
+                     'selling_date  INTEGER,                  ' +
+                     'PRIMARY KEY   (id, share_id, symbol)    ';
 
-var tableQuotes    = 'id            INTEGER PRIMARY KEY AUTOINCREMENT,' +
-                     'share_id      INTEGER,                          ' +
-                     'date          INTEGER,                          ' +
-                     'open          REAL,                             ' +
-                     'high          REAL,                             ' +
-                     'low           REAL,                             ' +
-                     'close         REAL,                             ' +
-                     'volume        INTEGER,                          ' +
-                     'adj_close     REAL                              ';
+var tableQuotes    = 'share_id      INTEGER,                  ' +
+                     'date          INTEGER,                  ' +
+                     'open          REAL,                     ' +
+                     'high          REAL,                     ' +
+                     'low           REAL,                     ' +
+                     'close         REAL,                     ' +
+                     'volume        INTEGER,                  ' +
+                     'adj_close     REAL,                     ' +
+                     'PRIMARY KEY   (share_id, date)          ';
+
+var tableDividends = 'share_id      INTEGER,                  ' +
+                     'symbol        TEXT,                     ' +
+                     'date          INTEGER,                  ' +
+                     'dividend      REAL,                     ' +
+                     'PRIMARY KEY   (share_id, symbol, date)  ';
+
+var tableSplits    = 'share_id      INTEGER,                  ' +
+                     'symbol        TEXT,                     ' +
+                     'date          INTEGER,                  ' +
+                     'ratio         TEXT,                     ' +
+                     'PRIMARY KEY   (share_id, symbol, date)  ';
 
 var dataDepots    = require('../json/depots.json');
 var dataDepot     = require('../json/depot.json');
@@ -61,7 +78,7 @@ var dataPrivatePositions;
 
 var tmp;
 
-// merge private date (not on github) with public
+// merge private data (not on github) with public
 if (fs.existsSync('../json/private_depots.json')) {
   dataPrivateDepots  = require('../json/private_depots.json');
   tmp = dataDepots.concat(dataPrivateDepots);
@@ -84,19 +101,19 @@ var databaseTables = [{'name': 'depots', 'sql': tableDepots, 'data': dataDepots}
                       {'name': 'depot', 'sql': tableDepot, 'data': dataDepot},
                       {'name': 'shares', 'sql': tableShares, 'data': dataShares},
                       {'name': 'positions', 'sql': tablePositions, 'data': dataPositions},
-                      {'name': 'quotes', 'sql': tableQuotes, 'data': []}];
-
-// db.open(databaseDir + databaseFile);
-// db.getTables();
+                      {'name': 'dividends', 'sql': tableDividends, 'data': []},
+                      {'name': 'splits', 'sql': tableSplits, 'data': []},
+                      {'name': 'quotes', 'sql': tableQuotes, 'data': []},
+                      {'name': 'adj_quotes', 'sql': tableQuotes, 'data': []}];
 
 function createDatebase() {
   console.time('Create Datebase');
   if (!fs.existsSync(databaseDir + databaseFile)) {
     if (!fs.existsSync(databaseDir)) {
       fs.mkdirSync(databaseDir);
-      db.open(databaseDir + databaseFile);
-      db.createTables(databaseDir + databaseFile, databaseTables);
     }
+    db.open(databaseDir + databaseFile);
+    db.createTables(databaseDir + databaseFile, databaseTables);
   }
   else {
     db.open(databaseDir + databaseFile);
@@ -148,7 +165,7 @@ function runServer() {
     var symbol = req.url.substr(15);
     res.header("Access-Control-Allow-Origin", "*");
     res.header('foo', 'bar');
-    db.getQuotes(symbol, function (data) {
+    db.getAdjQuotes(symbol, function (data) {
       res.send(JSON.stringify(data));
     });
   });

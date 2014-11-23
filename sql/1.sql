@@ -1,4 +1,5 @@
-#Summe Kurs x Anzahl pro Tag
+# Summe Kurs x Anzahl pro Tag
+# sum of the valule of all shares multiplied by the count in a depot 
 CREATE TABLE sum AS
 SELECT   shares.symbol AS symbol,
          positions.id AS positions_id,
@@ -15,7 +16,6 @@ WHERE    depot.depot_id = 0 AND
 GROUP BY positions.id,
          quotes.date
 ORDER BY quotes.date
-
          
 SELECT   count(*),
          sum.date,
@@ -23,7 +23,7 @@ SELECT   count(*),
 FROM     sum
 GROUP BY date
 
-# Welche Aktien befanden sich an diesem Tag im Depot "0"
+# which shares have been in a depot (here "0") on a certain day
 SELECT   shares.symbol,
          shares.name,
          positions.buying_date
@@ -36,7 +36,7 @@ WHERE    depots.id = 0 AND
          (positions.selling_date = "" OR positions.selling_date > "2012-07-11")
 
 
-# Aktien sortiert nach Kaufdatum in Depot "0"
+# shares sorted by buying date in depot "0"
 SELECT   shares.symbol,
          shares.name,
          positions.buying_date,
@@ -50,7 +50,7 @@ WHERE    depots.id = 0 AND
          positions.share_id = shares.id
 ORDER BY positions.buying_date
 
-# finde die letzten (neusten) Kurse für alle Positionen
+# find the latest quotes for all positions
 SELECT   shares.name,
          quotes.share_id,
          positions.symbol,
@@ -63,7 +63,7 @@ WHERE    quotes.share_id=positions.share_id AND
          quotes.share_id = shares.id
 GROUP BY quotes.share_id
 
-# Alle Aktien in einem Depot
+# all shares in a depot
 SELECT 
          positions.symbol,
          positions.count,
@@ -83,3 +83,11 @@ AND      depot.positions_id=positions.id
 AND      positions.share_id=shares.id
 AND      positions.selling_date=""
 ORDER BY shares.name
+
+# apply splits and create new table adj_quotes
+CREATE TABLE adj_quotes AS SELECT * FROM quotes
+
+UPDATE   adj_quotes
+SET      close = close / 5
+WHERE    share_id = 35 AND
+         date < "2014-01-02"

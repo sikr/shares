@@ -1,10 +1,60 @@
 {
   "query": {
-    "count": 219,
-    "created": "2014-11-17T20:10:00Z",
+    "count": 221,
+    "created": "2014-11-22T15:23:04Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2014-11-21",
+          "Open": "4.65",
+          "High": "4.90",
+          "Low": "4.65",
+          "Close": "4.80",
+          "Volume": "4300",
+          "Adj_Close": "4.80"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2014-11-20",
+          "Open": "4.82",
+          "High": "4.82",
+          "Low": "4.66",
+          "Close": "4.66",
+          "Volume": "4300",
+          "Adj_Close": "4.66"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2014-11-19",
+          "Open": "4.64",
+          "High": "4.84",
+          "Low": "4.64",
+          "Close": "4.84",
+          "Volume": "200",
+          "Adj_Close": "4.84"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2014-11-18",
+          "Open": "4.53",
+          "High": "4.71",
+          "Low": "4.53",
+          "Close": "4.71",
+          "Volume": "6900",
+          "Adj_Close": "4.71"
+        },
+        {
+          "Symbol": "SMHN.F",
+          "Date": "2014-11-17",
+          "Open": "4.62",
+          "High": "4.62",
+          "Low": "4.57",
+          "Close": "4.58",
+          "Volume": "9300",
+          "Adj_Close": "4.58"
+        },
         {
           "Symbol": "SMHN.F",
           "Date": "2014-11-14",
@@ -254,36 +304,6 @@
           "Close": "4.31",
           "Volume": "4100",
           "Adj_Close": "4.31"
-        },
-        {
-          "Symbol": "SMHN.F",
-          "Date": "2014-10-06",
-          "Open": "4.49",
-          "High": "4.49",
-          "Low": "4.40",
-          "Close": "4.40",
-          "Volume": "20800",
-          "Adj_Close": "4.40"
-        },
-        {
-          "Symbol": "SMHN.F",
-          "Date": "2014-10-03",
-          "Open": "4.52",
-          "High": "4.52",
-          "Low": "4.52",
-          "Close": "4.52",
-          "Volume": "000",
-          "Adj_Close": "4.52"
-        },
-        {
-          "Symbol": "SMHN.F",
-          "Date": "2014-10-02",
-          "Open": "4.67",
-          "High": "4.76",
-          "Low": "4.40",
-          "Close": "4.52",
-          "Volume": "7400",
-          "Adj_Close": "4.52"
         },
         {
           "Symbol": "SMHN.F",

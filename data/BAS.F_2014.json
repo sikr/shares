@@ -1,10 +1,60 @@
 {
   "query": {
-    "count": 228,
-    "created": "2014-11-17T20:06:36Z",
+    "count": 233,
+    "created": "2014-11-22T15:25:34Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "BAS.F",
+          "Date": "2014-11-21",
+          "Open": "71.30",
+          "High": "74.09",
+          "Low": "71.20",
+          "Close": "73.42",
+          "Volume": "39100",
+          "Adj_Close": "73.42"
+        },
+        {
+          "Symbol": "BAS.F",
+          "Date": "2014-11-20",
+          "Open": "71.85",
+          "High": "71.85",
+          "Low": "70.05",
+          "Close": "71.09",
+          "Volume": "37900",
+          "Adj_Close": "71.09"
+        },
+        {
+          "Symbol": "BAS.F",
+          "Date": "2014-11-19",
+          "Open": "71.60",
+          "High": "71.93",
+          "Low": "70.57",
+          "Close": "71.65",
+          "Volume": "17100",
+          "Adj_Close": "71.65"
+        },
+        {
+          "Symbol": "BAS.F",
+          "Date": "2014-11-18",
+          "Open": "69.68",
+          "High": "71.80",
+          "Low": "69.65",
+          "Close": "71.65",
+          "Volume": "17400",
+          "Adj_Close": "71.65"
+        },
+        {
+          "Symbol": "BAS.F",
+          "Date": "2014-11-17",
+          "Open": "69.10",
+          "High": "69.75",
+          "Low": "68.50",
+          "Close": "69.70",
+          "Volume": "18100",
+          "Adj_Close": "69.70"
+        },
         {
           "Symbol": "BAS.F",
           "Date": "2014-11-14",

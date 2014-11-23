@@ -1,0 +1,32 @@
+[
+  {
+    "Symbol": "NOVC.F",
+    "Date": "2014-03-21",
+    "Dividend": "3.240000"
+  },
+  {
+    "Symbol": "NOVC.F",
+    "Date": "2014-01-02",
+    "Split": "5:1"
+  },
+  {
+    "Symbol": "NOVC.F",
+    "Date": "2013-03-21",
+    "Dividend": "12.960000"
+  },
+  {
+    "Symbol": "NOVC.F",
+    "Date": "2012-03-22",
+    "Dividend": "10.080000"
+  },
+  {
+    "Symbol": "NOVC.F",
+    "Date": "2011-03-24",
+    "Dividend": "7.200000"
+  },
+  {
+    "Symbol": "NOVC.F",
+    "Date": "2007-12-03",
+    "Split": "2:1"
+  }
+]

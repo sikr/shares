@@ -1,10 +1,60 @@
 {
   "query": {
-    "count": 228,
-    "created": "2014-11-17T20:08:06Z",
+    "count": 233,
+    "created": "2014-11-22T15:24:44Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-21",
+          "Open": "23.20",
+          "High": "23.40",
+          "Low": "22.85",
+          "Close": "22.85",
+          "Volume": "8200",
+          "Adj_Close": "22.85"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-20",
+          "Open": "23.11",
+          "High": "23.23",
+          "Low": "22.81",
+          "Close": "23.12",
+          "Volume": "6500",
+          "Adj_Close": "23.12"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-19",
+          "Open": "23.05",
+          "High": "23.20",
+          "Low": "22.84",
+          "Close": "23.08",
+          "Volume": "10000",
+          "Adj_Close": "23.08"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-18",
+          "Open": "22.45",
+          "High": "23.00",
+          "Low": "22.38",
+          "Close": "22.91",
+          "Volume": "25800",
+          "Adj_Close": "22.91"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-11-17",
+          "Open": "21.69",
+          "High": "22.50",
+          "Low": "21.61",
+          "Close": "22.50",
+          "Volume": "11600",
+          "Adj_Close": "22.50"
+        },
         {
           "Symbol": "FNTN.F",
           "Date": "2014-11-14",

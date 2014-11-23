@@ -1,10 +1,60 @@
 {
   "query": {
-    "count": 228,
-    "created": "2014-11-17T20:06:43Z",
+    "count": 233,
+    "created": "2014-11-22T15:25:29Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "BAYN.F",
+          "Date": "2014-11-21",
+          "Open": "113.95",
+          "High": "117.88",
+          "Low": "113.89",
+          "Close": "117.28",
+          "Volume": "11700",
+          "Adj_Close": "117.28"
+        },
+        {
+          "Symbol": "BAYN.F",
+          "Date": "2014-11-20",
+          "Open": "114.10",
+          "High": "114.18",
+          "Low": "112.61",
+          "Close": "113.91",
+          "Volume": "10200",
+          "Adj_Close": "113.91"
+        },
+        {
+          "Symbol": "BAYN.F",
+          "Date": "2014-11-19",
+          "Open": "113.30",
+          "High": "114.54",
+          "Low": "113.21",
+          "Close": "113.80",
+          "Volume": "5900",
+          "Adj_Close": "113.80"
+        },
+        {
+          "Symbol": "BAYN.F",
+          "Date": "2014-11-18",
+          "Open": "111.15",
+          "High": "113.36",
+          "Low": "111.06",
+          "Close": "113.25",
+          "Volume": "7000",
+          "Adj_Close": "113.25"
+        },
+        {
+          "Symbol": "BAYN.F",
+          "Date": "2014-11-17",
+          "Open": "109.30",
+          "High": "111.29",
+          "Low": "108.50",
+          "Close": "111.20",
+          "Volume": "4100",
+          "Adj_Close": "111.20"
+        },
         {
           "Symbol": "BAYN.F",
           "Date": "2014-11-14",

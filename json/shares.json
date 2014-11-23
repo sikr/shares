@@ -39,5 +39,11 @@
   {"id": "42", "symbol": "TFBF.F", "isin": "TH0016010017", "wkn": "878347", "name": "Kasikornbank PCL"},
   {"id": "43", "symbol": "LIN.F",  "isin": "DE0006483001", "wkn": "648300", "name": "Linde AG"},
   {"id": "44", "symbol": "NOT.F",  "isin": "CH0012005267", "wkn": "904278", "name": "Novartis AG"},
-  {"id": "45", "symbol": "SRT3.F", "isin": "DE0007165631", "wkn": "716563", "name": "Sartorius AG"}
+  {"id": "45", "symbol": "SRT3.F", "isin": "DE0007165631", "wkn": "716563", "name": "Sartorius AG"},
+
+  {"id": "46", "symbol": "ARL.F",  "isin": "DE0005408116", "wkn": "540811", "name": "Aareal Bank AG"},
+  {"id": "47", "symbol": "BSL.F",  "isin": "DE0005102008", "wkn": "510200", "name": "Basler AG"},
+  {"id": "48", "symbol": "HPBK.F", "isin": "DE000A0L1NN5", "wkn": "A0L1NN", "name": "Heliad Equity Partners GmbH & Co. KGaA"},
+  {"id": "49", "symbol": "IKB.F",  "isin": "DE0008063306", "wkn": "806330", "name": "IKB Deutsche Industriebank AG"},
+  {"id": "50", "symbol": "INN.F",  "isin": "NL0000303600", "wkn": "881111", "name": "ING Group NV"}
 ]

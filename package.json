@@ -12,6 +12,7 @@
     "request": "~2.44.0",
     "socket.io": "^1.2.0",
     "sqlite3": "~3.0.2",
-    "sqlite3-transactions": "0.0.5"
+    "sqlite3-transactions": "0.0.5",
+    "winston": "^0.8.3"
   }
 }

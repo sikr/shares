@@ -1,10 +1,60 @@
 {
   "query": {
-    "count": 228,
-    "created": "2014-11-17T20:06:16Z",
+    "count": 233,
+    "created": "2014-11-22T15:25:54Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "AG8.F",
+          "Date": "2014-11-21",
+          "Open": "32.79",
+          "High": "33.74",
+          "Low": "32.79",
+          "Close": "33.74",
+          "Volume": "000",
+          "Adj_Close": "33.74"
+        },
+        {
+          "Symbol": "AG8.F",
+          "Date": "2014-11-20",
+          "Open": "32.36",
+          "High": "32.54",
+          "Low": "32.36",
+          "Close": "32.54",
+          "Volume": "000",
+          "Adj_Close": "32.54"
+        },
+        {
+          "Symbol": "AG8.F",
+          "Date": "2014-11-19",
+          "Open": "32.41",
+          "High": "32.41",
+          "Low": "32.35",
+          "Close": "32.35",
+          "Volume": "000",
+          "Adj_Close": "32.35"
+        },
+        {
+          "Symbol": "AG8.F",
+          "Date": "2014-11-18",
+          "Open": "32.88",
+          "High": "32.88",
+          "Low": "32.43",
+          "Close": "32.56",
+          "Volume": "100",
+          "Adj_Close": "32.56"
+        },
+        {
+          "Symbol": "AG8.F",
+          "Date": "2014-11-17",
+          "Open": "32.85",
+          "High": "32.94",
+          "Low": "32.85",
+          "Close": "32.94",
+          "Volume": "100",
+          "Adj_Close": "32.94"
+        },
         {
           "Symbol": "AG8.F",
           "Date": "2014-11-14",

@@ -56,6 +56,12 @@ body {
 .ui-color-gray {
   color: #555;
 }
+.ui-color-unavailable {
+  color: #9D0006;
+}
+.ui-color-available {
+  color: #009D29;
+}
 .ui-toolbar {
   height: 50px;
   display: flex;
