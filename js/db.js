@@ -5,35 +5,13 @@
 var db;
 var fs                  = require('fs');
 var sqlite3             = require("sqlite3").verbose();
-var winston             = require('winston');
 var TransactionDatabase = require('sqlite3-transactions').TransactionDatabase;
+var log;
 
-var log = new (winston.Logger)({
-  levels: {
-    verbose: 1,
-    debug:   2,
-    info:    3,
-    data:    4,
-    warn:    5,
-    error:   6
-  },
-  colors: {
-    verbose: 'cyan',
-    debug:   'blue',
-    info:    'green',
-    data:    'grey',
-    warn:    'yellow',
-    error:   'red'
-  }
-});
 
-log.add(winston.transports.Console, {
-  level: 'debug',
-  prettyPrint: false,
-  colorize: true,
-  silent: false,
-  timestamp: false
-});
+exports.setLog = function(logger) {
+  log = logger;
+};
 
 exports.open = function(file) {
   db = new TransactionDatabase(
@@ -304,10 +282,11 @@ exports.getShare = function(symbol, callback) {
 
 exports.getSymbols = function(callback) {
   var stmt = db.prepare(
-    'SELECT   symbol       ' +
+    'SELECT   id,          ' +
+    '         symbol       ' +
     'FROM     shares       ' +
     'WHERE    symbol != "" ' *
-    'GROUP BY symbol       ');
+    'GROUP BY id, symbol   ');
   stmt.all(function (err, rows) {
     if (err) {
       log.error(err);
@@ -417,7 +396,7 @@ exports.dumpFiles = function(callback) {
           }
         }
         else {
-          log.error('No matching share for symbol %s', symbol);
+          log.error('No matching share for file %s', files[f]);
         }
       }
       //
@@ -446,6 +425,53 @@ exports.dumpFiles = function(callback) {
       log.info('total count: ' + totalCount);
     });
   });
+};
+
+exports.insertUpdate = function(symbols, data) {
+  var i;
+  var d;
+  var j;
+  var share_id;
+  var found;
+  var t = new Date();
+  var timestamp = new Date().toISOString().substr(0, 16) + ':00';
+
+  if (data && data.query && data.query.results && data.query.results.quote) {
+    d = data.query.results.quote;
+    db.beginTransaction(function (err, transaction) {
+      for (i = 0; i < d.length; i++) {
+        var stmt = transaction.prepare('INSERT INTO hourly_quotes VALUES (?,?,?,?,?,?,?,?,?,?,?)');
+        found = false;
+        for (j = 0; j < symbols.length && found === false; j++) {
+          if (symbols[j].symbol == d[i].symbol) {
+            share_id = symbols[j].id;
+            found = true;
+          }
+        }
+        stmt.run(
+          share_id,
+          timestamp,
+          d[i].Ask,
+          d[i].Bid,
+          d[i].Change,
+          d[i].Currency,
+          d[i].DaysLow,
+          d[i].DaysHigh,
+          d[i].LastTradeDate,
+          d[i].LastTradePriceOnly,
+          d[i].PreviousClose
+        );
+      }
+      transaction.commit(function (err) {
+        if (err) {
+          log.error('commit failed');
+        }
+        else {
+          log.info('commit successful');
+        }
+      });
+    });
+  }
 };
 
 

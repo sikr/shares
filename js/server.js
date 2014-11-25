@@ -8,65 +8,109 @@ var util    = require('util');
 var fs      = require('fs');
 var sqlite3 = require("sqlite3").verbose();
 var db      = require('./db');
-// var yql     = require('./yql');
+var yql     = require('./yql');
 var express = require('express');
 var app     = express();
 var server  = require('http').Server(app);
 var io      = require('socket.io')(server);
+var CronJob = require('cron').CronJob;
+var winston = require('winston');
+var log;
 
+var job = new CronJob({
+  // cronTime: '0 0/2 * * * *',
+  cronTime: '0 0 7-19 * * 1-5',
+  onTick:  function () {
+    var i;
+    var s = [];
+    log.info('update quotes');
+    db.getSymbols(function(symbols) {
+      for (i = 0; i < symbols.length; i++) {
+        if (symbols[i].symbol !== '' ) {
+          s.push(symbols[i].symbol);
+        }
+      }
+      yql.update(s.join(','), function (data) {
+        db.insertUpdate(symbols, data);
+      });
+    });
+  },
+  start: true
+});
 
 var databaseDir    = "../db/";
 var databaseFile   = "shares.sqlite";
 
-var tableDepots    = 'id            INTEGER,                  ' +
-                     'name          TEXT,                     ' +
-                     'description   TEXT,                     ' +
-                     'PRIMARY KEY   (name)                    ';
+var tableDepots =
+  'id            INTEGER,                  ' +
+  'name          TEXT,                     ' +
+  'description   TEXT,                     ' +
+  'PRIMARY KEY   (name)                    ';
 
-var tableDepot     = 'depot_id      INTEGER,                  ' +
-                     'positions_id,                           ' +
-                     'PRIMARY KEY   (depot_id, positions_id)  ';
+var tableDepot =
+  'depot_id      INTEGER,                  ' +
+  'positions_id,                           ' +
+  'PRIMARY KEY   (depot_id, positions_id)  ';
 
-var tableShares    = 'id            INTEGER,                  ' +
-                     'symbol        TEXT,                     ' +
-                     'isin          TEXT,                     ' +
-                     'wkn           TEXT,                     ' +
-                     'name          TEXT,                     ' +
-                     'PRIMARY KEY   (symbol, isin, wkn, name) ';
+var tableShares =
+  'id            INTEGER,                  ' +
+  'symbol        TEXT,                     ' +
+  'isin          TEXT,                     ' +
+  'wkn           TEXT,                     ' +
+  'name          TEXT,                     ' +
+  'PRIMARY KEY   (symbol, isin, wkn, name) ';
 
-var tablePositions = 'id            INTEGER,                  ' +
-                     'share_id      INTEGER,                  ' +
-                     'symbol        TEXT,                     ' +
-                     'exchange      TEXT,                     ' +
-                     'currency      TEXT,                     ' +
-                     'count         INTEGER,                  ' +
-                     'buying_price  REAL,                     ' +
-                     'buying_date   INTEGER,                  ' +
-                     'selling_price REAL,                     ' +
-                     'selling_date  INTEGER,                  ' +
-                     'PRIMARY KEY   (id, share_id, symbol)    ';
+var tablePositions =
+  'id            INTEGER,                  ' +
+  'share_id      INTEGER,                  ' +
+  'symbol        TEXT,                     ' +
+  'exchange      TEXT,                     ' +
+  'currency      TEXT,                     ' +
+  'count         INTEGER,                  ' +
+  'buying_price  REAL,                     ' +
+  'buying_date   INTEGER,                  ' +
+  'selling_price REAL,                     ' +
+  'selling_date  INTEGER,                  ' +
+  'PRIMARY KEY   (id, share_id, symbol)    ';
 
-var tableQuotes    = 'share_id      INTEGER,                  ' +
-                     'date          INTEGER,                  ' +
-                     'open          REAL,                     ' +
-                     'high          REAL,                     ' +
-                     'low           REAL,                     ' +
-                     'close         REAL,                     ' +
-                     'volume        INTEGER,                  ' +
-                     'adj_close     REAL,                     ' +
-                     'PRIMARY KEY   (share_id, date)          ';
+var tableQuotes =
+  'share_id      INTEGER,                  ' +
+  'date          INTEGER,                  ' +
+  'open          REAL,                     ' +
+  'high          REAL,                     ' +
+  'low           REAL,                     ' +
+  'close         REAL,                     ' +
+  'volume        INTEGER,                  ' +
+  'adj_close     REAL,                     ' +
+  'PRIMARY KEY   (share_id, date)          ';
 
-var tableDividends = 'share_id      INTEGER,                  ' +
-                     'symbol        TEXT,                     ' +
-                     'date          INTEGER,                  ' +
-                     'dividend      REAL,                     ' +
-                     'PRIMARY KEY   (share_id, symbol, date)  ';
+var tableHourlyQuotes =
+  'share_id              INTEGER,         ' +
+  'date                  INTEGER,         ' +
+  'ask                   REAL,            ' +
+  'bid                   REAL,            ' +
+  'change                REAL,            ' +
+  'currency              TEXT,            ' +
+  'days_low              REAL,            ' +
+  'days_high             REAL,            ' +
+  'last_trade_date       INTEGER,         ' +
+  'last_trade_price_only REAL,            ' +
+  'previous_close        REAL,            ' +
+  'PRIMARY KEY           (share_id, date) ';
 
-var tableSplits    = 'share_id      INTEGER,                  ' +
-                     'symbol        TEXT,                     ' +
-                     'date          INTEGER,                  ' +
-                     'ratio         TEXT,                     ' +
-                     'PRIMARY KEY   (share_id, symbol, date)  ';
+var tableDividends =
+  'share_id      INTEGER,                  ' +
+  'symbol        TEXT,                     ' +
+  'date          INTEGER,                  ' +
+  'dividend      REAL,                     ' +
+  'PRIMARY KEY   (share_id, symbol, date)  ';
+
+var tableSplits =
+  'share_id      INTEGER,                  ' +
+  'symbol        TEXT,                     ' +
+  'date          INTEGER,                  ' +
+  'ratio         TEXT,                     ' +
+  'PRIMARY KEY   (share_id, symbol, date)  ';
 
 var dataDepots    = require('../json/depots.json');
 var dataDepot     = require('../json/depot.json');
@@ -104,7 +148,44 @@ var databaseTables = [{'name': 'depots', 'sql': tableDepots, 'data': dataDepots}
                       {'name': 'dividends', 'sql': tableDividends, 'data': []},
                       {'name': 'splits', 'sql': tableSplits, 'data': []},
                       {'name': 'quotes', 'sql': tableQuotes, 'data': []},
-                      {'name': 'adj_quotes', 'sql': tableQuotes, 'data': []}];
+                      {'name': 'adj_quotes', 'sql': tableQuotes, 'data': []},
+                      {'name': 'hourly_quotes', 'sql': tableHourlyQuotes, 'data': []}];
+
+//
+// set up logging
+//
+function setUpLog() {
+  log = new (winston.Logger)({
+    levels: {
+      verbose: 1,
+      debug:   2,
+      info:    3,
+      data:    4,
+      warn:    5,
+      error:   6
+    },
+    colors: {
+      verbose: 'cyan',
+      debug:   'blue',
+      info:    'green',
+      data:    'grey',
+      warn:    'yellow',
+      error:   'red'
+    }
+  });
+  log.add(winston.transports.Console, {
+    level: 'debug',
+    prettyPrint: false,
+    colorize: true,
+    silent: false,
+    timestamp: false,
+    handleExceptions: true
+  });
+  log.add(winston.transports.File, {
+    filename: '../log/shares.log',
+    handleExceptions: true
+  });
+}
 
 function createDatebase() {
   console.time('Create Datebase');
@@ -128,7 +209,7 @@ function createDatebase() {
 function runServer() {
   app.use('/shares', express.static('../'));
   app.use(function (req, res, next) {
-    console.log('request:' + req.url);
+    log.info('request:' + req.url);
     next();
   });
   app.get('/depots', function (req, res) {
@@ -184,24 +265,27 @@ function runServer() {
   var dataServer = app.listen(7781, function () {
     var host = dataServer.address().address;
     var port = dataServer.address().port;
-    console.log('Example app listening at http://%s:%s', host, port);
+    log.info('Example app listening at http://%s:%s', host, port);
   });
 
   // http server for serving static content
   var httpServer = server.listen(7780, function () {
     var host = httpServer.address().address;
     var port = httpServer.address().port;
-    console.log('Example app listening at http://%s:%s', host, port);
+    log.info('Example app listening at http://%s:%s', host, port);
   });
 
   // websocket server
   io.on('connection', function (socket) {
-    console.log('websocket successfully connected');
+    log.info('websocket successfully connected');
     socket.on('disconnect', function () {
-      console.log('websocket disconnected');
+      log.info('websocket disconnected');
     });
   });
 }
+
+setUpLog();
+db.setLog(log);
 
 if (process.argv[2] == '-c' || process.argv[2] == '--create') {
   createDatebase();

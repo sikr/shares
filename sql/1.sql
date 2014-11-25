@@ -6,7 +6,7 @@ SELECT   shares.symbol AS symbol,
          quotes.date AS date,
          ROUND(SUM(quotes.close * positions.count), 2) AS sum
 FROM     depots, depot, positions, shares, quotes
-WHERE    depot.depot_id = 0 AND
+WHERE    depot.depot_id = 1 AND
          (positions.selling_date == "" OR quotes.date < positions.selling_date) AND
          quotes.date >= positions.buying_date AND
          quotes.share_id = shares.id AND

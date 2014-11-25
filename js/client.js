@@ -45,6 +45,7 @@ var getDepots = function(callback) {
 var getPositions = function(id, callback) {
   $.getJSON('http://' + location.hostname + ':7781/positions?id=' + id, function (data) {
     positions = data;
+    buildTable();
     var list = $('<ul class="positions-list"></ul');
     $('#positions').append(list);
     for (var i in positions) {
@@ -82,15 +83,36 @@ var getPositions = function(id, callback) {
   });
 };
 
+var buildTable = function() {
+  $('#panel-overview').empty();
+  var table = $('<table></table>');
+  var tr;
+  var td;
+  var div;
+  var i;
+  for (i = 0; i < positions.length; i++) {
+    tr = $('<tr></tr>').appendTo(table);
+    td = $('<td></td>').appendTo(tr);
+    div = $('<div>' + positions[i].count + '</div>').appendTo(td);
+
+    td = $('<td></td>').appendTo(tr);
+    div = $('<div>' + positions[i].name + '</div>').appendTo(td);
+  }
+  table.appendTo($('#panel-overview'));
+};
+
 var initUI = function() {
   var row;
   panel = new UIPanel('panel');
   panel.create('shares').appendTo($('body'));
+  panel.addPanel('center', 'panel-overview');
+  panel.addPanel('center', 'panel-chart');
   panel.addToolbarButton('left', 'options', '', 'fa-bars');
   // panel.addToolbarButton('right', 'settings', '', 'fa-cog');
   // panel.addToolbarButton('right', 'settings', '', 'fa-line-chart');
   panel.addToolbarButton('center', 'overview', 'Übersicht', '');
   panel.addToolbarButton('center', 'chart', 'Chart', '');
+
 
   row = $('<div class="row"></div').appendTo(panel.panelLeft);
   $('<label for="depots">Depots:</label>').appendTo(row);
@@ -110,6 +132,14 @@ var initUI = function() {
 
   $('#settings').click(function (e) {
     panel.toggle('right');
+  });
+
+  $('#overview').click(function () {
+    panel.showPanel('panel-overview');
+  });
+
+  $('#chart').click(function () {
+    panel.showPanel('panel-chart');
   });
 
   $('body').keydown(function (e) {
@@ -140,7 +170,7 @@ var createChart = function() {
   if (chart !== undefined) {
     chart.destroy();
   }
-  $('#shares-ui-panel-center').highcharts('StockChart', chartOptions);
+  $('#panel-chart').highcharts('StockChart', chartOptions);
   Highcharts.setOptions(highchartsOptions);
 }();
 

@@ -2,7 +2,7 @@ function UIPanel(name) {
 
   'use strict';
 
-  var that    = this;
+  var that = this;
 
   that.create = function (name) {
     this.panel = $('<div class="ui-panel"></div>')
@@ -28,9 +28,10 @@ function UIPanel(name) {
     this.panelLeft = $('<div class="ui-panel-left"></div>')
       .attr('id', name + '-ui-panel-left')
       .appendTo(this.panelMiddle);
-    this.panelCenter = $('<div class="ui-panel-center"></div>')
-      .attr('id', name + '-ui-panel-center')
-      .appendTo(this.panelMiddle);
+    this.panelCenter = [];
+    // this.panelCenter = $('<div class="ui-panel-center"></div>')
+    //   .attr('id', name + '-ui-panel-center')
+    //   .appendTo(this.panelMiddle);
     this.panelRight = $('<div class="ui-panel-right"></div>')
       .attr('id', name + '-ui-panel-right')
       .appendTo(this.panelMiddle);
@@ -38,6 +39,42 @@ function UIPanel(name) {
       .attr('id', name + '-ui-panel-bottom')
       .appendTo(this.panel);
     return this.panel;
+  };
+
+  that.addPanel = function(position, id) {
+    var panel;
+    switch (position) {
+      case 'top' :
+        break;
+      case 'left' :
+        break;
+      case 'center' :
+        panel = $('<div class="ui-panel-center"></div>')
+          .attr('id', id)
+          .appendTo(this.panelMiddle);
+        this.panelCenter.push(panel);
+        break;
+      case 'right' :
+        break;
+      case 'bottom' :
+        break;
+    }
+  };
+
+  that.showPanel = function(id) {
+    var i;
+    for (i = 0; i < this.panelCenter.length; i++) {
+      if (this.panelCenter[i].attr('id') === id) {
+        this.panelCenter[i].show();
+      }
+      else {
+        this.panelCenter[i].hide();
+      }
+    }
+  };
+
+  that.addToolbar = function(position, id) {
+    // ...
   };
 
   that.addToolbarButton = function(position, id, text, icon) {

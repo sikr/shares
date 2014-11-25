@@ -6,12 +6,8 @@
 var http = require('http');
 var fs   = require('fs');
 var util = require('util');
-var db   = require('./db');
 
-var databaseDir  = "../db/";
-var databaseFile = "shares.sqlite";
-
-function fetchQuotes(symbol, year) {
+exports.fetchQuotes = function(symbol, year) {
 
   var startDate = year + '-01-01';
   var endDate   = year + '-12-31';
@@ -50,9 +46,9 @@ function fetchQuotes(symbol, year) {
       fs.writeFile('../data/' + symbol + '_' + startDate.substr(0,4) + '.json', JSON.stringify(json, null, '  '));
     });
   }).end();
-}
+};
 
-function fetchDividendsAndSplits(symbol, year) {
+exports.fetchDividendsAndSplits = function(symbol, year) {
 
   var startDay = 0;
   var startMonth = 0;
@@ -115,9 +111,9 @@ function fetchDividendsAndSplits(symbol, year) {
       console.log(JSON.stringify(json));
     });
   }).end();
-}
+};
 
-function update(symbols) {
+exports.update = function(symbols, callback) {
 
   // concat select statement
   var select = util.format(
@@ -146,13 +142,14 @@ function update(symbols) {
     });
 
     response.on('end', function () {
-      var json = JSON.parse(str);
-      fs.appendFile('../data/update.json', JSON.stringify(json, null, '  '));
+      if (undefined !== callback) {
+        callback(JSON.parse(str));
+      }
     });
   }).end();
-}
+};
 
-function fetchAllQuotes(symbols, year) {
+exports.fetchAllQuotes = function(symbols, year) {
   var intervalId;
   var callFetch = function() {
     if (symbols.length > 0) {
@@ -166,9 +163,9 @@ function fetchAllQuotes(symbols, year) {
     }
   };
   intervalId = setInterval(callFetch, 5000);
-}
+};
 
-function fetchAllDividendsAndSplits(symbols, year) {
+exports.fetchAllDividendsAndSplits = function(symbols, year) {
   var intervalId;
   var callFetch = function() {
     if (symbols.length > 0) {
@@ -182,54 +179,54 @@ function fetchAllDividendsAndSplits(symbols, year) {
     }
   };
   intervalId = setInterval(callFetch, 5000);
-}
+};
 
 
-var symbol = "";
-var year = "";
-var symbols = "";
-var dividendsAndSplits;
+// var symbol = "";
+// var year = "";
+// var symbols = "";
+// var dividendsAndSplits;
 
-for (var i = 0; i < process.argv.length; i++) {
-  if (process.argv[i] == '-y') {
-    year = process.argv[++i];
-  }
-  else if (process.argv[i] == '-s') {
-    symbol = process.argv[++i];
-  }
-  else if (process.argv[i] == '-u') {
-    symbols = process.argv[++i];
-  }
-  else if (process.argv[i] == '-ds') {
-    dividendsAndSplits = true;
-  }
-}
-if (symbol.length && year.length) {
-  if (symbol.toUpperCase() === 'ALL') {
-    db.open(databaseDir + databaseFile);
-    if (dividendsAndSplits) {
-      db.getSymbols(function(symbols) {
-        fetchAllDividendsAndSplits(symbols, year);
-      });
-    }
-    else {
-      db.getSymbols(function(symbols) {
-        fetchAllQuotes(symbols, year);
-      });
-    }
-  }
-  else {
-    if (dividendsAndSplits) {
-      fetchDividendsAndSplits(symbol, year);
-    }
-    else {
-      fetchQuotes(symbol, year);
-    }
-  }
-}
-else if (symbols.length) {
-  update(symbols);
-}
+// for (var i = 0; i < process.argv.length; i++) {
+//   if (process.argv[i] == '-y') {
+//     year = process.argv[++i];
+//   }
+//   else if (process.argv[i] == '-s') {
+//     symbol = process.argv[++i];
+//   }
+//   else if (process.argv[i] == '-u') {
+//     symbols = process.argv[++i];
+//   }
+//   else if (process.argv[i] == '-ds') {
+//     dividendsAndSplits = true;
+//   }
+// }
+// if (symbol.length && year.length) {
+//   if (symbol.toUpperCase() === 'ALL') {
+//     db.open(databaseDir + databaseFile);
+//     if (dividendsAndSplits) {
+//       db.getSymbols(function(symbols) {
+//         fetchAllDividendsAndSplits(symbols, year);
+//       });
+//     }
+//     else {
+//       db.getSymbols(function(symbols) {
+//         fetchAllQuotes(symbols, year);
+//       });
+//     }
+//   }
+//   else {
+//     if (dividendsAndSplits) {
+//       fetchDividendsAndSplits(symbol, year);
+//     }
+//     else {
+//       fetchQuotes(symbol, year);
+//     }
+//   }
+// }
+// else if (symbols.length) {
+//   update(symbols);
+// }
 
 
 })();

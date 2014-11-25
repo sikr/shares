@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "Simon Kruska (SiKr)",
   "dependencies": {
+    "cron": "^1.0.5",
     "daemonize2": "^0.4.2",
     "express": "^4.9.7",
     "grunt-contrib-jshint": "~0.10.0",
