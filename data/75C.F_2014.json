@@ -1,10 +1,60 @@
 {
   "query": {
-    "count": 228,
-    "created": "2014-11-22T15:26:04Z",
+    "count": 231,
+    "created": "2014-11-30T19:27:11Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "75C.F",
+          "Date": "2014-11-28",
+          "Open": "3.37",
+          "High": "3.37",
+          "Low": "3.37",
+          "Close": "3.37",
+          "Volume": "000",
+          "Adj_Close": "3.37"
+        },
+        {
+          "Symbol": "75C.F",
+          "Date": "2014-11-27",
+          "Open": "3.35",
+          "High": "3.35",
+          "Low": "3.35",
+          "Close": "3.35",
+          "Volume": "000",
+          "Adj_Close": "3.35"
+        },
+        {
+          "Symbol": "75C.F",
+          "Date": "2014-11-26",
+          "Open": "3.29",
+          "High": "3.29",
+          "Low": "3.29",
+          "Close": "3.29",
+          "Volume": "000",
+          "Adj_Close": "3.29"
+        },
+        {
+          "Symbol": "75C.F",
+          "Date": "2014-11-25",
+          "Open": "3.16",
+          "High": "3.16",
+          "Low": "3.16",
+          "Close": "3.16",
+          "Volume": "000",
+          "Adj_Close": "3.16"
+        },
+        {
+          "Symbol": "75C.F",
+          "Date": "2014-11-24",
+          "Open": "3.17",
+          "High": "3.17",
+          "Low": "3.17",
+          "Close": "3.17",
+          "Volume": "400",
+          "Adj_Close": "3.17"
+        },
         {
           "Symbol": "75C.F",
           "Date": "2014-11-21",
@@ -294,26 +344,6 @@
           "Close": "2.72",
           "Volume": "000",
           "Adj_Close": "2.72"
-        },
-        {
-          "Symbol": "75C.F",
-          "Date": "2014-10-13",
-          "Open": "2.72",
-          "High": "2.72",
-          "Low": "2.72",
-          "Close": "2.72",
-          "Volume": "000",
-          "Adj_Close": "2.72"
-        },
-        {
-          "Symbol": "75C.F",
-          "Date": "2014-10-10",
-          "Open": "2.74",
-          "High": "2.74",
-          "Low": "2.74",
-          "Close": "2.74",
-          "Volume": "000",
-          "Adj_Close": "2.74"
         },
         {
           "Symbol": "75C.F",

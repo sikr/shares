@@ -155,7 +155,7 @@ exports.fetchAllQuotes = function(symbols, year) {
     if (symbols.length > 0) {
       var row = symbols.pop();
       if (row && row.symbol) {
-        fetchQuotes(row.symbol, year);
+        exports.fetchQuotes(row.symbol, year);
       }
     }
     else {
@@ -171,7 +171,7 @@ exports.fetchAllDividendsAndSplits = function(symbols, year) {
     if (symbols.length > 0) {
       var row = symbols.pop();
       if (row && row.symbol) {
-        fetchDividendsAndSplits(row.symbol, year);
+        exports.fetchDividendsAndSplits(row.symbol, year);
       }
     }
     else {
@@ -180,53 +180,6 @@ exports.fetchAllDividendsAndSplits = function(symbols, year) {
   };
   intervalId = setInterval(callFetch, 5000);
 };
-
-
-// var symbol = "";
-// var year = "";
-// var symbols = "";
-// var dividendsAndSplits;
-
-// for (var i = 0; i < process.argv.length; i++) {
-//   if (process.argv[i] == '-y') {
-//     year = process.argv[++i];
-//   }
-//   else if (process.argv[i] == '-s') {
-//     symbol = process.argv[++i];
-//   }
-//   else if (process.argv[i] == '-u') {
-//     symbols = process.argv[++i];
-//   }
-//   else if (process.argv[i] == '-ds') {
-//     dividendsAndSplits = true;
-//   }
-// }
-// if (symbol.length && year.length) {
-//   if (symbol.toUpperCase() === 'ALL') {
-//     db.open(databaseDir + databaseFile);
-//     if (dividendsAndSplits) {
-//       db.getSymbols(function(symbols) {
-//         fetchAllDividendsAndSplits(symbols, year);
-//       });
-//     }
-//     else {
-//       db.getSymbols(function(symbols) {
-//         fetchAllQuotes(symbols, year);
-//       });
-//     }
-//   }
-//   else {
-//     if (dividendsAndSplits) {
-//       fetchDividendsAndSplits(symbol, year);
-//     }
-//     else {
-//       fetchQuotes(symbol, year);
-//     }
-//   }
-// }
-// else if (symbols.length) {
-//   update(symbols);
-// }
 
 
 })();

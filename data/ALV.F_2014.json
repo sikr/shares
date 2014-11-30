@@ -1,10 +1,60 @@
 {
   "query": {
-    "count": 233,
-    "created": "2014-11-22T15:25:44Z",
+    "count": 238,
+    "created": "2014-11-30T19:27:51Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "ALV.F",
+          "Date": "2014-11-28",
+          "Open": "137.85",
+          "High": "139.07",
+          "Low": "137.42",
+          "Close": "138.10",
+          "Volume": "11800",
+          "Adj_Close": "138.10"
+        },
+        {
+          "Symbol": "ALV.F",
+          "Date": "2014-11-27",
+          "Open": "136.90",
+          "High": "138.29",
+          "Low": "136.61",
+          "Close": "137.62",
+          "Volume": "16700",
+          "Adj_Close": "137.62"
+        },
+        {
+          "Symbol": "ALV.F",
+          "Date": "2014-11-26",
+          "Open": "136.60",
+          "High": "137.27",
+          "Low": "136.30",
+          "Close": "136.75",
+          "Volume": "11700",
+          "Adj_Close": "136.75"
+        },
+        {
+          "Symbol": "ALV.F",
+          "Date": "2014-11-25",
+          "Open": "136.60",
+          "High": "137.00",
+          "Low": "135.82",
+          "Close": "136.55",
+          "Volume": "15700",
+          "Adj_Close": "136.55"
+        },
+        {
+          "Symbol": "ALV.F",
+          "Date": "2014-11-24",
+          "Open": "136.10",
+          "High": "137.18",
+          "Low": "135.60",
+          "Close": "136.45",
+          "Volume": "18800",
+          "Adj_Close": "136.45"
+        },
         {
           "Symbol": "ALV.F",
           "Date": "2014-11-21",

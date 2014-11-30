@@ -17,26 +17,12 @@ var CronJob = require('cron').CronJob;
 var winston = require('winston');
 var log;
 
-var job = new CronJob({
-  // cronTime: '0 * * * * *',
-  cronTime: '0 0 7-19 * * 1-5',
-  onTick:  function () {
-    var i;
-    var s = [];
-    log.info('update quotes');
-    db.getSymbols(function(symbols) {
-      for (i = 0; i < symbols.length; i++) {
-        if (symbols[i].symbol !== '' ) {
-          s.push(symbols[i].symbol);
-        }
-      }
-      yql.update(s.join(','), function (data) {
-        db.insertUpdate(symbols, data);
-      });
-    });
-  },
-  start: true
-});
+var symbol = "";
+var year = "";
+var dividendsAndSplits;
+var bCreate = false;
+var bServer = true;
+var bYQL = false;
 
 var databaseDir    = "../db/";
 var databaseFile   = "shares.sqlite";
@@ -175,7 +161,7 @@ function setUpLog() {
   });
   log.add(winston.transports.Console, {
     level: 'debug',
-    prettyPrint: false,
+    prettyPrint: true,
     colorize: true,
     silent: false,
     timestamp: false,
@@ -184,6 +170,32 @@ function setUpLog() {
   log.add(winston.transports.File, {
     filename: '../log/shares.log',
     handleExceptions: true
+  });
+}
+
+//
+// set up cron
+//
+function setUpCron() {
+  var job = new CronJob({
+    // cronTime: '0 * * * * *',
+    cronTime: '0 0 7-19 * * 1-5',
+    onTick:  function () {
+      var i;
+      var s = [];
+      log.info('update quotes');
+      db.getSymbols(function(symbols) {
+        for (i = 0; i < symbols.length; i++) {
+          if (symbols[i].symbol !== '' ) {
+            s.push(symbols[i].symbol);
+          }
+        }
+        yql.update(s.join(','), function (data) {
+          db.insertUpdate(symbols, data);
+        });
+      });
+    },
+    start: true
   });
 }
 
@@ -284,15 +296,68 @@ function runServer() {
   });
 }
 
+function parseArgs() {
+
+  for (var i = 0; i < process.argv.length; i++) {
+    if (process.argv[i] == '-c' || process.argv[2] == '--create') {
+      bCreate = true;
+      bServer = false;
+    }
+    else if (process.argv[i] == '-ds' || process.argv[i] == '--dividendsandsplits') {
+      dividendsAndSplits = true;
+      bYQL = true;
+      bServer = false;
+    }
+    else if (process.argv[i] == '-s' || process.argv[i] == '--symbol') {
+      symbol = process.argv[++i];
+      bYQL = true;
+      bServer = false;
+    }
+    if (process.argv[i] == '-y' || process.argv[i] == '--year') {
+      year = process.argv[++i];
+      bYQL = true;
+      bServer = false;
+    }
+  }
+}
+
 setUpLog();
 db.setLog(log);
+parseArgs();
 
-if (process.argv[2] == '-c' || process.argv[2] == '--create') {
+if (bCreate) {
   createDatebase();
 }
-else {
+else if (bYQL) {
+  if (symbol.length && year.length) {
+    if (symbol.toUpperCase() === 'ALL') {
+      db.open(databaseDir + databaseFile);
+      if (dividendsAndSplits) {
+        db.getSymbols(function(symbols) {
+          yql.fetchAllDividendsAndSplits(symbols, year);
+        });
+      }
+      else {
+        db.getSymbols(function(symbols) {
+          yql.fetchAllQuotes(symbols, year);
+        });
+      }
+    }
+    else {
+      if (dividendsAndSplits) {
+        yql.fetchDividendsAndSplits(symbol, year);
+      }
+      else {
+        yql.fetchQuotes(symbol, year);
+      }
+    }
+  }
+}
+else if (bServer) {
+  setUpCron();
   db.open(databaseDir + databaseFile);
   runServer();
 }
+
 
 })();
