@@ -433,10 +433,10 @@ exports.insertUpdate = function(symbols, data) {
   var j;
   var share_id;
   var found;
-  var t = new Date();
-  var timestamp = new Date().toISOString().substr(0, 16) + ':00';
+  var timestamp;
 
-  if (data && data.query && data.query.results && data.query.results.quote) {
+  if (data && data.query && data.query.created && data.query.results && data.query.results.quote) {
+    timestamp = data.query.created.substr(0, 17) + '00Z';
     d = data.query.results.quote;
     db.beginTransaction(function (err, transaction) {
       for (i = 0; i < d.length; i++) {

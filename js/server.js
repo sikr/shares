@@ -18,7 +18,7 @@ var winston = require('winston');
 var log;
 
 var job = new CronJob({
-  // cronTime: '0 0/2 * * * *',
+  // cronTime: '0 * * * * *',
   cronTime: '0 0 7-19 * * 1-5',
   onTick:  function () {
     var i;
