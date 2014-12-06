@@ -17,7 +17,7 @@ exports.open = function(file) {
   db = new TransactionDatabase(
     new sqlite3.Database(file, function (err) {
       if (null !== err) {
-        log.error('error opening database file: %s', JSON.stringiy(err));
+        log.error('error opening database file: %s', JSON.stringify(err));
       }
     })
   );
@@ -28,8 +28,10 @@ exports.clear = function(tables) {
     var table;
     var stmt;
     for (table in tables) {
-      stmt = db.prepare('DELETE FROM ' + tables[table].name);
-      stmt.run();
+      if (tables[table].clear === true) {
+        stmt = db.prepare('DELETE FROM ' + tables[table].name);
+        stmt.run();
+      }
     }
     stmt.finalize();
   });

@@ -1,0 +1,2 @@
+http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.historicaldata%20where%20symbol%20in%20(%22BSL.F%22)%20and%20st
+artDate%20%3D%20%222014-01-01%22%20and%20endDate%20%3D%20%222014-12-31%22&env=http://datatables.org/alltables.env&format=json

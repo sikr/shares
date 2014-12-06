@@ -1,10 +1,50 @@
 {
   "query": {
-    "count": 238,
-    "created": "2014-11-30T19:26:57Z",
+    "count": 242,
+    "created": "2014-12-06T09:41:47Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-05",
+          "Open": "153.28",
+          "High": "154.00",
+          "Low": "153.20",
+          "Close": "153.74",
+          "Volume": "1100",
+          "Adj_Close": "153.74"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-04",
+          "Open": "154.41",
+          "High": "155.00",
+          "Low": "153.25",
+          "Close": "154.30",
+          "Volume": "1200",
+          "Adj_Close": "154.30"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-03",
+          "Open": "152.46",
+          "High": "154.67",
+          "Low": "152.41",
+          "Close": "154.67",
+          "Volume": "800",
+          "Adj_Close": "154.67"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-02",
+          "Open": "152.35",
+          "High": "154.60",
+          "Low": "152.30",
+          "Close": "152.30",
+          "Volume": "900",
+          "Adj_Close": "152.30"
+        },
         {
           "Symbol": "LIN.F",
           "Date": "2014-11-28",

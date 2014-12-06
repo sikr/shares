@@ -142,8 +142,11 @@ exports.update = function(symbols, callback) {
     });
 
     response.on('end', function () {
+      var json = JSON.parse(str);
+      var timestamp = json.query.created.substr(0, 17) + '00Z';
+      fs.writeFile('../data/update_' + timestamp + ' .json', JSON.stringify(json, null, '  '));
       if (undefined !== callback) {
-        callback(JSON.parse(str));
+        callback(json);
       }
     });
   }).end();
@@ -151,7 +154,7 @@ exports.update = function(symbols, callback) {
 
 exports.fetchAllQuotes = function(symbols, year) {
   var intervalId;
-  var callFetch = function() {
+  var fetch = function() {
     if (symbols.length > 0) {
       var row = symbols.pop();
       if (row && row.symbol) {
@@ -162,12 +165,12 @@ exports.fetchAllQuotes = function(symbols, year) {
       clearInterval(intervalId);
     }
   };
-  intervalId = setInterval(callFetch, 5000);
+  intervalId = setInterval(fetch, 5000);
 };
 
 exports.fetchAllDividendsAndSplits = function(symbols, year) {
   var intervalId;
-  var callFetch = function() {
+  var fetch = function() {
     if (symbols.length > 0) {
       var row = symbols.pop();
       if (row && row.symbol) {
@@ -178,7 +181,7 @@ exports.fetchAllDividendsAndSplits = function(symbols, year) {
       clearInterval(intervalId);
     }
   };
-  intervalId = setInterval(callFetch, 5000);
+  intervalId = setInterval(fetch, 5000);
 };
 
 

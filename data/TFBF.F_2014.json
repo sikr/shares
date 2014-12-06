@@ -1,10 +1,50 @@
 {
   "query": {
-    "count": 238,
-    "created": "2014-11-30T19:27:01Z",
+    "count": 242,
+    "created": "2014-12-06T09:41:52Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-05",
+          "Open": "5.79",
+          "High": "5.79",
+          "Low": "5.79",
+          "Close": "5.79",
+          "Volume": "000",
+          "Adj_Close": "5.79"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-04",
+          "Open": "5.78",
+          "High": "5.79",
+          "Low": "5.78",
+          "Close": "5.79",
+          "Volume": "000",
+          "Adj_Close": "5.79"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-03",
+          "Open": "5.86",
+          "High": "5.86",
+          "Low": "5.86",
+          "Close": "5.86",
+          "Volume": "000",
+          "Adj_Close": "5.86"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-02",
+          "Open": "5.94",
+          "High": "5.94",
+          "Low": "5.94",
+          "Close": "5.94",
+          "Volume": "000",
+          "Adj_Close": "5.94"
+        },
         {
           "Symbol": "TFBF.F",
           "Date": "2014-11-28",

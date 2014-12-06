@@ -1,7 +1,7 @@
 {
   "query": {
-    "count": 231,
-    "created": "2014-11-30T19:27:11Z",
+    "count": 233,
+    "created": "2014-12-06T09:42:02Z",
     "lang": "en-US",
     "results": {
       "quote": [
@@ -344,6 +344,26 @@
           "Close": "2.72",
           "Volume": "000",
           "Adj_Close": "2.72"
+        },
+        {
+          "Symbol": "75C.F",
+          "Date": "2014-10-13",
+          "Open": "2.72",
+          "High": "2.72",
+          "Low": "2.72",
+          "Close": "2.72",
+          "Volume": "000",
+          "Adj_Close": "2.72"
+        },
+        {
+          "Symbol": "75C.F",
+          "Date": "2014-10-10",
+          "Open": "2.74",
+          "High": "2.74",
+          "Low": "2.74",
+          "Close": "2.74",
+          "Volume": "000",
+          "Adj_Close": "2.74"
         },
         {
           "Symbol": "75C.F",

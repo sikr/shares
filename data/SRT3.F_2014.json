@@ -1,10 +1,50 @@
 {
   "query": {
-    "count": 234,
-    "created": "2014-11-30T19:26:46Z",
+    "count": 238,
+    "created": "2014-12-06T09:41:37Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "SRT3.F",
+          "Date": "2014-12-05",
+          "Open": "98.50",
+          "High": "99.05",
+          "Low": "98.50",
+          "Close": "99.05",
+          "Volume": "100",
+          "Adj_Close": "99.05"
+        },
+        {
+          "Symbol": "SRT3.F",
+          "Date": "2014-12-04",
+          "Open": "98.39",
+          "High": "100.96",
+          "Low": "98.39",
+          "Close": "99.88",
+          "Volume": "000",
+          "Adj_Close": "99.88"
+        },
+        {
+          "Symbol": "SRT3.F",
+          "Date": "2014-12-03",
+          "Open": "95.48",
+          "High": "100.05",
+          "Low": "95.48",
+          "Close": "100.05",
+          "Volume": "100",
+          "Adj_Close": "100.05"
+        },
+        {
+          "Symbol": "SRT3.F",
+          "Date": "2014-12-02",
+          "Open": "93.30",
+          "High": "94.89",
+          "Low": "93.30",
+          "Close": "94.89",
+          "Volume": "000",
+          "Adj_Close": "94.89"
+        },
         {
           "Symbol": "SRT3.F",
           "Date": "2014-11-28",

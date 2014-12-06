@@ -15,6 +15,7 @@ var server  = require('http').Server(app);
 var io      = require('socket.io')(server);
 var CronJob = require('cron').CronJob;
 var winston = require('winston');
+var utils   = require('./utils');
 var log;
 
 var symbol = "";
@@ -127,15 +128,15 @@ if (fs.existsSync('../json/private_positions.json')) {
   dataPositions = tmp;
 }
 
-var databaseTables = [{'name': 'depots', 'sql': tableDepots, 'data': dataDepots},
-                      {'name': 'depot', 'sql': tableDepot, 'data': dataDepot},
-                      {'name': 'shares', 'sql': tableShares, 'data': dataShares},
-                      {'name': 'positions', 'sql': tablePositions, 'data': dataPositions},
-                      {'name': 'dividends', 'sql': tableDividends, 'data': []},
-                      {'name': 'splits', 'sql': tableSplits, 'data': []},
-                      {'name': 'quotes', 'sql': tableQuotes, 'data': []},
-                      {'name': 'adj_quotes', 'sql': tableQuotes, 'data': []},
-                      {'name': 'hourly_quotes', 'sql': tableHourlyQuotes, 'data': []}];
+var databaseTables = [{'name': 'depots', 'sql': tableDepots, 'data': dataDepots, 'clear': true},
+                      {'name': 'depot', 'sql': tableDepot, 'data': dataDepot, 'clear': true},
+                      {'name': 'shares', 'sql': tableShares, 'data': dataShares, 'clear': true},
+                      {'name': 'positions', 'sql': tablePositions, 'data': dataPositions, 'clear': true},
+                      {'name': 'dividends', 'sql': tableDividends, 'data': [], 'clear': true},
+                      {'name': 'splits', 'sql': tableSplits, 'data': [], 'clear': true},
+                      {'name': 'quotes', 'sql': tableQuotes, 'data': [], 'clear': true},
+                      {'name': 'adj_quotes', 'sql': tableQuotes, 'data': [], 'clear': true},
+                      {'name': 'hourly_quotes', 'sql': tableHourlyQuotes, 'data': [], 'clear': false}];
 
 //
 // set up logging
@@ -165,11 +166,14 @@ function setUpLog() {
     colorize: true,
     silent: false,
     timestamp: false,
+    json: false,
     handleExceptions: true
   });
   log.add(winston.transports.File, {
     filename: '../log/shares.log',
-    handleExceptions: true
+    timestamp:  function() { return utils.getPrettyDate(); },
+    handleExceptions: true,
+    json: false
   });
 }
 
@@ -277,23 +281,24 @@ function runServer() {
   var dataServer = app.listen(7781, function () {
     var host = dataServer.address().address;
     var port = dataServer.address().port;
-    log.info('Example app listening at http://%s:%s', host, port);
+    log.info('DB query server listening at http://%s:%s', host, port);
   });
 
   // http server for serving static content
   var httpServer = server.listen(7780, function () {
     var host = httpServer.address().address;
     var port = httpServer.address().port;
-    log.info('Example app listening at http://%s:%s', host, port);
+    log.info('HTTP server listening at http://%s:%s', host, port);
   });
 
   // websocket server
   io.on('connection', function (socket) {
-    log.info('websocket successfully connected');
-    socket.on('disconnect', function () {
-      log.info('websocket disconnected');
+    log.info('websocket: %s successfully connected', socket.handshake.address);
+    socket.on('disconnect', function (socket) {
+      log.info('websocket: %s disconnected', this.handshake.address);
     });
   });
+  log.info('**** shares Server up and operational');
 }
 
 function parseArgs() {
