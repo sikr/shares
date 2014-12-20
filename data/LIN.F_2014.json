@@ -1,10 +1,110 @@
 {
   "query": {
-    "count": 242,
-    "created": "2014-12-06T09:41:47Z",
+    "count": 253,
+    "created": "2014-12-20T09:44:34Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-19",
+          "Open": "152.33",
+          "High": "153.00",
+          "Low": "150.90",
+          "Close": "152.13",
+          "Volume": "600",
+          "Adj_Close": "152.13"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-18",
+          "Open": "149.90",
+          "High": "151.30",
+          "Low": "149.90",
+          "Close": "151.30",
+          "Volume": "1300",
+          "Adj_Close": "151.30"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-17",
+          "Open": "147.21",
+          "High": "149.41",
+          "Low": "147.10",
+          "Close": "149.04",
+          "Volume": "5100",
+          "Adj_Close": "149.04"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-16",
+          "Open": "144.65",
+          "High": "148.59",
+          "Low": "143.50",
+          "Close": "148.38",
+          "Volume": "5600",
+          "Adj_Close": "148.38"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-15",
+          "Open": "147.86",
+          "High": "148.70",
+          "Low": "143.96",
+          "Close": "144.85",
+          "Volume": "3600",
+          "Adj_Close": "144.85"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-12",
+          "Open": "150.63",
+          "High": "150.63",
+          "Low": "147.35",
+          "Close": "148.39",
+          "Volume": "3100",
+          "Adj_Close": "148.39"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-11",
+          "Open": "151.59",
+          "High": "152.15",
+          "Low": "150.94",
+          "Close": "151.62",
+          "Volume": "1100",
+          "Adj_Close": "151.62"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-10",
+          "Open": "152.47",
+          "High": "153.60",
+          "Low": "152.47",
+          "Close": "152.60",
+          "Volume": "600",
+          "Adj_Close": "152.60"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-09",
+          "Open": "152.35",
+          "High": "153.25",
+          "Low": "151.50",
+          "Close": "151.50",
+          "Volume": "900",
+          "Adj_Close": "151.50"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-08",
+          "Open": "153.70",
+          "High": "154.10",
+          "Low": "152.45",
+          "Close": "153.27",
+          "Volume": "300",
+          "Adj_Close": "153.27"
+        },
         {
           "Symbol": "LIN.F",
           "Date": "2014-12-05",
@@ -44,6 +144,16 @@
           "Close": "152.30",
           "Volume": "900",
           "Adj_Close": "152.30"
+        },
+        {
+          "Symbol": "LIN.F",
+          "Date": "2014-12-01",
+          "Open": "151.00",
+          "High": "152.60",
+          "Low": "150.47",
+          "Close": "151.95",
+          "Volume": "500",
+          "Adj_Close": "151.95"
         },
         {
           "Symbol": "LIN.F",
