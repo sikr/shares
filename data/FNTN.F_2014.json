@@ -1,10 +1,90 @@
 {
   "query": {
-    "count": 253,
-    "created": "2014-12-20T09:45:19Z",
+    "count": 261,
+    "created": "2015-02-07T10:51:19Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-12-31",
+          "Open": "23.62",
+          "High": "23.62",
+          "Low": "23.62",
+          "Close": "23.62",
+          "Volume": "000",
+          "Adj_Close": "23.62"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-12-30",
+          "Open": "23.75",
+          "High": "23.77",
+          "Low": "23.60",
+          "Close": "23.62",
+          "Volume": "2800",
+          "Adj_Close": "23.62"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-12-29",
+          "Open": "23.90",
+          "High": "23.90",
+          "Low": "23.60",
+          "Close": "23.84",
+          "Volume": "5500",
+          "Adj_Close": "23.84"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-12-26",
+          "Open": "23.81",
+          "High": "23.81",
+          "Low": "23.81",
+          "Close": "23.81",
+          "Volume": "000",
+          "Adj_Close": "23.81"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-12-25",
+          "Open": "23.81",
+          "High": "23.81",
+          "Low": "23.81",
+          "Close": "23.81",
+          "Volume": "000",
+          "Adj_Close": "23.81"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-12-24",
+          "Open": "23.81",
+          "High": "23.81",
+          "Low": "23.81",
+          "Close": "23.81",
+          "Volume": "000",
+          "Adj_Close": "23.81"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-12-23",
+          "Open": "23.64",
+          "High": "23.91",
+          "Low": "23.64",
+          "Close": "23.81",
+          "Volume": "5600",
+          "Adj_Close": "23.81"
+        },
+        {
+          "Symbol": "FNTN.F",
+          "Date": "2014-12-22",
+          "Open": "23.56",
+          "High": "23.77",
+          "Low": "23.45",
+          "Close": "23.73",
+          "Volume": "6100",
+          "Adj_Close": "23.73"
+        },
         {
           "Symbol": "FNTN.F",
           "Date": "2014-12-19",
@@ -1593,7 +1673,7 @@
           "Low": "23.40",
           "Close": "23.89",
           "Volume": "36400",
-          "Adj_Close": "22.80"
+          "Adj_Close": "22.43"
         },
         {
           "Symbol": "FNTN.F",
@@ -1603,7 +1683,7 @@
           "Low": "24.26",
           "Close": "24.69",
           "Volume": "59400",
-          "Adj_Close": "23.57"
+          "Adj_Close": "23.19"
         },
         {
           "Symbol": "FNTN.F",
@@ -1613,7 +1693,7 @@
           "Low": "23.27",
           "Close": "24.40",
           "Volume": "17300",
-          "Adj_Close": "23.29"
+          "Adj_Close": "22.92"
         },
         {
           "Symbol": "FNTN.F",
@@ -1623,7 +1703,7 @@
           "Low": "22.90",
           "Close": "23.57",
           "Volume": "48500",
-          "Adj_Close": "22.50"
+          "Adj_Close": "22.14"
         },
         {
           "Symbol": "FNTN.F",
@@ -1633,7 +1713,7 @@
           "Low": "24.40",
           "Close": "24.65",
           "Volume": "33900",
-          "Adj_Close": "23.53"
+          "Adj_Close": "23.15"
         },
         {
           "Symbol": "FNTN.F",
@@ -1643,7 +1723,7 @@
           "Low": "25.18",
           "Close": "25.30",
           "Volume": "8700",
-          "Adj_Close": "24.15"
+          "Adj_Close": "23.76"
         },
         {
           "Symbol": "FNTN.F",
@@ -1653,7 +1733,7 @@
           "Low": "25.15",
           "Close": "25.55",
           "Volume": "19000",
-          "Adj_Close": "24.39"
+          "Adj_Close": "24.00"
         },
         {
           "Symbol": "FNTN.F",
@@ -1663,7 +1743,7 @@
           "Low": "25.08",
           "Close": "25.30",
           "Volume": "18200",
-          "Adj_Close": "24.15"
+          "Adj_Close": "23.76"
         },
         {
           "Symbol": "FNTN.F",
@@ -1673,7 +1753,7 @@
           "Low": "24.92",
           "Close": "24.92",
           "Volume": "000",
-          "Adj_Close": "23.78"
+          "Adj_Close": "23.41"
         },
         {
           "Symbol": "FNTN.F",
@@ -1683,7 +1763,7 @@
           "Low": "24.65",
           "Close": "24.92",
           "Volume": "9100",
-          "Adj_Close": "23.78"
+          "Adj_Close": "23.41"
         },
         {
           "Symbol": "FNTN.F",
@@ -1693,7 +1773,7 @@
           "Low": "24.27",
           "Close": "24.73",
           "Volume": "3800",
-          "Adj_Close": "23.60"
+          "Adj_Close": "23.22"
         },
         {
           "Symbol": "FNTN.F",
@@ -1703,7 +1783,7 @@
           "Low": "24.10",
           "Close": "24.10",
           "Volume": "8700",
-          "Adj_Close": "23.00"
+          "Adj_Close": "22.64"
         },
         {
           "Symbol": "FNTN.F",
@@ -1713,7 +1793,7 @@
           "Low": "24.03",
           "Close": "24.30",
           "Volume": "9600",
-          "Adj_Close": "23.19"
+          "Adj_Close": "22.82"
         },
         {
           "Symbol": "FNTN.F",
@@ -1723,7 +1803,7 @@
           "Low": "24.35",
           "Close": "24.59",
           "Volume": "13000",
-          "Adj_Close": "23.47"
+          "Adj_Close": "23.10"
         },
         {
           "Symbol": "FNTN.F",
@@ -1733,7 +1813,7 @@
           "Low": "24.43",
           "Close": "24.58",
           "Volume": "3000",
-          "Adj_Close": "23.47"
+          "Adj_Close": "23.09"
         },
         {
           "Symbol": "FNTN.F",
@@ -1743,7 +1823,7 @@
           "Low": "24.35",
           "Close": "24.76",
           "Volume": "15200",
-          "Adj_Close": "23.64"
+          "Adj_Close": "23.26"
         },
         {
           "Symbol": "FNTN.F",
@@ -1753,7 +1833,7 @@
           "Low": "24.31",
           "Close": "24.31",
           "Volume": "000",
-          "Adj_Close": "23.20"
+          "Adj_Close": "22.83"
         },
         {
           "Symbol": "FNTN.F",
@@ -1763,7 +1843,7 @@
           "Low": "24.31",
           "Close": "24.31",
           "Volume": "000",
-          "Adj_Close": "23.20"
+          "Adj_Close": "22.83"
         },
         {
           "Symbol": "FNTN.F",
@@ -1773,7 +1853,7 @@
           "Low": "23.95",
           "Close": "24.31",
           "Volume": "9200",
-          "Adj_Close": "23.20"
+          "Adj_Close": "22.83"
         },
         {
           "Symbol": "FNTN.F",
@@ -1783,7 +1863,7 @@
           "Low": "23.67",
           "Close": "24.09",
           "Volume": "11900",
-          "Adj_Close": "22.99"
+          "Adj_Close": "22.63"
         },
         {
           "Symbol": "FNTN.F",
@@ -1793,7 +1873,7 @@
           "Low": "22.66",
           "Close": "23.10",
           "Volume": "38000",
-          "Adj_Close": "22.05"
+          "Adj_Close": "21.70"
         },
         {
           "Symbol": "FNTN.F",
@@ -1803,7 +1883,7 @@
           "Low": "23.66",
           "Close": "24.07",
           "Volume": "31500",
-          "Adj_Close": "22.97"
+          "Adj_Close": "22.61"
         },
         {
           "Symbol": "FNTN.F",
@@ -1813,7 +1893,7 @@
           "Low": "24.62",
           "Close": "24.82",
           "Volume": "7200",
-          "Adj_Close": "23.69"
+          "Adj_Close": "23.31"
         },
         {
           "Symbol": "FNTN.F",
@@ -1823,7 +1903,7 @@
           "Low": "24.90",
           "Close": "24.91",
           "Volume": "11800",
-          "Adj_Close": "23.77"
+          "Adj_Close": "23.39"
         },
         {
           "Symbol": "FNTN.F",
@@ -1833,7 +1913,7 @@
           "Low": "24.93",
           "Close": "25.32",
           "Volume": "12000",
-          "Adj_Close": "24.17"
+          "Adj_Close": "23.78"
         },
         {
           "Symbol": "FNTN.F",
@@ -1843,7 +1923,7 @@
           "Low": "24.65",
           "Close": "25.00",
           "Volume": "17300",
-          "Adj_Close": "23.86"
+          "Adj_Close": "23.48"
         },
         {
           "Symbol": "FNTN.F",
@@ -1853,7 +1933,7 @@
           "Low": "25.34",
           "Close": "25.37",
           "Volume": "11400",
-          "Adj_Close": "24.21"
+          "Adj_Close": "23.83"
         },
         {
           "Symbol": "FNTN.F",
@@ -1863,7 +1943,7 @@
           "Low": "25.54",
           "Close": "25.80",
           "Volume": "10200",
-          "Adj_Close": "24.62"
+          "Adj_Close": "24.23"
         },
         {
           "Symbol": "FNTN.F",
@@ -1873,7 +1953,7 @@
           "Low": "25.40",
           "Close": "25.59",
           "Volume": "6900",
-          "Adj_Close": "24.42"
+          "Adj_Close": "24.04"
         },
         {
           "Symbol": "FNTN.F",
@@ -1883,7 +1963,7 @@
           "Low": "25.52",
           "Close": "25.65",
           "Volume": "12800",
-          "Adj_Close": "24.48"
+          "Adj_Close": "24.09"
         },
         {
           "Symbol": "FNTN.F",
@@ -1893,7 +1973,7 @@
           "Low": "25.38",
           "Close": "25.70",
           "Volume": "10600",
-          "Adj_Close": "24.53"
+          "Adj_Close": "24.14"
         },
         {
           "Symbol": "FNTN.F",
@@ -1903,7 +1983,7 @@
           "Low": "25.25",
           "Close": "25.35",
           "Volume": "14800",
-          "Adj_Close": "24.20"
+          "Adj_Close": "23.81"
         },
         {
           "Symbol": "FNTN.F",
@@ -1913,7 +1993,7 @@
           "Low": "25.07",
           "Close": "25.23",
           "Volume": "7700",
-          "Adj_Close": "24.08"
+          "Adj_Close": "23.70"
         },
         {
           "Symbol": "FNTN.F",
@@ -1923,7 +2003,7 @@
           "Low": "24.96",
           "Close": "25.17",
           "Volume": "3000",
-          "Adj_Close": "24.02"
+          "Adj_Close": "23.64"
         },
         {
           "Symbol": "FNTN.F",
@@ -1933,7 +2013,7 @@
           "Low": "24.45",
           "Close": "25.01",
           "Volume": "23500",
-          "Adj_Close": "23.87"
+          "Adj_Close": "23.49"
         },
         {
           "Symbol": "FNTN.F",
@@ -1943,7 +2023,7 @@
           "Low": "24.14",
           "Close": "24.50",
           "Volume": "13500",
-          "Adj_Close": "23.38"
+          "Adj_Close": "23.01"
         },
         {
           "Symbol": "FNTN.F",
@@ -1953,7 +2033,7 @@
           "Low": "24.05",
           "Close": "24.28",
           "Volume": "4600",
-          "Adj_Close": "23.17"
+          "Adj_Close": "22.80"
         },
         {
           "Symbol": "FNTN.F",
@@ -1963,7 +2043,7 @@
           "Low": "24.33",
           "Close": "24.42",
           "Volume": "10200",
-          "Adj_Close": "23.31"
+          "Adj_Close": "22.94"
         },
         {
           "Symbol": "FNTN.F",
@@ -1973,7 +2053,7 @@
           "Low": "23.80",
           "Close": "24.23",
           "Volume": "4100",
-          "Adj_Close": "23.13"
+          "Adj_Close": "22.76"
         },
         {
           "Symbol": "FNTN.F",
@@ -1983,7 +2063,7 @@
           "Low": "23.95",
           "Close": "24.21",
           "Volume": "5600",
-          "Adj_Close": "23.11"
+          "Adj_Close": "22.74"
         },
         {
           "Symbol": "FNTN.F",
@@ -1993,7 +2073,7 @@
           "Low": "23.57",
           "Close": "23.95",
           "Volume": "9600",
-          "Adj_Close": "22.86"
+          "Adj_Close": "22.50"
         },
         {
           "Symbol": "FNTN.F",
@@ -2003,7 +2083,7 @@
           "Low": "23.14",
           "Close": "24.06",
           "Volume": "16500",
-          "Adj_Close": "22.96"
+          "Adj_Close": "22.60"
         },
         {
           "Symbol": "FNTN.F",
@@ -2013,7 +2093,7 @@
           "Low": "22.72",
           "Close": "23.24",
           "Volume": "39700",
-          "Adj_Close": "22.18"
+          "Adj_Close": "21.83"
         },
         {
           "Symbol": "FNTN.F",
@@ -2023,7 +2103,7 @@
           "Low": "23.14",
           "Close": "23.20",
           "Volume": "25100",
-          "Adj_Close": "22.14"
+          "Adj_Close": "21.79"
         },
         {
           "Symbol": "FNTN.F",
@@ -2033,7 +2113,7 @@
           "Low": "23.85",
           "Close": "23.96",
           "Volume": "4600",
-          "Adj_Close": "22.87"
+          "Adj_Close": "22.50"
         },
         {
           "Symbol": "FNTN.F",
@@ -2043,7 +2123,7 @@
           "Low": "23.90",
           "Close": "24.11",
           "Volume": "5000",
-          "Adj_Close": "23.01"
+          "Adj_Close": "22.64"
         },
         {
           "Symbol": "FNTN.F",
@@ -2053,7 +2133,7 @@
           "Low": "23.78",
           "Close": "23.92",
           "Volume": "11000",
-          "Adj_Close": "22.83"
+          "Adj_Close": "22.47"
         },
         {
           "Symbol": "FNTN.F",
@@ -2063,7 +2143,7 @@
           "Low": "23.90",
           "Close": "24.08",
           "Volume": "9600",
-          "Adj_Close": "22.98"
+          "Adj_Close": "22.62"
         },
         {
           "Symbol": "FNTN.F",
@@ -2073,7 +2153,7 @@
           "Low": "24.11",
           "Close": "24.39",
           "Volume": "3800",
-          "Adj_Close": "23.28"
+          "Adj_Close": "22.91"
         },
         {
           "Symbol": "FNTN.F",
@@ -2083,7 +2163,7 @@
           "Low": "24.12",
           "Close": "24.21",
           "Volume": "8000",
-          "Adj_Close": "23.11"
+          "Adj_Close": "22.74"
         },
         {
           "Symbol": "FNTN.F",
@@ -2093,7 +2173,7 @@
           "Low": "23.35",
           "Close": "24.44",
           "Volume": "24800",
-          "Adj_Close": "23.33"
+          "Adj_Close": "22.96"
         },
         {
           "Symbol": "FNTN.F",
@@ -2103,7 +2183,7 @@
           "Low": "23.15",
           "Close": "23.22",
           "Volume": "53600",
-          "Adj_Close": "22.16"
+          "Adj_Close": "21.81"
         },
         {
           "Symbol": "FNTN.F",
@@ -2113,7 +2193,7 @@
           "Low": "23.93",
           "Close": "24.53",
           "Volume": "30300",
-          "Adj_Close": "23.41"
+          "Adj_Close": "23.04"
         },
         {
           "Symbol": "FNTN.F",
@@ -2123,7 +2203,7 @@
           "Low": "23.66",
           "Close": "23.87",
           "Volume": "11700",
-          "Adj_Close": "22.78"
+          "Adj_Close": "22.42"
         },
         {
           "Symbol": "FNTN.F",
@@ -2133,7 +2213,7 @@
           "Low": "24.15",
           "Close": "24.29",
           "Volume": "3200",
-          "Adj_Close": "23.18"
+          "Adj_Close": "22.82"
         },
         {
           "Symbol": "FNTN.F",
@@ -2143,7 +2223,7 @@
           "Low": "24.12",
           "Close": "24.26",
           "Volume": "9000",
-          "Adj_Close": "23.15"
+          "Adj_Close": "22.79"
         },
         {
           "Symbol": "FNTN.F",
@@ -2153,7 +2233,7 @@
           "Low": "23.85",
           "Close": "24.39",
           "Volume": "7300",
-          "Adj_Close": "23.28"
+          "Adj_Close": "22.91"
         },
         {
           "Symbol": "FNTN.F",
@@ -2163,7 +2243,7 @@
           "Low": "23.62",
           "Close": "23.95",
           "Volume": "7800",
-          "Adj_Close": "22.86"
+          "Adj_Close": "22.50"
         },
         {
           "Symbol": "FNTN.F",
@@ -2173,7 +2253,7 @@
           "Low": "22.93",
           "Close": "23.65",
           "Volume": "15300",
-          "Adj_Close": "22.57"
+          "Adj_Close": "22.22"
         },
         {
           "Symbol": "FNTN.F",
@@ -2183,7 +2263,7 @@
           "Low": "23.47",
           "Close": "23.80",
           "Volume": "11100",
-          "Adj_Close": "22.72"
+          "Adj_Close": "22.36"
         },
         {
           "Symbol": "FNTN.F",
@@ -2193,7 +2273,7 @@
           "Low": "23.35",
           "Close": "23.55",
           "Volume": "10400",
-          "Adj_Close": "22.48"
+          "Adj_Close": "22.12"
         },
         {
           "Symbol": "FNTN.F",
@@ -2203,7 +2283,7 @@
           "Low": "23.20",
           "Close": "23.39",
           "Volume": "12000",
-          "Adj_Close": "22.32"
+          "Adj_Close": "21.97"
         },
         {
           "Symbol": "FNTN.F",
@@ -2213,7 +2293,7 @@
           "Low": "23.07",
           "Close": "23.23",
           "Volume": "5300",
-          "Adj_Close": "22.17"
+          "Adj_Close": "21.82"
         },
         {
           "Symbol": "FNTN.F",
@@ -2223,7 +2303,7 @@
           "Low": "22.98",
           "Close": "23.12",
           "Volume": "5900",
-          "Adj_Close": "22.07"
+          "Adj_Close": "21.72"
         },
         {
           "Symbol": "FNTN.F",
@@ -2233,7 +2313,7 @@
           "Low": "22.84",
           "Close": "23.05",
           "Volume": "9400",
-          "Adj_Close": "22.00"
+          "Adj_Close": "21.65"
         },
         {
           "Symbol": "FNTN.F",
@@ -2243,7 +2323,7 @@
           "Low": "22.55",
           "Close": "22.84",
           "Volume": "12100",
-          "Adj_Close": "21.80"
+          "Adj_Close": "21.45"
         },
         {
           "Symbol": "FNTN.F",
@@ -2253,7 +2333,7 @@
           "Low": "22.53",
           "Close": "22.55",
           "Volume": "8600",
-          "Adj_Close": "21.52"
+          "Adj_Close": "21.18"
         },
         {
           "Symbol": "FNTN.F",
@@ -2263,7 +2343,7 @@
           "Low": "22.47",
           "Close": "22.67",
           "Volume": "12100",
-          "Adj_Close": "21.64"
+          "Adj_Close": "21.29"
         },
         {
           "Symbol": "FNTN.F",
@@ -2273,7 +2353,7 @@
           "Low": "21.94",
           "Close": "22.57",
           "Volume": "10800",
-          "Adj_Close": "21.54"
+          "Adj_Close": "21.20"
         },
         {
           "Symbol": "FNTN.F",
@@ -2283,7 +2363,7 @@
           "Low": "21.69",
           "Close": "21.88",
           "Volume": "10400",
-          "Adj_Close": "20.88"
+          "Adj_Close": "20.55"
         },
         {
           "Symbol": "FNTN.F",
@@ -2293,7 +2373,7 @@
           "Low": "21.50",
           "Close": "22.04",
           "Volume": "27100",
-          "Adj_Close": "21.04"
+          "Adj_Close": "20.70"
         },
         {
           "Symbol": "FNTN.F",
@@ -2303,7 +2383,7 @@
           "Low": "22.18",
           "Close": "22.22",
           "Volume": "9500",
-          "Adj_Close": "21.20"
+          "Adj_Close": "20.87"
         },
         {
           "Symbol": "FNTN.F",
@@ -2313,7 +2393,7 @@
           "Low": "22.17",
           "Close": "22.50",
           "Volume": "19400",
-          "Adj_Close": "21.48"
+          "Adj_Close": "21.13"
         },
         {
           "Symbol": "FNTN.F",
@@ -2323,7 +2403,7 @@
           "Low": "22.39",
           "Close": "22.73",
           "Volume": "13100",
-          "Adj_Close": "21.69"
+          "Adj_Close": "21.35"
         },
         {
           "Symbol": "FNTN.F",
@@ -2333,7 +2413,7 @@
           "Low": "22.45",
           "Close": "22.53",
           "Volume": "9400",
-          "Adj_Close": "21.50"
+          "Adj_Close": "21.16"
         },
         {
           "Symbol": "FNTN.F",
@@ -2343,7 +2423,7 @@
           "Low": "22.00",
           "Close": "22.70",
           "Volume": "12800",
-          "Adj_Close": "21.67"
+          "Adj_Close": "21.32"
         },
         {
           "Symbol": "FNTN.F",
@@ -2353,7 +2433,7 @@
           "Low": "21.37",
           "Close": "22.00",
           "Volume": "46600",
-          "Adj_Close": "21.00"
+          "Adj_Close": "20.66"
         },
         {
           "Symbol": "FNTN.F",
@@ -2363,7 +2443,7 @@
           "Low": "21.75",
           "Close": "21.86",
           "Volume": "33400",
-          "Adj_Close": "20.86"
+          "Adj_Close": "20.53"
         },
         {
           "Symbol": "FNTN.F",
@@ -2373,7 +2453,7 @@
           "Low": "22.77",
           "Close": "22.86",
           "Volume": "6200",
-          "Adj_Close": "21.82"
+          "Adj_Close": "21.47"
         },
         {
           "Symbol": "FNTN.F",
@@ -2383,7 +2463,7 @@
           "Low": "22.99",
           "Close": "23.02",
           "Volume": "12400",
-          "Adj_Close": "21.97"
+          "Adj_Close": "21.62"
         },
         {
           "Symbol": "FNTN.F",
@@ -2393,7 +2473,7 @@
           "Low": "22.91",
           "Close": "23.03",
           "Volume": "11000",
-          "Adj_Close": "21.99"
+          "Adj_Close": "21.64"
         },
         {
           "Symbol": "FNTN.F",
@@ -2403,7 +2483,7 @@
           "Low": "22.84",
           "Close": "23.02",
           "Volume": "11400",
-          "Adj_Close": "21.97"
+          "Adj_Close": "21.62"
         },
         {
           "Symbol": "FNTN.F",
@@ -2413,7 +2493,7 @@
           "Low": "22.80",
           "Close": "22.83",
           "Volume": "7600",
-          "Adj_Close": "21.79"
+          "Adj_Close": "21.44"
         },
         {
           "Symbol": "FNTN.F",
@@ -2423,7 +2503,7 @@
           "Low": "22.67",
           "Close": "22.78",
           "Volume": "15900",
-          "Adj_Close": "21.75"
+          "Adj_Close": "21.40"
         },
         {
           "Symbol": "FNTN.F",
@@ -2433,7 +2513,7 @@
           "Low": "22.34",
           "Close": "22.72",
           "Volume": "21100",
-          "Adj_Close": "21.69"
+          "Adj_Close": "21.34"
         },
         {
           "Symbol": "FNTN.F",
@@ -2443,7 +2523,7 @@
           "Low": "21.80",
           "Close": "22.26",
           "Volume": "12500",
-          "Adj_Close": "21.25"
+          "Adj_Close": "20.91"
         },
         {
           "Symbol": "FNTN.F",
@@ -2453,7 +2533,7 @@
           "Low": "21.95",
           "Close": "22.01",
           "Volume": "15000",
-          "Adj_Close": "21.01"
+          "Adj_Close": "20.67"
         },
         {
           "Symbol": "FNTN.F",
@@ -2463,7 +2543,7 @@
           "Low": "21.70",
           "Close": "22.03",
           "Volume": "17100",
-          "Adj_Close": "21.03"
+          "Adj_Close": "20.69"
         },
         {
           "Symbol": "FNTN.F",
@@ -2473,7 +2553,7 @@
           "Low": "21.55",
           "Close": "21.70",
           "Volume": "10000",
-          "Adj_Close": "20.71"
+          "Adj_Close": "20.38"
         },
         {
           "Symbol": "FNTN.F",
@@ -2483,7 +2563,7 @@
           "Low": "21.50",
           "Close": "21.70",
           "Volume": "39100",
-          "Adj_Close": "20.71"
+          "Adj_Close": "20.38"
         },
         {
           "Symbol": "FNTN.F",
@@ -2493,7 +2573,7 @@
           "Low": "21.90",
           "Close": "22.19",
           "Volume": "8800",
-          "Adj_Close": "21.18"
+          "Adj_Close": "20.84"
         },
         {
           "Symbol": "FNTN.F",
@@ -2503,7 +2583,7 @@
           "Low": "21.75",
           "Close": "21.93",
           "Volume": "11100",
-          "Adj_Close": "20.93"
+          "Adj_Close": "20.60"
         },
         {
           "Symbol": "FNTN.F",
@@ -2513,7 +2593,7 @@
           "Low": "21.49",
           "Close": "22.12",
           "Volume": "22900",
-          "Adj_Close": "21.11"
+          "Adj_Close": "20.78"
         },
         {
           "Symbol": "FNTN.F",
@@ -2523,7 +2603,7 @@
           "Low": "21.49",
           "Close": "21.61",
           "Volume": "16600",
-          "Adj_Close": "20.63"
+          "Adj_Close": "20.30"
         },
         {
           "Symbol": "FNTN.F",
@@ -2533,7 +2613,7 @@
           "Low": "21.72",
           "Close": "21.72",
           "Volume": "000",
-          "Adj_Close": "20.73"
+          "Adj_Close": "20.40"
         }
       ]
     }

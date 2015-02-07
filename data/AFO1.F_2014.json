@@ -1,10 +1,90 @@
 {
   "query": {
-    "count": 253,
-    "created": "2014-12-20T09:47:19Z",
+    "count": 261,
+    "created": "2015-02-07T10:53:18Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "AFO1.F",
+          "Date": "2014-12-31",
+          "Open": "40.90",
+          "High": "40.90",
+          "Low": "40.90",
+          "Close": "40.90",
+          "Volume": "000",
+          "Adj_Close": "40.90"
+        },
+        {
+          "Symbol": "AFO1.F",
+          "Date": "2014-12-30",
+          "Open": "41.15",
+          "High": "41.20",
+          "Low": "40.90",
+          "Close": "40.90",
+          "Volume": "300",
+          "Adj_Close": "40.90"
+        },
+        {
+          "Symbol": "AFO1.F",
+          "Date": "2014-12-29",
+          "Open": "41.15",
+          "High": "41.58",
+          "Low": "41.15",
+          "Close": "41.58",
+          "Volume": "200",
+          "Adj_Close": "41.58"
+        },
+        {
+          "Symbol": "AFO1.F",
+          "Date": "2014-12-26",
+          "Open": "40.82",
+          "High": "40.82",
+          "Low": "40.82",
+          "Close": "40.82",
+          "Volume": "000",
+          "Adj_Close": "40.82"
+        },
+        {
+          "Symbol": "AFO1.F",
+          "Date": "2014-12-25",
+          "Open": "40.82",
+          "High": "40.82",
+          "Low": "40.82",
+          "Close": "40.82",
+          "Volume": "000",
+          "Adj_Close": "40.82"
+        },
+        {
+          "Symbol": "AFO1.F",
+          "Date": "2014-12-24",
+          "Open": "40.82",
+          "High": "40.82",
+          "Low": "40.82",
+          "Close": "40.82",
+          "Volume": "000",
+          "Adj_Close": "40.82"
+        },
+        {
+          "Symbol": "AFO1.F",
+          "Date": "2014-12-23",
+          "Open": "40.82",
+          "High": "40.82",
+          "Low": "40.82",
+          "Close": "40.82",
+          "Volume": "000",
+          "Adj_Close": "40.82"
+        },
+        {
+          "Symbol": "AFO1.F",
+          "Date": "2014-12-22",
+          "Open": "40.79",
+          "High": "41.71",
+          "Low": "40.79",
+          "Close": "41.71",
+          "Volume": "500",
+          "Adj_Close": "41.71"
+        },
         {
           "Symbol": "AFO1.F",
           "Date": "2014-12-19",

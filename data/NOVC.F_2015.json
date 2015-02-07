@@ -1,0 +1,281 @@
+{
+  "query": {
+    "count": 27,
+    "created": "2015-02-07T11:13:52Z",
+    "lang": "en-US",
+    "results": {
+      "quote": [
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-02-06",
+          "Open": "38.10",
+          "High": "38.10",
+          "Low": "37.20",
+          "Close": "37.92",
+          "Volume": "12500",
+          "Adj_Close": "37.92"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-02-05",
+          "Open": "38.66",
+          "High": "39.08",
+          "Low": "38.00",
+          "Close": "38.49",
+          "Volume": "17800",
+          "Adj_Close": "38.49"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-02-04",
+          "Open": "39.67",
+          "High": "39.67",
+          "Low": "37.34",
+          "Close": "38.26",
+          "Volume": "26000",
+          "Adj_Close": "38.26"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-02-03",
+          "Open": "39.40",
+          "High": "39.80",
+          "Low": "38.60",
+          "Close": "39.01",
+          "Volume": "25500",
+          "Adj_Close": "39.01"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-02-02",
+          "Open": "40.30",
+          "High": "40.35",
+          "Low": "39.10",
+          "Close": "39.62",
+          "Volume": "10100",
+          "Adj_Close": "39.62"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-30",
+          "Open": "40.10",
+          "High": "41.34",
+          "Low": "39.55",
+          "Close": "39.98",
+          "Volume": "15900",
+          "Adj_Close": "39.98"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-29",
+          "Open": "40.58",
+          "High": "40.95",
+          "Low": "40.06",
+          "Close": "40.95",
+          "Volume": "31100",
+          "Adj_Close": "40.95"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-28",
+          "Open": "40.55",
+          "High": "40.55",
+          "Low": "39.79",
+          "Close": "40.50",
+          "Volume": "5100",
+          "Adj_Close": "40.50"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-27",
+          "Open": "40.20",
+          "High": "40.65",
+          "Low": "39.79",
+          "Close": "40.41",
+          "Volume": "8000",
+          "Adj_Close": "40.41"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-26",
+          "Open": "39.74",
+          "High": "40.79",
+          "Low": "38.96",
+          "Close": "40.79",
+          "Volume": "20500",
+          "Adj_Close": "40.79"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-23",
+          "Open": "39.21",
+          "High": "39.50",
+          "Low": "38.93",
+          "Close": "39.20",
+          "Volume": "13700",
+          "Adj_Close": "39.20"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-22",
+          "Open": "38.60",
+          "High": "39.23",
+          "Low": "37.76",
+          "Close": "39.10",
+          "Volume": "8300",
+          "Adj_Close": "39.10"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-21",
+          "Open": "39.00",
+          "High": "39.20",
+          "Low": "38.37",
+          "Close": "39.00",
+          "Volume": "10700",
+          "Adj_Close": "39.00"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-20",
+          "Open": "39.90",
+          "High": "39.90",
+          "Low": "38.90",
+          "Close": "39.00",
+          "Volume": "11600",
+          "Adj_Close": "39.00"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-19",
+          "Open": "38.42",
+          "High": "39.75",
+          "Low": "38.05",
+          "Close": "39.75",
+          "Volume": "25200",
+          "Adj_Close": "39.75"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-16",
+          "Open": "38.60",
+          "High": "38.60",
+          "Low": "37.70",
+          "Close": "38.15",
+          "Volume": "8800",
+          "Adj_Close": "38.15"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-15",
+          "Open": "36.99",
+          "High": "38.30",
+          "Low": "36.70",
+          "Close": "38.22",
+          "Volume": "7700",
+          "Adj_Close": "38.22"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-14",
+          "Open": "37.93",
+          "High": "37.93",
+          "Low": "37.19",
+          "Close": "37.20",
+          "Volume": "3600",
+          "Adj_Close": "37.20"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-13",
+          "Open": "37.51",
+          "High": "37.93",
+          "Low": "37.13",
+          "Close": "37.93",
+          "Volume": "5300",
+          "Adj_Close": "37.93"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-12",
+          "Open": "36.70",
+          "High": "37.27",
+          "Low": "36.50",
+          "Close": "37.27",
+          "Volume": "6700",
+          "Adj_Close": "37.27"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-09",
+          "Open": "36.70",
+          "High": "36.74",
+          "Low": "36.08",
+          "Close": "36.51",
+          "Volume": "7300",
+          "Adj_Close": "36.51"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-08",
+          "Open": "35.60",
+          "High": "36.88",
+          "Low": "35.60",
+          "Close": "36.70",
+          "Volume": "9200",
+          "Adj_Close": "36.70"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-07",
+          "Open": "35.56",
+          "High": "36.10",
+          "Low": "35.50",
+          "Close": "36.09",
+          "Volume": "4300",
+          "Adj_Close": "36.09"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-06",
+          "Open": "35.90",
+          "High": "35.90",
+          "Low": "35.35",
+          "Close": "35.76",
+          "Volume": "2900",
+          "Adj_Close": "35.76"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-05",
+          "Open": "35.19",
+          "High": "35.93",
+          "Low": "35.19",
+          "Close": "35.90",
+          "Volume": "5500",
+          "Adj_Close": "35.90"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-02",
+          "Open": "35.31",
+          "High": "35.75",
+          "Low": "35.03",
+          "Close": "35.03",
+          "Volume": "4800",
+          "Adj_Close": "35.03"
+        },
+        {
+          "Symbol": "NOVC.F",
+          "Date": "2015-01-01",
+          "Open": "35.44",
+          "High": "35.44",
+          "Low": "35.44",
+          "Close": "35.44",
+          "Volume": "000",
+          "Adj_Close": "35.44"
+        }
+      ]
+    }
+  }
+}

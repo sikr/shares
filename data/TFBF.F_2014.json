@@ -1,10 +1,90 @@
 {
   "query": {
-    "count": 253,
-    "created": "2014-12-20T09:44:39Z",
+    "count": 261,
+    "created": "2015-02-07T10:50:38Z",
     "lang": "en-US",
     "results": {
       "quote": [
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-31",
+          "Open": "5.60",
+          "High": "5.60",
+          "Low": "5.60",
+          "Close": "5.60",
+          "Volume": "000",
+          "Adj_Close": "5.60"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-30",
+          "Open": "5.60",
+          "High": "5.60",
+          "Low": "5.60",
+          "Close": "5.60",
+          "Volume": "200",
+          "Adj_Close": "5.60"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-29",
+          "Open": "5.64",
+          "High": "5.64",
+          "Low": "5.64",
+          "Close": "5.64",
+          "Volume": "000",
+          "Adj_Close": "5.64"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-26",
+          "Open": "5.80",
+          "High": "5.80",
+          "Low": "5.80",
+          "Close": "5.80",
+          "Volume": "000",
+          "Adj_Close": "5.80"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-25",
+          "Open": "5.80",
+          "High": "5.80",
+          "Low": "5.80",
+          "Close": "5.80",
+          "Volume": "000",
+          "Adj_Close": "5.80"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-24",
+          "Open": "5.80",
+          "High": "5.80",
+          "Low": "5.80",
+          "Close": "5.80",
+          "Volume": "000",
+          "Adj_Close": "5.80"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-23",
+          "Open": "5.80",
+          "High": "5.80",
+          "Low": "5.80",
+          "Close": "5.80",
+          "Volume": "300",
+          "Adj_Close": "5.80"
+        },
+        {
+          "Symbol": "TFBF.F",
+          "Date": "2014-12-22",
+          "Open": "5.91",
+          "High": "5.91",
+          "Low": "5.64",
+          "Close": "5.64",
+          "Volume": "3100",
+          "Adj_Close": "5.64"
+        },
         {
           "Symbol": "TFBF.F",
           "Date": "2014-12-19",
@@ -753,7 +833,7 @@
           "Low": "5.70",
           "Close": "5.75",
           "Volume": "9100",
-          "Adj_Close": "5.30"
+          "Adj_Close": "5.25"
         },
         {
           "Symbol": "TFBF.F",
@@ -763,7 +843,7 @@
           "Low": "5.55",
           "Close": "5.55",
           "Volume": "000",
-          "Adj_Close": "5.12"
+          "Adj_Close": "5.07"
         },
         {
           "Symbol": "TFBF.F",
@@ -773,7 +853,7 @@
           "Low": "5.49",
           "Close": "5.80",
           "Volume": "9700",
-          "Adj_Close": "5.35"
+          "Adj_Close": "5.29"
         },
         {
           "Symbol": "TFBF.F",
@@ -783,7 +863,7 @@
           "Low": "5.30",
           "Close": "5.32",
           "Volume": "400",
-          "Adj_Close": "4.90"
+          "Adj_Close": "4.86"
         },
         {
           "Symbol": "TFBF.F",
@@ -793,7 +873,7 @@
           "Low": "5.30",
           "Close": "5.30",
           "Volume": "1000",
-          "Adj_Close": "4.89"
+          "Adj_Close": "4.84"
         },
         {
           "Symbol": "TFBF.F",
@@ -803,7 +883,7 @@
           "Low": "5.30",
           "Close": "5.30",
           "Volume": "000",
-          "Adj_Close": "4.89"
+          "Adj_Close": "4.84"
         },
         {
           "Symbol": "TFBF.F",
@@ -813,7 +893,7 @@
           "Low": "5.30",
           "Close": "5.30",
           "Volume": "000",
-          "Adj_Close": "4.89"
+          "Adj_Close": "4.84"
         },
         {
           "Symbol": "TFBF.F",
@@ -823,7 +903,7 @@
           "Low": "5.27",
           "Close": "5.27",
           "Volume": "000",
-          "Adj_Close": "4.86"
+          "Adj_Close": "4.81"
         },
         {
           "Symbol": "TFBF.F",
@@ -833,7 +913,7 @@
           "Low": "5.24",
           "Close": "5.24",
           "Volume": "000",
-          "Adj_Close": "4.83"
+          "Adj_Close": "4.79"
         },
         {
           "Symbol": "TFBF.F",
@@ -843,7 +923,7 @@
           "Low": "5.15",
           "Close": "5.15",
           "Volume": "400",
-          "Adj_Close": "4.75"
+          "Adj_Close": "4.70"
         },
         {
           "Symbol": "TFBF.F",
@@ -853,7 +933,7 @@
           "Low": "5.20",
           "Close": "5.35",
           "Volume": "1300",
-          "Adj_Close": "4.93"
+          "Adj_Close": "4.88"
         },
         {
           "Symbol": "TFBF.F",
@@ -863,7 +943,7 @@
           "Low": "5.20",
           "Close": "5.20",
           "Volume": "1000",
-          "Adj_Close": "4.79"
+          "Adj_Close": "4.75"
         },
         {
           "Symbol": "TFBF.F",
@@ -873,7 +953,7 @@
           "Low": "5.17",
           "Close": "5.17",
           "Volume": "000",
-          "Adj_Close": "4.77"
+          "Adj_Close": "4.72"
         },
         {
           "Symbol": "TFBF.F",
@@ -883,7 +963,7 @@
           "Low": "5.19",
           "Close": "5.21",
           "Volume": "4200",
-          "Adj_Close": "4.80"
+          "Adj_Close": "4.76"
         },
         {
           "Symbol": "TFBF.F",
@@ -893,7 +973,7 @@
           "Low": "5.20",
           "Close": "5.20",
           "Volume": "500",
-          "Adj_Close": "4.79"
+          "Adj_Close": "4.75"
         },
         {
           "Symbol": "TFBF.F",
@@ -903,7 +983,7 @@
           "Low": "5.20",
           "Close": "5.20",
           "Volume": "000",
-          "Adj_Close": "4.79"
+          "Adj_Close": "4.75"
         },
         {
           "Symbol": "TFBF.F",
@@ -913,7 +993,7 @@
           "Low": "5.22",
           "Close": "5.22",
           "Volume": "000",
-          "Adj_Close": "4.81"
+          "Adj_Close": "4.77"
         },
         {
           "Symbol": "TFBF.F",
@@ -923,7 +1003,7 @@
           "Low": "5.25",
           "Close": "5.25",
           "Volume": "1000",
-          "Adj_Close": "4.84"
+          "Adj_Close": "4.79"
         },
         {
           "Symbol": "TFBF.F",
@@ -933,7 +1013,7 @@
           "Low": "5.20",
           "Close": "5.23",
           "Volume": "5000",
-          "Adj_Close": "4.82"
+          "Adj_Close": "4.78"
         },
         {
           "Symbol": "TFBF.F",
@@ -943,7 +1023,7 @@
           "Low": "5.03",
           "Close": "5.03",
           "Volume": "000",
-          "Adj_Close": "4.63"
+          "Adj_Close": "4.59"
         },
         {
           "Symbol": "TFBF.F",
@@ -953,7 +1033,7 @@
           "Low": "5.01",
           "Close": "5.02",
           "Volume": "1300",
-          "Adj_Close": "4.62"
+          "Adj_Close": "4.58"
         },
         {
           "Symbol": "TFBF.F",
@@ -963,7 +1043,7 @@
           "Low": "5.00",
           "Close": "5.01",
           "Volume": "1100",
-          "Adj_Close": "4.61"
+          "Adj_Close": "4.57"
         },
         {
           "Symbol": "TFBF.F",
@@ -973,7 +1053,7 @@
           "Low": "5.00",
           "Close": "5.02",
           "Volume": "1200",
-          "Adj_Close": "4.63"
+          "Adj_Close": "4.58"
         },
         {
           "Symbol": "TFBF.F",
@@ -983,7 +1063,7 @@
           "Low": "4.95",
           "Close": "4.95",
           "Volume": "000",
-          "Adj_Close": "4.56"
+          "Adj_Close": "4.52"
         },
         {
           "Symbol": "TFBF.F",
@@ -993,7 +1073,7 @@
           "Low": "4.91",
           "Close": "4.91",
           "Volume": "000",
-          "Adj_Close": "4.53"
+          "Adj_Close": "4.49"
         },
         {
           "Symbol": "TFBF.F",
@@ -1003,7 +1083,7 @@
           "Low": "4.88",
           "Close": "4.88",
           "Volume": "4000",
-          "Adj_Close": "4.50"
+          "Adj_Close": "4.46"
         },
         {
           "Symbol": "TFBF.F",
@@ -1013,7 +1093,7 @@
           "Low": "4.77",
           "Close": "4.90",
           "Volume": "500",
-          "Adj_Close": "4.52"
+          "Adj_Close": "4.47"
         },
         {
           "Symbol": "TFBF.F",
@@ -1023,7 +1103,7 @@
           "Low": "4.83",
           "Close": "4.83",
           "Volume": "000",
-          "Adj_Close": "4.45"
+          "Adj_Close": "4.41"
         },
         {
           "Symbol": "TFBF.F",
@@ -1033,7 +1113,7 @@
           "Low": "4.72",
           "Close": "4.72",
           "Volume": "000",
-          "Adj_Close": "4.36"
+          "Adj_Close": "4.31"
         },
         {
           "Symbol": "TFBF.F",
@@ -1043,7 +1123,7 @@
           "Low": "4.66",
           "Close": "4.66",
           "Volume": "4100",
-          "Adj_Close": "4.30"
+          "Adj_Close": "4.26"
         },
         {
           "Symbol": "TFBF.F",
@@ -1053,7 +1133,7 @@
           "Low": "4.91",
           "Close": "4.91",
           "Volume": "1000",
-          "Adj_Close": "4.53"
+          "Adj_Close": "4.48"
         },
         {
           "Symbol": "TFBF.F",
@@ -1063,7 +1143,7 @@
           "Low": "4.86",
           "Close": "4.86",
           "Volume": "000",
-          "Adj_Close": "4.48"
+          "Adj_Close": "4.44"
         },
         {
           "Symbol": "TFBF.F",
@@ -1073,7 +1153,7 @@
           "Low": "4.93",
           "Close": "4.93",
           "Volume": "2100",
-          "Adj_Close": "4.55"
+          "Adj_Close": "4.50"
         },
         {
           "Symbol": "TFBF.F",
@@ -1083,7 +1163,7 @@
           "Low": "4.95",
           "Close": "5.05",
           "Volume": "2700",
-          "Adj_Close": "4.65"
+          "Adj_Close": "4.61"
         },
         {
           "Symbol": "TFBF.F",
@@ -1093,7 +1173,7 @@
           "Low": "4.89",
           "Close": "5.00",
           "Volume": "5000",
-          "Adj_Close": "4.61"
+          "Adj_Close": "4.57"
         },
         {
           "Symbol": "TFBF.F",
@@ -1103,7 +1183,7 @@
           "Low": "4.87",
           "Close": "4.90",
           "Volume": "500",
-          "Adj_Close": "4.52"
+          "Adj_Close": "4.47"
         },
         {
           "Symbol": "TFBF.F",
@@ -1113,7 +1193,7 @@
           "Low": "4.82",
           "Close": "4.90",
           "Volume": "6700",
-          "Adj_Close": "4.52"
+          "Adj_Close": "4.47"
         },
         {
           "Symbol": "TFBF.F",
@@ -1123,7 +1203,7 @@
           "Low": "4.76",
           "Close": "4.76",
           "Volume": "000",
-          "Adj_Close": "4.39"
+          "Adj_Close": "4.35"
         },
         {
           "Symbol": "TFBF.F",
@@ -1133,7 +1213,7 @@
           "Low": "4.81",
           "Close": "4.81",
           "Volume": "000",
-          "Adj_Close": "4.43"
+          "Adj_Close": "4.39"
         },
         {
           "Symbol": "TFBF.F",
@@ -1143,7 +1223,7 @@
           "Low": "4.80",
           "Close": "4.80",
           "Volume": "000",
-          "Adj_Close": "4.42"
+          "Adj_Close": "4.38"
         },
         {
           "Symbol": "TFBF.F",
@@ -1153,7 +1233,7 @@
           "Low": "4.83",
           "Close": "4.83",
           "Volume": "3300",
-          "Adj_Close": "4.45"
+          "Adj_Close": "4.41"
         },
         {
           "Symbol": "TFBF.F",
@@ -1163,7 +1243,7 @@
           "Low": "4.80",
           "Close": "4.80",
           "Volume": "3000",
-          "Adj_Close": "4.43"
+          "Adj_Close": "4.38"
         },
         {
           "Symbol": "TFBF.F",
@@ -1173,7 +1253,7 @@
           "Low": "4.82",
           "Close": "4.82",
           "Volume": "000",
-          "Adj_Close": "4.44"
+          "Adj_Close": "4.40"
         },
         {
           "Symbol": "TFBF.F",
@@ -1183,7 +1263,7 @@
           "Low": "4.85",
           "Close": "4.85",
           "Volume": "3000",
-          "Adj_Close": "4.47"
+          "Adj_Close": "4.43"
         },
         {
           "Symbol": "TFBF.F",
@@ -1193,7 +1273,7 @@
           "Low": "4.82",
           "Close": "4.82",
           "Volume": "000",
-          "Adj_Close": "4.44"
+          "Adj_Close": "4.40"
         },
         {
           "Symbol": "TFBF.F",
@@ -1203,7 +1283,7 @@
           "Low": "4.82",
           "Close": "4.82",
           "Volume": "2700",
-          "Adj_Close": "4.44"
+          "Adj_Close": "4.40"
         },
         {
           "Symbol": "TFBF.F",
@@ -1213,7 +1293,7 @@
           "Low": "4.80",
           "Close": "4.90",
           "Volume": "12000",
-          "Adj_Close": "4.52"
+          "Adj_Close": "4.47"
         },
         {
           "Symbol": "TFBF.F",
@@ -1223,7 +1303,7 @@
           "Low": "4.76",
           "Close": "4.90",
           "Volume": "5200",
-          "Adj_Close": "4.52"
+          "Adj_Close": "4.47"
         },
         {
           "Symbol": "TFBF.F",
@@ -1233,7 +1313,7 @@
           "Low": "4.68",
           "Close": "4.70",
           "Volume": "2000",
-          "Adj_Close": "4.34"
+          "Adj_Close": "4.30"
         },
         {
           "Symbol": "TFBF.F",
@@ -1243,7 +1323,7 @@
           "Low": "4.53",
           "Close": "4.53",
           "Volume": "000",
-          "Adj_Close": "4.18"
+          "Adj_Close": "4.14"
         },
         {
           "Symbol": "TFBF.F",
@@ -1253,7 +1333,7 @@
           "Low": "4.53",
           "Close": "4.53",
           "Volume": "000",
-          "Adj_Close": "4.18"
+          "Adj_Close": "4.14"
         },
         {
           "Symbol": "TFBF.F",
@@ -1263,7 +1343,7 @@
           "Low": "4.53",
           "Close": "4.53",
           "Volume": "1000",
-          "Adj_Close": "4.18"
+          "Adj_Close": "4.14"
         },
         {
           "Symbol": "TFBF.F",
@@ -1273,7 +1353,7 @@
           "Low": "4.53",
           "Close": "4.53",
           "Volume": "100",
-          "Adj_Close": "4.18"
+          "Adj_Close": "4.14"
         },
         {
           "Symbol": "TFBF.F",
@@ -1283,7 +1363,7 @@
           "Low": "4.54",
           "Close": "4.54",
           "Volume": "000",
-          "Adj_Close": "4.18"
+          "Adj_Close": "4.15"
         },
         {
           "Symbol": "TFBF.F",
@@ -1293,7 +1373,7 @@
           "Low": "4.47",
           "Close": "4.47",
           "Volume": "000",
-          "Adj_Close": "4.12"
+          "Adj_Close": "4.08"
         },
         {
           "Symbol": "TFBF.F",
@@ -1303,7 +1383,7 @@
           "Low": "4.50",
           "Close": "4.65",
           "Volume": "000",
-          "Adj_Close": "4.29"
+          "Adj_Close": "4.24"
         },
         {
           "Symbol": "TFBF.F",
@@ -1313,7 +1393,7 @@
           "Low": "4.53",
           "Close": "4.65",
           "Volume": "100",
-          "Adj_Close": "4.29"
+          "Adj_Close": "4.24"
         },
         {
           "Symbol": "TFBF.F",
@@ -1323,7 +1403,7 @@
           "Low": "4.50",
           "Close": "4.50",
           "Volume": "000",
-          "Adj_Close": "4.15"
+          "Adj_Close": "4.11"
         },
         {
           "Symbol": "TFBF.F",
@@ -1333,7 +1413,7 @@
           "Low": "4.50",
           "Close": "4.50",
           "Volume": "1000",
-          "Adj_Close": "4.15"
+          "Adj_Close": "4.11"
         },
         {
           "Symbol": "TFBF.F",
@@ -1343,7 +1423,7 @@
           "Low": "4.50",
           "Close": "4.50",
           "Volume": "1000",
-          "Adj_Close": "4.15"
+          "Adj_Close": "4.11"
         },
         {
           "Symbol": "TFBF.F",
@@ -1353,7 +1433,7 @@
           "Low": "4.53",
           "Close": "4.53",
           "Volume": "800",
-          "Adj_Close": "4.18"
+          "Adj_Close": "4.14"
         },
         {
           "Symbol": "TFBF.F",
@@ -1363,7 +1443,7 @@
           "Low": "4.55",
           "Close": "4.55",
           "Volume": "000",
-          "Adj_Close": "4.19"
+          "Adj_Close": "4.15"
         },
         {
           "Symbol": "TFBF.F",
@@ -1373,7 +1453,7 @@
           "Low": "4.55",
           "Close": "4.55",
           "Volume": "000",
-          "Adj_Close": "4.19"
+          "Adj_Close": "4.16"
         },
         {
           "Symbol": "TFBF.F",
@@ -1383,7 +1463,7 @@
           "Low": "4.65",
           "Close": "4.65",
           "Volume": "200",
-          "Adj_Close": "4.29"
+          "Adj_Close": "4.24"
         },
         {
           "Symbol": "TFBF.F",
@@ -1393,7 +1473,7 @@
           "Low": "4.59",
           "Close": "4.59",
           "Volume": "000",
-          "Adj_Close": "4.23"
+          "Adj_Close": "4.19"
         },
         {
           "Symbol": "TFBF.F",
@@ -1403,7 +1483,7 @@
           "Low": "4.38",
           "Close": "4.42",
           "Volume": "000",
-          "Adj_Close": "4.08"
+          "Adj_Close": "4.04"
         },
         {
           "Symbol": "TFBF.F",
@@ -1413,7 +1493,7 @@
           "Low": "4.42",
           "Close": "4.42",
           "Volume": "2500",
-          "Adj_Close": "4.08"
+          "Adj_Close": "4.04"
         },
         {
           "Symbol": "TFBF.F",
@@ -1423,7 +1503,7 @@
           "Low": "4.38",
           "Close": "4.45",
           "Volume": "2200",
-          "Adj_Close": "4.10"
+          "Adj_Close": "4.06"
         },
         {
           "Symbol": "TFBF.F",
@@ -1433,7 +1513,7 @@
           "Low": "4.35",
           "Close": "4.35",
           "Volume": "000",
-          "Adj_Close": "4.01"
+          "Adj_Close": "3.97"
         },
         {
           "Symbol": "TFBF.F",
@@ -1443,7 +1523,7 @@
           "Low": "4.35",
           "Close": "4.35",
           "Volume": "000",
-          "Adj_Close": "4.01"
+          "Adj_Close": "3.97"
         },
         {
           "Symbol": "TFBF.F",
@@ -1453,7 +1533,7 @@
           "Low": "4.23",
           "Close": "4.23",
           "Volume": "800",
-          "Adj_Close": "3.90"
+          "Adj_Close": "3.86"
         },
         {
           "Symbol": "TFBF.F",
@@ -1463,7 +1543,7 @@
           "Low": "4.16",
           "Close": "4.16",
           "Volume": "000",
-          "Adj_Close": "3.83"
+          "Adj_Close": "3.80"
         },
         {
           "Symbol": "TFBF.F",
@@ -1473,7 +1553,7 @@
           "Low": "4.20",
           "Close": "4.20",
           "Volume": "000",
-          "Adj_Close": "3.87"
+          "Adj_Close": "3.83"
         },
         {
           "Symbol": "TFBF.F",
@@ -1483,7 +1563,7 @@
           "Low": "4.18",
           "Close": "4.18",
           "Volume": "000",
-          "Adj_Close": "3.85"
+          "Adj_Close": "3.82"
         },
         {
           "Symbol": "TFBF.F",
@@ -1493,7 +1573,7 @@
           "Low": "4.13",
           "Close": "4.13",
           "Volume": "000",
-          "Adj_Close": "3.81"
+          "Adj_Close": "3.77"
         },
         {
           "Symbol": "TFBF.F",
@@ -1503,7 +1583,7 @@
           "Low": "4.20",
           "Close": "4.20",
           "Volume": "1000",
-          "Adj_Close": "3.87"
+          "Adj_Close": "3.83"
         },
         {
           "Symbol": "TFBF.F",
@@ -1513,7 +1593,7 @@
           "Low": "4.20",
           "Close": "4.20",
           "Volume": "000",
-          "Adj_Close": "3.87"
+          "Adj_Close": "3.83"
         },
         {
           "Symbol": "TFBF.F",
@@ -1523,7 +1603,7 @@
           "Low": "4.32",
           "Close": "4.32",
           "Volume": "000",
-          "Adj_Close": "3.98"
+          "Adj_Close": "3.94"
         },
         {
           "Symbol": "TFBF.F",
@@ -1533,7 +1613,7 @@
           "Low": "4.23",
           "Close": "4.23",
           "Volume": "000",
-          "Adj_Close": "3.90"
+          "Adj_Close": "3.86"
         },
         {
           "Symbol": "TFBF.F",
@@ -1543,7 +1623,7 @@
           "Low": "4.26",
           "Close": "4.26",
           "Volume": "000",
-          "Adj_Close": "3.93"
+          "Adj_Close": "3.89"
         },
         {
           "Symbol": "TFBF.F",
@@ -1553,7 +1633,7 @@
           "Low": "4.32",
           "Close": "4.32",
           "Volume": "000",
-          "Adj_Close": "3.98"
+          "Adj_Close": "3.94"
         },
         {
           "Symbol": "TFBF.F",
@@ -1563,7 +1643,7 @@
           "Low": "4.29",
           "Close": "4.30",
           "Volume": "1000",
-          "Adj_Close": "3.96"
+          "Adj_Close": "3.92"
         },
         {
           "Symbol": "TFBF.F",
@@ -1573,7 +1653,7 @@
           "Low": "4.25",
           "Close": "4.25",
           "Volume": "500",
-          "Adj_Close": "3.92"
+          "Adj_Close": "3.88"
         },
         {
           "Symbol": "TFBF.F",
@@ -1583,7 +1663,7 @@
           "Low": "4.24",
           "Close": "4.24",
           "Volume": "1000",
-          "Adj_Close": "3.91"
+          "Adj_Close": "3.87"
         },
         {
           "Symbol": "TFBF.F",
@@ -1593,7 +1673,7 @@
           "Low": "4.14",
           "Close": "4.20",
           "Volume": "000",
-          "Adj_Close": "3.87"
+          "Adj_Close": "3.83"
         },
         {
           "Symbol": "TFBF.F",
@@ -1603,7 +1683,7 @@
           "Low": "4.17",
           "Close": "4.20",
           "Volume": "11200",
-          "Adj_Close": "3.87"
+          "Adj_Close": "3.83"
         },
         {
           "Symbol": "TFBF.F",
@@ -1613,7 +1693,7 @@
           "Low": "4.12",
           "Close": "4.12",
           "Volume": "000",
-          "Adj_Close": "3.80"
+          "Adj_Close": "3.76"
         },
         {
           "Symbol": "TFBF.F",
@@ -1623,7 +1703,7 @@
           "Low": "4.17",
           "Close": "4.17",
           "Volume": "000",
-          "Adj_Close": "3.84"
+          "Adj_Close": "3.81"
         },
         {
           "Symbol": "TFBF.F",
@@ -1633,7 +1713,7 @@
           "Low": "4.23",
           "Close": "4.23",
           "Volume": "000",
-          "Adj_Close": "3.90"
+          "Adj_Close": "3.86"
         },
         {
           "Symbol": "TFBF.F",
@@ -1643,7 +1723,7 @@
           "Low": "4.28",
           "Close": "4.28",
           "Volume": "2400",
-          "Adj_Close": "3.95"
+          "Adj_Close": "3.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -1653,7 +1733,7 @@
           "Low": "4.35",
           "Close": "4.35",
           "Volume": "000",
-          "Adj_Close": "4.01"
+          "Adj_Close": "3.97"
         },
         {
           "Symbol": "TFBF.F",
@@ -1663,7 +1743,7 @@
           "Low": "4.27",
           "Close": "4.27",
           "Volume": "000",
-          "Adj_Close": "3.94"
+          "Adj_Close": "3.90"
         },
         {
           "Symbol": "TFBF.F",
@@ -1673,7 +1753,7 @@
           "Low": "4.32",
           "Close": "4.32",
           "Volume": "000",
-          "Adj_Close": "3.98"
+          "Adj_Close": "3.94"
         },
         {
           "Symbol": "TFBF.F",
@@ -1683,7 +1763,7 @@
           "Low": "4.32",
           "Close": "4.32",
           "Volume": "000",
-          "Adj_Close": "3.98"
+          "Adj_Close": "3.94"
         },
         {
           "Symbol": "TFBF.F",
@@ -1693,7 +1773,7 @@
           "Low": "4.28",
           "Close": "4.31",
           "Volume": "5300",
-          "Adj_Close": "3.97"
+          "Adj_Close": "3.94"
         },
         {
           "Symbol": "TFBF.F",
@@ -1703,7 +1783,7 @@
           "Low": "4.35",
           "Close": "4.35",
           "Volume": "000",
-          "Adj_Close": "4.01"
+          "Adj_Close": "3.97"
         },
         {
           "Symbol": "TFBF.F",
@@ -1713,7 +1793,7 @@
           "Low": "4.23",
           "Close": "4.23",
           "Volume": "000",
-          "Adj_Close": "3.90"
+          "Adj_Close": "3.86"
         },
         {
           "Symbol": "TFBF.F",
@@ -1723,7 +1803,7 @@
           "Low": "4.34",
           "Close": "4.34",
           "Volume": "000",
-          "Adj_Close": "4.00"
+          "Adj_Close": "3.97"
         },
         {
           "Symbol": "TFBF.F",
@@ -1733,7 +1813,7 @@
           "Low": "4.41",
           "Close": "4.44",
           "Volume": "000",
-          "Adj_Close": "4.09"
+          "Adj_Close": "4.05"
         },
         {
           "Symbol": "TFBF.F",
@@ -1743,7 +1823,7 @@
           "Low": "4.42",
           "Close": "4.42",
           "Volume": "3000",
-          "Adj_Close": "4.07"
+          "Adj_Close": "4.03"
         },
         {
           "Symbol": "TFBF.F",
@@ -1753,7 +1833,7 @@
           "Low": "4.28",
           "Close": "4.28",
           "Volume": "000",
-          "Adj_Close": "3.95"
+          "Adj_Close": "3.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -1763,7 +1843,7 @@
           "Low": "4.28",
           "Close": "4.28",
           "Volume": "000",
-          "Adj_Close": "3.95"
+          "Adj_Close": "3.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -1773,7 +1853,7 @@
           "Low": "4.15",
           "Close": "4.28",
           "Volume": "200",
-          "Adj_Close": "3.95"
+          "Adj_Close": "3.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -1783,7 +1863,7 @@
           "Low": "4.13",
           "Close": "4.13",
           "Volume": "000",
-          "Adj_Close": "3.81"
+          "Adj_Close": "3.77"
         },
         {
           "Symbol": "TFBF.F",
@@ -1793,7 +1873,7 @@
           "Low": "4.05",
           "Close": "4.05",
           "Volume": "500",
-          "Adj_Close": "3.73"
+          "Adj_Close": "3.70"
         },
         {
           "Symbol": "TFBF.F",
@@ -1803,7 +1883,7 @@
           "Low": "4.05",
           "Close": "4.05",
           "Volume": "10000",
-          "Adj_Close": "3.73"
+          "Adj_Close": "3.70"
         },
         {
           "Symbol": "TFBF.F",
@@ -1813,7 +1893,7 @@
           "Low": "4.07",
           "Close": "4.07",
           "Volume": "000",
-          "Adj_Close": "1.26"
+          "Adj_Close": "0.98"
         },
         {
           "Symbol": "TFBF.F",
@@ -1823,7 +1903,7 @@
           "Low": "4.13",
           "Close": "4.13",
           "Volume": "1800",
-          "Adj_Close": "1.28"
+          "Adj_Close": "0.99"
         },
         {
           "Symbol": "TFBF.F",
@@ -1833,7 +1913,7 @@
           "Low": "4.13",
           "Close": "4.30",
           "Volume": "2000",
-          "Adj_Close": "1.33"
+          "Adj_Close": "1.03"
         },
         {
           "Symbol": "TFBF.F",
@@ -1843,7 +1923,7 @@
           "Low": "4.15",
           "Close": "4.27",
           "Volume": "700",
-          "Adj_Close": "1.33"
+          "Adj_Close": "1.03"
         },
         {
           "Symbol": "TFBF.F",
@@ -1853,7 +1933,7 @@
           "Low": "4.15",
           "Close": "4.15",
           "Volume": "000",
-          "Adj_Close": "1.29"
+          "Adj_Close": "1.00"
         },
         {
           "Symbol": "TFBF.F",
@@ -1863,7 +1943,7 @@
           "Low": "4.19",
           "Close": "4.19",
           "Volume": "000",
-          "Adj_Close": "1.30"
+          "Adj_Close": "1.01"
         },
         {
           "Symbol": "TFBF.F",
@@ -1873,7 +1953,7 @@
           "Low": "4.18",
           "Close": "4.18",
           "Volume": "000",
-          "Adj_Close": "1.30"
+          "Adj_Close": "1.00"
         },
         {
           "Symbol": "TFBF.F",
@@ -1883,7 +1963,7 @@
           "Low": "4.16",
           "Close": "4.16",
           "Volume": "000",
-          "Adj_Close": "1.29"
+          "Adj_Close": "1.00"
         },
         {
           "Symbol": "TFBF.F",
@@ -1893,7 +1973,7 @@
           "Low": "4.12",
           "Close": "4.12",
           "Volume": "1000",
-          "Adj_Close": "1.28"
+          "Adj_Close": "0.99"
         },
         {
           "Symbol": "TFBF.F",
@@ -1903,7 +1983,7 @@
           "Low": "4.07",
           "Close": "4.07",
           "Volume": "600",
-          "Adj_Close": "1.26"
+          "Adj_Close": "0.98"
         },
         {
           "Symbol": "TFBF.F",
@@ -1913,7 +1993,7 @@
           "Low": "3.98",
           "Close": "4.10",
           "Volume": "2000",
-          "Adj_Close": "1.27"
+          "Adj_Close": "0.98"
         },
         {
           "Symbol": "TFBF.F",
@@ -1923,7 +2003,7 @@
           "Low": "4.05",
           "Close": "4.05",
           "Volume": "100",
-          "Adj_Close": "1.26"
+          "Adj_Close": "0.97"
         },
         {
           "Symbol": "TFBF.F",
@@ -1933,7 +2013,7 @@
           "Low": "3.92",
           "Close": "3.92",
           "Volume": "000",
-          "Adj_Close": "1.22"
+          "Adj_Close": "0.94"
         },
         {
           "Symbol": "TFBF.F",
@@ -1943,7 +2023,7 @@
           "Low": "4.10",
           "Close": "4.10",
           "Volume": "500",
-          "Adj_Close": "1.27"
+          "Adj_Close": "0.98"
         },
         {
           "Symbol": "TFBF.F",
@@ -1953,7 +2033,7 @@
           "Low": "3.96",
           "Close": "3.96",
           "Volume": "000",
-          "Adj_Close": "1.23"
+          "Adj_Close": "0.95"
         },
         {
           "Symbol": "TFBF.F",
@@ -1963,7 +2043,7 @@
           "Low": "3.89",
           "Close": "3.89",
           "Volume": "000",
-          "Adj_Close": "1.21"
+          "Adj_Close": "0.93"
         },
         {
           "Symbol": "TFBF.F",
@@ -1973,7 +2053,7 @@
           "Low": "3.87",
           "Close": "4.07",
           "Volume": "4000",
-          "Adj_Close": "1.26"
+          "Adj_Close": "0.98"
         },
         {
           "Symbol": "TFBF.F",
@@ -1983,7 +2063,7 @@
           "Low": "3.95",
           "Close": "3.95",
           "Volume": "500",
-          "Adj_Close": "1.23"
+          "Adj_Close": "0.95"
         },
         {
           "Symbol": "TFBF.F",
@@ -1993,7 +2073,7 @@
           "Low": "3.93",
           "Close": "3.94",
           "Volume": "4000",
-          "Adj_Close": "1.22"
+          "Adj_Close": "0.95"
         },
         {
           "Symbol": "TFBF.F",
@@ -2003,7 +2083,7 @@
           "Low": "3.84",
           "Close": "3.84",
           "Volume": "000",
-          "Adj_Close": "1.19"
+          "Adj_Close": "0.92"
         },
         {
           "Symbol": "TFBF.F",
@@ -2013,7 +2093,7 @@
           "Low": "3.82",
           "Close": "3.82",
           "Volume": "1100",
-          "Adj_Close": "1.19"
+          "Adj_Close": "0.92"
         },
         {
           "Symbol": "TFBF.F",
@@ -2023,7 +2103,7 @@
           "Low": "3.82",
           "Close": "3.82",
           "Volume": "3000",
-          "Adj_Close": "1.19"
+          "Adj_Close": "0.92"
         },
         {
           "Symbol": "TFBF.F",
@@ -2033,7 +2113,7 @@
           "Low": "3.85",
           "Close": "3.85",
           "Volume": "000",
-          "Adj_Close": "1.20"
+          "Adj_Close": "0.92"
         },
         {
           "Symbol": "TFBF.F",
@@ -2043,7 +2123,7 @@
           "Low": "3.87",
           "Close": "3.87",
           "Volume": "000",
-          "Adj_Close": "1.20"
+          "Adj_Close": "0.93"
         },
         {
           "Symbol": "TFBF.F",
@@ -2053,7 +2133,7 @@
           "Low": "3.86",
           "Close": "3.86",
           "Volume": "000",
-          "Adj_Close": "1.20"
+          "Adj_Close": "0.93"
         },
         {
           "Symbol": "TFBF.F",
@@ -2063,7 +2143,7 @@
           "Low": "3.93",
           "Close": "3.94",
           "Volume": "1000",
-          "Adj_Close": "1.22"
+          "Adj_Close": "0.95"
         },
         {
           "Symbol": "TFBF.F",
@@ -2073,7 +2153,7 @@
           "Low": "4.00",
           "Close": "4.00",
           "Volume": "1400",
-          "Adj_Close": "1.24"
+          "Adj_Close": "0.96"
         },
         {
           "Symbol": "TFBF.F",
@@ -2083,7 +2163,7 @@
           "Low": "3.94",
           "Close": "3.94",
           "Volume": "000",
-          "Adj_Close": "1.22"
+          "Adj_Close": "0.95"
         },
         {
           "Symbol": "TFBF.F",
@@ -2093,7 +2173,7 @@
           "Low": "3.87",
           "Close": "3.87",
           "Volume": "000",
-          "Adj_Close": "1.20"
+          "Adj_Close": "0.93"
         },
         {
           "Symbol": "TFBF.F",
@@ -2103,7 +2183,7 @@
           "Low": "3.82",
           "Close": "3.84",
           "Volume": "5000",
-          "Adj_Close": "1.19"
+          "Adj_Close": "0.92"
         },
         {
           "Symbol": "TFBF.F",
@@ -2113,7 +2193,7 @@
           "Low": "3.80",
           "Close": "3.80",
           "Volume": "000",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2123,7 +2203,7 @@
           "Low": "3.79",
           "Close": "3.82",
           "Volume": "700",
-          "Adj_Close": "1.19"
+          "Adj_Close": "0.92"
         },
         {
           "Symbol": "TFBF.F",
@@ -2133,7 +2213,7 @@
           "Low": "3.72",
           "Close": "3.72",
           "Volume": "900",
-          "Adj_Close": "1.16"
+          "Adj_Close": "0.89"
         },
         {
           "Symbol": "TFBF.F",
@@ -2143,7 +2223,7 @@
           "Low": "3.71",
           "Close": "3.71",
           "Volume": "000",
-          "Adj_Close": "1.15"
+          "Adj_Close": "0.89"
         },
         {
           "Symbol": "TFBF.F",
@@ -2153,7 +2233,7 @@
           "Low": "3.72",
           "Close": "3.72",
           "Volume": "000",
-          "Adj_Close": "1.15"
+          "Adj_Close": "0.89"
         },
         {
           "Symbol": "TFBF.F",
@@ -2163,7 +2243,7 @@
           "Low": "3.70",
           "Close": "3.70",
           "Volume": "600",
-          "Adj_Close": "1.15"
+          "Adj_Close": "0.89"
         },
         {
           "Symbol": "TFBF.F",
@@ -2173,7 +2253,7 @@
           "Low": "3.68",
           "Close": "3.68",
           "Volume": "12600",
-          "Adj_Close": "1.14"
+          "Adj_Close": "0.88"
         },
         {
           "Symbol": "TFBF.F",
@@ -2183,7 +2263,7 @@
           "Low": "3.79",
           "Close": "3.79",
           "Volume": "3600",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2193,7 +2273,7 @@
           "Low": "3.80",
           "Close": "3.80",
           "Volume": "000",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2203,7 +2283,7 @@
           "Low": "3.94",
           "Close": "3.94",
           "Volume": "1200",
-          "Adj_Close": "1.22"
+          "Adj_Close": "0.95"
         },
         {
           "Symbol": "TFBF.F",
@@ -2213,7 +2293,7 @@
           "Low": "3.77",
           "Close": "3.78",
           "Volume": "1700",
-          "Adj_Close": "1.17"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2223,7 +2303,7 @@
           "Low": "3.77",
           "Close": "3.77",
           "Volume": "3500",
-          "Adj_Close": "1.17"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2233,7 +2313,7 @@
           "Low": "3.76",
           "Close": "3.90",
           "Volume": "2200",
-          "Adj_Close": "1.21"
+          "Adj_Close": "0.94"
         },
         {
           "Symbol": "TFBF.F",
@@ -2243,7 +2323,7 @@
           "Low": "3.73",
           "Close": "3.73",
           "Volume": "1700",
-          "Adj_Close": "1.16"
+          "Adj_Close": "0.90"
         },
         {
           "Symbol": "TFBF.F",
@@ -2253,7 +2333,7 @@
           "Low": "3.79",
           "Close": "3.79",
           "Volume": "100",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2263,7 +2343,7 @@
           "Low": "3.79",
           "Close": "3.79",
           "Volume": "000",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2273,7 +2353,7 @@
           "Low": "3.78",
           "Close": "3.78",
           "Volume": "000",
-          "Adj_Close": "1.17"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2283,7 +2363,7 @@
           "Low": "3.79",
           "Close": "3.79",
           "Volume": "000",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2293,7 +2373,7 @@
           "Low": "3.70",
           "Close": "3.70",
           "Volume": "000",
-          "Adj_Close": "1.15"
+          "Adj_Close": "0.89"
         },
         {
           "Symbol": "TFBF.F",
@@ -2303,7 +2383,7 @@
           "Low": "3.80",
           "Close": "3.80",
           "Volume": "000",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2313,7 +2393,7 @@
           "Low": "3.73",
           "Close": "3.73",
           "Volume": "000",
-          "Adj_Close": "1.16"
+          "Adj_Close": "0.90"
         },
         {
           "Symbol": "TFBF.F",
@@ -2323,7 +2403,7 @@
           "Low": "3.71",
           "Close": "3.71",
           "Volume": "000",
-          "Adj_Close": "1.15"
+          "Adj_Close": "0.89"
         },
         {
           "Symbol": "TFBF.F",
@@ -2333,7 +2413,7 @@
           "Low": "3.77",
           "Close": "3.77",
           "Volume": "1800",
-          "Adj_Close": "1.17"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2343,7 +2423,7 @@
           "Low": "3.72",
           "Close": "3.79",
           "Volume": "200",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2353,7 +2433,7 @@
           "Low": "3.75",
           "Close": "3.75",
           "Volume": "5100",
-          "Adj_Close": "1.16"
+          "Adj_Close": "0.90"
         },
         {
           "Symbol": "TFBF.F",
@@ -2363,7 +2443,7 @@
           "Low": "3.85",
           "Close": "3.85",
           "Volume": "5100",
-          "Adj_Close": "1.20"
+          "Adj_Close": "0.92"
         },
         {
           "Symbol": "TFBF.F",
@@ -2373,7 +2453,7 @@
           "Low": "3.80",
           "Close": "3.87",
           "Volume": "2600",
-          "Adj_Close": "1.20"
+          "Adj_Close": "0.93"
         },
         {
           "Symbol": "TFBF.F",
@@ -2383,7 +2463,7 @@
           "Low": "3.76",
           "Close": "3.80",
           "Volume": "2000",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2393,7 +2473,7 @@
           "Low": "3.80",
           "Close": "3.80",
           "Volume": "3200",
-          "Adj_Close": "1.18"
+          "Adj_Close": "0.91"
         },
         {
           "Symbol": "TFBF.F",
@@ -2403,7 +2483,7 @@
           "Low": "3.73",
           "Close": "3.75",
           "Volume": "4900",
-          "Adj_Close": "1.16"
+          "Adj_Close": "0.90"
         },
         {
           "Symbol": "TFBF.F",
@@ -2413,7 +2493,7 @@
           "Low": "3.75",
           "Close": "3.75",
           "Volume": "000",
-          "Adj_Close": "1.16"
+          "Adj_Close": "0.90"
         },
         {
           "Symbol": "TFBF.F",
@@ -2423,7 +2503,7 @@
           "Low": "3.66",
           "Close": "3.68",
           "Volume": "500",
-          "Adj_Close": "1.14"
+          "Adj_Close": "0.88"
         },
         {
           "Symbol": "TFBF.F",
@@ -2433,7 +2513,7 @@
           "Low": "3.60",
           "Close": "3.60",
           "Volume": "4000",
-          "Adj_Close": "1.12"
+          "Adj_Close": "0.86"
         },
         {
           "Symbol": "TFBF.F",
@@ -2443,7 +2523,7 @@
           "Low": "3.62",
           "Close": "3.63",
           "Volume": "1000",
-          "Adj_Close": "1.13"
+          "Adj_Close": "0.87"
         },
         {
           "Symbol": "TFBF.F",
@@ -2453,7 +2533,7 @@
           "Low": "3.58",
           "Close": "3.58",
           "Volume": "000",
-          "Adj_Close": "1.11"
+          "Adj_Close": "0.86"
         },
         {
           "Symbol": "TFBF.F",
@@ -2463,7 +2543,7 @@
           "Low": "3.49",
           "Close": "3.55",
           "Volume": "1200",
-          "Adj_Close": "1.10"
+          "Adj_Close": "0.85"
         },
         {
           "Symbol": "TFBF.F",
@@ -2473,7 +2553,7 @@
           "Low": "3.58",
           "Close": "3.58",
           "Volume": "000",
-          "Adj_Close": "1.11"
+          "Adj_Close": "0.86"
         },
         {
           "Symbol": "TFBF.F",
@@ -2483,7 +2563,7 @@
           "Low": "3.56",
           "Close": "3.62",
           "Volume": "300",
-          "Adj_Close": "1.12"
+          "Adj_Close": "0.87"
         },
         {
           "Symbol": "TFBF.F",
@@ -2493,7 +2573,7 @@
           "Low": "3.50",
           "Close": "3.53",
           "Volume": "1300",
-          "Adj_Close": "1.10"
+          "Adj_Close": "0.85"
         },
         {
           "Symbol": "TFBF.F",
@@ -2503,7 +2583,7 @@
           "Low": "3.43",
           "Close": "3.45",
           "Volume": "14400",
-          "Adj_Close": "1.07"
+          "Adj_Close": "0.83"
         },
         {
           "Symbol": "TFBF.F",
@@ -2513,7 +2593,7 @@
           "Low": "3.34",
           "Close": "3.34",
           "Volume": "1000",
-          "Adj_Close": "1.04"
+          "Adj_Close": "0.80"
         },
         {
           "Symbol": "TFBF.F",
@@ -2523,7 +2603,7 @@
           "Low": "3.25",
           "Close": "3.30",
           "Volume": "21800",
-          "Adj_Close": "1.02"
+          "Adj_Close": "0.79"
         },
         {
           "Symbol": "TFBF.F",
@@ -2533,7 +2613,7 @@
           "Low": "3.57",
           "Close": "3.57",
           "Volume": "000",
-          "Adj_Close": "1.11"
+          "Adj_Close": "0.86"
         }
       ]
     }
