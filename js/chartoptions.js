@@ -32,7 +32,8 @@ var chartOptions = {
   // },
   tooltip : {
     crosshairs: [true, false],
-    followPointer: false
+    followPointer: false,
+    shared: false
   },
 };
 

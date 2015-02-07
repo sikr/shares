@@ -355,7 +355,7 @@ exports.dumpFiles = function(callback) {
                   res[i].Dividend
                   );
               }
-              else if (undefined !== res[i].Split) {
+              else if (undefined !== res[i].Split && (res[i].Apply === undefined || res[i].Apply === true)) {
                 stmt = transaction.prepare('INSERT INTO splits VALUES (?, ?, ?, ?)');
                 stmt.run(
                   id,
@@ -406,6 +406,7 @@ exports.dumpFiles = function(callback) {
       //
       transaction.run('INSERT INTO adj_quotes SELECT * FROM quotes');
       transaction.each('SELECT * FROM splits', function (err, row) {
+        console.log('apply split for: ' + JSON.stringify(row));
         var m = parseInt(row.ratio.split(':')[0]);
         var n = parseInt(row.ratio.split(':')[1]);
         stmt = transaction.prepare(

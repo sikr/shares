@@ -1,5 +1,4 @@
-# Summe Kurs x Anzahl pro Tag
-# sum of the valule of all shares multiplied by the count in a depot 
+# sum of the value of all shares multiplied by the count in a depot 
 CREATE TABLE sum AS
 SELECT   shares.symbol AS symbol,
          positions.id AS positions_id,
@@ -52,20 +51,25 @@ ORDER BY positions.buying_date
 
 # find the latest quotes for all positions
 SELECT   shares.name,
-         quotes.share_id,
+         quotes.share_id AS _share_id,
          positions.symbol,
          quotes.date,
-         MAX(strftime("%s", quotes.date)),
          ROUND(julianday("now") - julianday(quotes.date)),
          quotes.close
-FROM     shares, quotes, positions
+FROM     depot, positions, shares, quotes
 WHERE    quotes.share_id=positions.share_id AND
-         quotes.share_id = shares.id
+         quotes.share_id = shares.id AND
+         positions.id = depot.positions_id AND
+         depot.depot_id = 1 AND
+         quotes.date = (
+            SELECT MAX(quotes.date) 
+            FROM   quotes
+            WHERE  quotes.share_id=_share_id
+         )
 GROUP BY quotes.share_id
 
 # all shares in a depot
-SELECT 
-         positions.symbol,
+SELECT   positions.symbol,
          positions.count,
          positions.buying_price,
          positions.buying_date,

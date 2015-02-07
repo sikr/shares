@@ -107,11 +107,13 @@ var initUI = function() {
   panel.create('shares').appendTo($('body'));
   panel.addPanel('center', 'panel-overview');
   panel.addPanel('center', 'panel-chart');
+  panel.addPanel('center', 'panel-sql');
   panel.addToolbarButton('left', 'options', '', 'fa-bars');
   // panel.addToolbarButton('right', 'settings', '', 'fa-cog');
   // panel.addToolbarButton('right', 'settings', '', 'fa-line-chart');
   panel.addToolbarButton('center', 'overview', 'Übersicht', '');
   panel.addToolbarButton('center', 'chart', 'Chart', '');
+  panel.addToolbarButton('center', 'sql', 'SQL', '');
 
 
   row = $('<div class="row"></div').appendTo(panel.panelLeft);
@@ -140,6 +142,10 @@ var initUI = function() {
 
   $('#chart').click(function () {
     panel.showPanel('panel-chart');
+  });
+
+  $('#sql').click(function () {
+    panel.showPanel('panel-sql');
   });
 
   $('body').keydown(function (e) {
