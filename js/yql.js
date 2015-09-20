@@ -144,7 +144,7 @@ exports.update = function(symbols, callback) {
     response.on('end', function () {
       var json = JSON.parse(str);
       var timestamp = json.query.created.substr(0, 17) + '00Z';
-      fs.writeFile('../data/update_' + timestamp + ' .json', JSON.stringify(json, null, '  '));
+      fs.writeFile('../data/update_' + timestamp + '.json', JSON.stringify(json, null, '  '));
       if (undefined !== callback) {
         callback(json);
       }
